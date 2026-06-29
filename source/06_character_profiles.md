@@ -797,3 +797,225 @@ story_role: The freed royal who legitimizes Q'ten Lo's new course and ties Rapht
 key_relationship: Raphtalia (cousin); Makina (former handler); Sadeena & Shildina (protectors)
 arc_summary: A manipulated puppet-emperor is freed by Naofumi's intervention to step out from a corrupt regime's shadow
 ```
+
+
+---
+
+# Batch 3 — Kizuna's World (the parallel world)
+
+## Kizuna Kazayama
+
+```
+name: Kizuna Kazayama (Age: 18 — adult)
+aliases: the Hunting Hero, the otaku hero, "the fisher"
+species: Human (summoned otherworlder, from a near-future Japan with VR games)
+faction: One of the four Legendary Heroes of Kizuna's/Glass's World; Naofumi's cross-world ally
+occupation: Hunting Hero; world-traveling adventurer (and obsessive angler); built her own home
+power_tier: Legendary-class in her world; powerful, but — like Naofumi — hard-locked so she can only harm monsters, not people
+weapon: The Legendary Hunting Tool — shifts between a large hunting knife and a fishing rod
+forms:
+  - Curse Series — Hunting Tool of Sloth (unlocked after a second rescue)
+signature_abilities:
+  - Monster-only damage (cannot hurt humans), making her a specialist beast-slayer
+  - Survival, hunting, and fishing mastery; built and furnished her own house
+  - Strong morale/leadership; rallies cross-world allies
+arc_notes: Summoned before the Waves to slay a Demon Dragon Emperor; afterward stranded in a hostile country and sealed in a magic labyrinth for years until Naofumi (also dumped there by Kyo) frees her. She halts her allies' attacks on Naofumi's world, joins to kill Kyo, and vows to solve the Waves together without the worlds' heroes killing each other. (Inspires Naofumi to found his own village; she does not appear in the original web novel.)
+physical: A cheerful adult woman with long dark hair and an athletic, outdoorsy build; practical hunting gear
+style: Upbeat and hands-on; charges into adventure (and fishing spots) with glee
+presence: Warm, infectious optimism — the easy friend who makes allies of strangers
+core_motivation: Protect her world and friends; live freely, travel, and (always) fish
+fear_or_conflict: Being caged again (literal labyrinth trauma); the worlds being forced to kill each other; failing Glass and her party
+worldview: Heroes of different worlds shouldn't be enemies — the real enemy is whatever makes them fight
+self_image: A free-spirited hunter and loyal friend who refuses the no-win premise
+tone: Bright, energetic, friendly
+humor: Goofy otaku enthusiasm; derails into fishing tangents
+reaction_cue: Befriends people instantly; has to be physically restrained from fishing mid-mission; turns serious and decisive in a real crisis
+relationship_pattern: Makes friends effortlessly; ride-or-die for Glass; quick kinship with Naofumi as a fellow "can't-hurt-people" hero
+voice_quality: Bright, clear, animated
+speech_pattern: Casual, enthusiastic, peppered with game/otaku references
+tells: Eyes sparkle at water or a rare catch; bounces on her heels when excited
+signature_phrase: "Different worlds, sure — but we don't have to be enemies. Now hold on, is that a fishing spot?"
+story_role: The cross-world counterpart-hero who turns enemies into allies and reframes the whole conflict
+key_relationship: Glass (best friend/closest ally); Naofumi (kindred hero); L'Arc, Ethnobalt, Therese (party)
+arc_summary: A caged, stranded hero is freed by her "rival world's" Shield and chooses cooperation over the worlds' lethal logic, becoming Naofumi's key ally across dimensions
+```
+
+## Glass
+
+```
+name: Glass (Age: adult)
+aliases: the Vassal Fan Hero, Kizuna's blade and best friend
+species: Spirit Person (a race whose level/stats are tied to Soul Power)
+faction: Kizuna's World — Vassal Hero; (initially) enemy of Naofumi's world, later ally
+occupation: Martial-artist Vassal Hero; Kizuna's closest companion
+power_tier: Extremely strong in her world; her power scales with Soul Power (and is vulnerable to soul-draining)
+weapon: The Vassal Fan (paired iron fans); graceful martial arts
+forms:
+  - Soul-Power surges (stats rise/fall with her Soul Power reserve)
+signature_abilities:
+  - Fan-based martial arts: elegant, precise, devastating
+  - Soul-Power-fueled techniques
+  - Fragments of a "pacifier"-like bloodline ability (only usable with Shildina's help, due to her thinner lineage)
+arc_notes: Chosen by the Vassal Fan, she became Kizuna's closest ally. When Kizuna vanished, a desperate Glass led the invasion of Naofumi's world (reasoning that killing the rival heroes would spare hers). She first duels Naofumi during the third Wave, recognizing him as the only "real" hero present; clashes again at Cal Mira; then, ordered by her weapon to stop the rogue Kyo, allies with Naofumi and reunites with Kizuna. Comes to respect Naofumi deeply (he leaves her a Soul-Healing Water recipe to cover her weakness)
+physical: A poised, severe adult woman with long black hair, pale features, and traditional dress; cold elegance
+style: Formal, controlled, lethally graceful
+presence: Stern and honor-bound; thaws to genuine warmth only for those she trusts
+core_motivation: Save her world and protect Kizuna above all
+fear_or_conflict: Losing Kizuna again; the lethal either/or between the worlds; her soul-power vulnerability
+worldview: Duty and honor first — but the right enemy can change who you'll stand beside
+self_image: A weapon of her world and Kizuna's loyal blade
+tone: Cold, formal, clipped
+humor: Dry, rare; mostly stoic
+reaction_cue: Challenges the strongest foe directly; softens visibly around Kizuna; honors a worthy opponent
+relationship_pattern: Closed-off and honor-bound; fiercely loyal to the few she lets in (Kizuna above all)
+voice_quality: Low, measured, cool
+speech_pattern: Formal, terse, precise
+tells: Snaps her fan open before committing; her cold mask cracks only for Kizuna
+signature_phrase: "You are the only true hero among them. Draw your shield."
+story_role: The honorable enemy-turned-ally who first recognizes Naofumi's worth across worlds
+key_relationship: Kizuna (best friend, the center of her loyalty); Naofumi (rival → respected ally); Shildina (pacifier-power link)
+arc_summary: An honor-bound warrior invades to save her world, learns the true enemy isn't Naofumi, and becomes one of his staunchest cross-world allies while reunited with her best friend
+```
+
+## L'Arc Berg Sickle
+
+```
+name: L'Arc Berg Sickle (Age: adult)
+aliases: the Vassal Scythe Hero, "kiddo"-guy, the traveling king
+species: Human (Kizuna's World)
+faction: Kizuna's World — Vassal Hero; young king of a country that reveres the Hunting Hero
+occupation: King and Vassal Scythe Hero; restless adventurer
+power_tier: High-tier Vassal Hero; a strong, versatile frontline fighter
+weapon: The Vassal Scythe
+forms: —
+signature_abilities:
+  - Sweeping scythe combat; mobile and aggressive
+  - Battlefield leadership (a king used to command)
+arc_notes: Chosen by the Vassal Scythe, he joined Kizuna's party. He and Therese secretly slip into Naofumi's world to find and kill its Legendary Heroes (to save their own). He unknowingly befriends Naofumi en route to Cal Mira — refusing to believe such a good guy is the "criminal" Shield Hero, calling him "kiddo." Realizes the truth during the Cal Mira Wave, fights him, retreats, and later allies with him to stop Kyo (dropping the kill-the-heroes plan on Kizuna's order). Does not appear in the web novel.
+physical: A tall, rakish adult man with red-and-black hair and an easy grin; traveling clothes over a king's bearing
+style: Loose, confident, brawler-with-a-scythe energy
+presence: Breezy, charismatic, instantly likable — a king who'd rather be on the road
+core_motivation: Protect his world and people; enjoy travel, friendship, and a good fight
+fear_or_conflict: The kill-or-be-killed worlds dilemma; squaring his duty with the friends he's made (Naofumi); his oblivious crush on Therese
+worldview: Judge people by who they are, not their reputation; have fun while doing your duty
+self_image: A regular, fun-loving guy who happens to be a king and a hero
+tone: Easygoing, jovial, teasing
+humor: Big, warm ribbing; calls Naofumi "kiddo" to needle him
+reaction_cue: Claps you on the back and makes friends fast; gets serious only when his world's at stake; flustered around Therese
+relationship_pattern: Open and friendly; genuine bond with Naofumi; one-sided pining for Therese (and comic rivalry with Naofumi over her attention)
+voice_quality: Hearty, warm, loud
+speech_pattern: Casual, jokey, nickname-happy ("kiddo")
+tells: Grins and rests the scythe on his shoulder; goes quiet when duty and friendship collide
+signature_phrase: "No way a good guy like you's the villain they talk about, kiddo."
+story_role: The friendly enemy-turned-ally who humanizes the "rival world" before the alliance forms
+key_relationship: Therese (companion/crush); Kizuna's party; Naofumi (friend → foe → ally)
+arc_summary: A wandering king sent to kill Naofumi's world's heroes befriends Naofumi instead, and once the real enemy is clear, throws in with him wholeheartedly
+```
+
+## Therese Alexanderite
+
+```
+name: Therese Alexanderite (Age: adult)
+aliases: the Jewel woman, L'Arc's companion, the gem-crafter's muse
+species: Jewel (a race born with a large gemstone, able to commune with gems)
+faction: Kizuna's World — member of Kizuna's party; travels with L'Arc
+occupation: Gem-magic caster and accessory enthusiast; Kizuna's party member
+power_tier: Strong support/offense caster via gemstone magic
+weapon: Gemstone magic (channels power through jewels)
+forms: —
+signature_abilities:
+  - Gem-channeled magic, including offensive spells that spare allies
+  - Communes with gemstones to draw out their power
+  - Connoisseur's eye for crafting and accessories
+arc_notes: Travels with L'Arc to Naofumi's world on the kill-the-heroes mission, but befriends Naofumi (sure he's a good person despite the rumors). Reluctantly fights his party at the Cal Mira Wave, then joins him against Kyo. Becomes fascinated by Naofumi's crafting and loves watching him work — obliviously fanning L'Arc's jealousy into a one-sided rivalry. Does not appear in the web novel.
+physical: A serene adult woman with a prominent gemstone set at her brow and a calm, refined beauty
+style: Quiet, composed, artisanal focus
+presence: Reserved and gentle, with a collector's spark when craft or gems are involved
+core_motivation: Protect her world; pursue beauty and craftsmanship; stand by L'Arc and Kizuna
+fear_or_conflict: Harming people she's come to like (Naofumi); the worlds' lethal premise
+worldview: There is beauty and worth to be found everywhere — including in a "villain" everyone slanders
+self_image: A calm artisan-warrior who trusts what she sees over what she's told
+tone: Soft, measured, warm
+humor: Gentle, understated; obliviously causes comedy via L'Arc's jealousy
+reaction_cue: Lights up at fine craft or gems; gently insists on a person's goodness; fights with reluctance
+relationship_pattern: Steadfast with L'Arc and Kizuna; crafting-kinship with Naofumi (to L'Arc's dismay); oblivious to L'Arc's feelings
+voice_quality: Calm, melodic
+speech_pattern: Polite, thoughtful, a little dreamy about craftsmanship
+tells: Goes rapt watching Naofumi craft; cradles a gemstone when casting
+signature_phrase: "The rumors are wrong about you — I can see it in how carefully you work."
+story_role: The gentle cross-world ally whose crafting bond (and obliviousness) drives both alliance and comedy
+key_relationship: L'Arc (companion who pines for her); Naofumi (crafting kinship); Kizuna's party
+arc_summary: A serene gem-mage sent to help kill Naofumi instead recognizes his worth, allies with him, and bonds over craft — never noticing the jealousy she stirs
+```
+
+## Ethnobalt
+
+```
+name: Ethnobalt (Age: adult)
+aliases: the Vassal Book Hero (originally Boat), the Library Rabbit
+species: Library Rabbit (a scholarly race; can take a humanoid form)
+faction: Kizuna's World — Vassal Hero; Kizuna's ally
+occupation: Scholar-leader of the Library Rabbits; support hero
+power_tier: Support-tier early (Boat), gaining offense as the Book Hero
+weapon: Vassal Boat (transport/flight) → later the Vassal Book (offense + knowledge)
+forms:
+  - Humanoid form (a calm young man); in Naofumi's world appears as a Usapil monster
+signature_abilities:
+  - Vast scholarly knowledge; expertise in shikigami/familiar creation (helps build Raph-chan)
+  - Transport/flight (Boat); offensive and utility magic (Book)
+arc_notes: Introduced to Naofumi by Kizuna; uses his familiar-craft expertise to help search for missing allies and to assist against Kyo. Originally the Vassal Boat Hero (flight/transport); after the Boat is stolen, he's chosen as the new Vassal Book Hero during the fight with Hidemasa, gaining real offensive power
+physical: In humanoid form, a slight, scholarly adult young man with rabbit features and a gentle demeanor
+style: Calm, analytical, support-from-the-back
+presence: Soft-spoken and bookish; a reassuring, brainy steadiness
+core_motivation: Preserve knowledge, help his friends, and protect his world through wisdom
+fear_or_conflict: His race's unsuitedness for combat; being unable to protect those he supports
+worldview: Knowledge and cooperation solve what brute force can't
+self_image: A scholar and helper rather than a warrior
+tone: Gentle, measured, polite
+humor: Mild, dry, scholarly
+reaction_cue: Offers research and options; stays composed; quietly steps up when needed
+relationship_pattern: Loyal, supportive, collegial; bonds with Naofumi over craft/knowledge
+voice_quality: Soft, even, articulate
+speech_pattern: Precise, informative, courteous
+tells: Pushes up to explain something; ears twitch when thinking
+signature_phrase: "Give me a moment with the records — there's always a method if we look."
+story_role: The knowledge-and-support hero who enables the party's familiar-craft and problem-solving
+key_relationship: Kizuna (the one who introduces/anchors him); Naofumi (craft/knowledge ally); Glass, L'Arc
+arc_summary: A bookish support hero grows from a transport-provider into a true combatant Book Hero, his knowledge proving as vital as any blade
+```
+
+## S'yne Lokk
+
+```
+name: S'yne Lokk (Age: adult)
+aliases: the Vassal Sewing-Set Hero, the world-less wanderer
+species: Skywing (a race that can regain a lost ability to fly)
+faction: Cross-world ally; later joins Naofumi's party/village
+occupation: Coliseum champion (in disguise) turned Vassal Sewing-Set Hero
+power_tier: Top-tier duelist (was Zeltoble's reigning coliseum champion), though her weapon slowly weakens
+weapon: The Vassal Sewing Set — scissors as her main weapon, binding threads, sewing-pin teleport markers, stuffed-animal familiars
+forms:
+  - Regains the Skywing flight ability through training with her ancestor R'yne
+signature_abilities:
+  - Scissor combat + thread binding; pin-markers she teleports to (incl. ones she sticks on allies' armor)
+  - Stuffed-animal familiars that fight and speak for her
+arc_notes: The sole survivor of a world destroyed after its Legendary Heroes were killed, she drifted aimlessly between worlds, then disguised herself and rose to the top of Zeltoble's coliseum circuit. After narrowly losing to Naofumi's party in a tournament final, she seeks them out and joins to fight the Vanguards of the Waves. Her weapon's translation feature is broken (her speech comes out partly static), and the weapon slowly loses strength because her home world is gone. Does not appear in the web novel.
+physical: A quiet adult woman with an unreadable expression; carries oversized scissors; subtle Skywing heritage
+style: Silent, efficient, eerily calm in a fight
+presence: Detached and enigmatic — easy to overlook until she's already won
+core_motivation: Find purpose after losing everything; protect Naofumi and stop the force that destroyed her world
+fear_or_conflict: The emptiness of having no world/people left; her weapon (and voice) fading
+worldview: Bleak but quietly hopeful — she latches onto a cause and a person worth following
+self_image: A survivor with nothing left to lose, choosing where to belong
+tone: Flat, quiet, sincere underneath
+humor: Deadpan; her stuffed familiars often "speak" her blunter thoughts
+reaction_cue: Says little, acts decisively; marks Naofumi with pins to always find him
+relationship_pattern: Attaches deeply and silently to those she respects (Naofumi); loyal once committed
+voice_quality: Soft and partly static/garbled (broken translation), with a familiar voicing the rest
+speech_pattern: Fragmented, clipped; gaps where the static eats her words; familiars fill in
+tells: Idly works her scissors; places a pin on someone she's decided to protect
+signature_phrase: "...[static]... I'll stay with you. My pins are already on your armor."
+story_role: The enigmatic survivor who attaches to Naofumi and fights the Vanguards alongside him
+key_relationship: Naofumi (the one she chooses to follow); R'yne (ancestor/teacher); her destroyed world & Vanguard sister
+arc_summary: A worldless wanderer who lost everything finds purpose at Naofumi's side, slowly reclaiming her heritage as she helps fight the force that orphaned her
+```
