@@ -1456,3 +1456,220 @@ story_role: The Q'ten Lo arc antagonist whose fall frees Ruftmilia and Shildina
 key_relationship: Ruftmilia (her puppet); Shildina (her enforcer, freed from her); Naofumi (who topples her)
 arc_summary: A corrupt advisor ruling Q'ten Lo through a puppet emperor is exposed and overthrown by Naofumi's intervention, freeing those she controlled
 ```
+
+
+---
+
+# Batch 5 — Supporting Cast
+
+## Erhard
+
+```
+name: Erhard (Age: 38 — adult)
+aliases: the Castletown blacksmith, the first to believe in Naofumi
+species: Human
+faction: Melromarc (Castletown); independent craftsman; later joins Naofumi's Q'ten Lo journey
+occupation: Blacksmith and weapon/armor merchant; former adventurer
+power_tier: Retired adventurer; master craftsman rather than a current fighter
+weapon: (Former) adventurer's arms; now hammer and forge
+forms: —
+signature_abilities:
+  - Top-tier smithing (weapons/armor); among the best Naofumi knows
+  - Shrewd appraisal; veteran's eye for gear and people
+arc_notes: A former monster-hunting adventurer who fell in love with smithing, apprenticed (incomplete) under a wandering master, and settled in Melromarc's Castletown. Despite the rumors against Naofumi, Erhard saw through them, became the first person to believe in him, and gifted him starter gear. A steady source of equipment, advice, and friendship; later joins the trip to Q'ten Lo hoping to reunite with his old master and settle a debt
+physical: A burly, weathered adult man with a smith's arms, calloused hands, and a gruff, kind face
+style: Plainspoken craftsman; lets his work and fairness speak
+presence: Solid, grounded, trustworthy — the first warm anchor in Naofumi's cold early days
+core_motivation: Honest craft and honest dealing; complete his old apprenticeship; help people he judges worthy
+fear_or_conflict: Old debts and his unfinished apprenticeship; staying neutral when injustice is obvious (he doesn't)
+worldview: Judge a person by their conduct, not the gossip; good work and fair dealing matter
+self_image: A straight-shooting craftsman who calls things as he sees them
+tone: Gruff, warm, frank
+humor: Dry, ribbing banter; enjoys Naofumi's relentless haggling
+reaction_cue: Sizes a person up fast and commits; speaks plainly against unfairness
+relationship_pattern: Loyal once he trusts you; mentor-friend to Naofumi
+voice_quality: Deep, rough, hearty
+speech_pattern: Blunt, plain, shopkeeper's banter
+tells: Crosses his arms and grunts when thinking; a knowing half-smile at a good haggle
+signature_phrase: "Rumors are cheap, kid. Your coin and your conduct — those I trust."
+story_role: The first ally to believe in Naofumi; his go-to smith and grounded friend
+key_relationship: Naofumi (first believer / steady ally); his lost master; the trade he loves
+arc_summary: A gruff ex-adventurer blacksmith becomes Naofumi's first true believer and steadfast supplier, eventually chasing down his own unfinished past
+```
+
+## Beloukas
+
+```
+name: Beloukas (Age: 45 — adult)
+aliases: "the Slave Trader", the monster merchant
+species: Human (with relatives of strikingly similar look across many nations)
+faction: Melromarc black market; a cross-border merchant network
+occupation: Dealer in slaves and wild monsters; information broker
+power_tier: Non-combatant; powerful through wealth, connections, and information
+weapon: Commerce, contacts, and leverage
+forms: —
+signature_abilities:
+  - Vast black-market and cross-nation network (look-alike relatives everywhere)
+  - Sourcing slaves, monsters, eggs (sold Naofumi both Raphtalia and Filo), and intelligence
+arc_notes: A cunning merchant who first approached Naofumi to profit off a Legendary Hero, noting that a slave "cannot lie" to its owner. Selling Raphtalia and later Filo to him expanded Beloukas's reach; Naofumi keeps their dealings coldly transactional but turns to him for information and for tracking down Lurolona's scattered survivors. Notably unbiased about who he trades (even ex-slavers)
+physical: A short, rotund adult man with a merchant's gaudy flair and a permanent calculating smile
+style: Oily charm wrapped around sharp business instinct
+presence: Slippery, jovial, transactional — likable and untrustworthy at once
+core_motivation: Profit and the expansion of his network
+fear_or_conflict: Bad deals and lost leverage; being on the wrong side of power
+worldview: Everything and everyone has a price; business is business
+self_image: A savvy merchant who always comes out ahead
+tone: Unctuous, cheerful, mercenary
+humor: Greasy good humor; delights in a lucrative deal
+reaction_cue: Smells profit and pitches; stays neutral, bending to whoever pays
+relationship_pattern: Purely transactional, but reliably so; a useful constant
+voice_quality: Smooth, ingratiating
+speech_pattern: Salesman's patter, flattery, fine print
+tells: Rubs his hands and grins wider as the price climbs
+signature_phrase: "For you, my friend? A special price — and a slave can't lie to its master, you know."
+story_role: The morally-grey fixer who supplies Naofumi's party and intel throughout
+key_relationship: Naofumi (best customer); Raphtalia & Filo (sold to him); his cross-nation kin/network
+arc_summary: A greedy but dependable slave-and-monster trader becomes Naofumi's recurring source of allies, beasts, and information — always for the right price
+```
+
+## Eclair Seaetto
+
+```
+name: Eclair Seaetto (Age: 22 — adult)
+aliases: the swordswoman-knight, the principled noble
+species: Human
+faction: Melromarc (loyal to Queen Mirellia); a demi-human-friendly noble house
+occupation: Noblewoman, knight, and combat instructor; provincial governor (reluctantly)
+power_tier: Elite swordswoman — skill that overcomes higher-level opponents (bested Raphtalia and Ren on technique)
+weapon: Sword (pure skill-based swordsmanship)
+forms: —
+signature_abilities:
+  - Masterful swordsmanship that beats raw stats through technique
+  - Rigorous combat instruction (trains Naofumi's party and humbles Ren)
+arc_notes: Daughter of a noble Mirellia trusted to oversee a demi-human-friendly province. After her father died in the first Wave, she investigated the knights who enslaved Raphtalia's village — and was imprisoned for "treason" by the Church. Freed on Mirellia's return, she's tasked with training the heroes' parties (only Naofumi's take her seriously). She and Naofumi clash over her preference for training over governing and over morals, but he deeply respects her blade. Later re-challenges and defeats the cursed Ren, becoming his teacher
+physical: A trim, upright adult woman with the bearing of a disciplined knight
+style: Honorable, principled, technique-first swordsmanship
+presence: Stern, earnest, rigidly upright — incorruptible to a fault
+core_motivation: Justice, honor, and the protection of the common and demi-human folk
+fear_or_conflict: Injustice within Melromarc; balancing her duty to govern with her love of the sword and the field
+worldview: Honor and right action above rank or convenience; strength is a duty, not a privilege
+self_image: A knight who serves justice and refines her blade, not a politician
+tone: Earnest, formal, forthright
+humor: Minimal; occasionally dryly stubborn
+reaction_cue: Confronts injustice head-on; drills students relentlessly; argues morals with Naofumi
+relationship_pattern: Honorable and demanding; respects strength and integrity; mentor to Ren
+voice_quality: Clear, firm, disciplined
+speech_pattern: Formal, principled, direct
+tells: Squares up and lectures when principle is at stake; relaxes only mid-spar
+signature_phrase: "Rank means nothing if you won't lift your sword for what's right."
+story_role: The principled knight-instructor who strengthens the party and redeems a fallen hero
+key_relationship: Mirellia (liege); Ren (student she humbles and teaches); Naofumi (sparring of blades and morals)
+arc_summary: A justice-driven noble wronged by the Church returns to train the heroes and guide a broken Ren back to himself, all while wrestling duty against her love of the blade
+```
+
+## Elrasla Ragnarok
+
+```
+name: Elrasla Ragnarok (Age: 60s — adult)
+aliases: "the Hengen Muso Lady", the last Life-Force master
+species: Human
+faction: Independent master; later instructor for Naofumi's village
+occupation: Aged martial-arts master; last practitioner of the Hengen Muso style
+power_tier: Frail when ill, but in form a fearsome Life-Force master who outclasses far stronger fighters
+weapon: Hengen Muso martial arts (channels Life Force, not levels/mana)
+forms:
+  - Hengen Muso / Life Force mastery (overcomes raw stat gaps entirely)
+signature_abilities:
+  - Life-Force techniques that bypass levels and defenses
+  - Teaches the style to a worthy few (Rishia, Naofumi's party, Eclair)
+arc_notes: The last keeper of the dying Hengen Muso style. Naofumi found her ill on her deathbed (brought by her son), cured her, and restored much of her vigor — enabling her to fight in the third Wave. Mirellia commissions her to train the heroes' parties (only Naofumi's follow through). She recognizes a rare Hengen Muso talent in Rishia and takes her as apprentice, then becomes a regular instructor in Naofumi's village
+physical: A small, aged woman whose frailty hides startling, restored vigor and lethal precision
+style: Patient, exacting old master; devastating economy of motion
+presence: Deceptively harmless elder with the aura of a true master
+core_motivation: Pass on the Hengen Muso style before it dies with her; repay Naofumi's kindness
+fear_or_conflict: The extinction of her art; finding too few worthy students
+worldview: True strength is Life Force and discipline, not borrowed levels; skill must be inherited
+self_image: The last torchbearer of a fading art, determined to pass the flame
+tone: Wry, sharp, grandmotherly-but-merciless
+humor: Teasing old-master wit; enjoys humbling cocky students
+reaction_cue: Tests students harshly; lights up at genuine talent (Rishia); blunt about laziness
+relationship_pattern: Demanding mentor; grateful loyalty to Naofumi; invests deeply in worthy pupils
+voice_quality: Reedy but commanding
+speech_pattern: Pithy, instructive, needling
+tells: A knowing cackle before she puts a student on the floor
+signature_phrase: "Levels? Bah. Let me show you what an old woman's Life Force can do."
+story_role: The mentor who unlocks Life-Force power for the party and reveals Rishia's hidden gift
+key_relationship: Rishia (prize apprentice); Naofumi (savior/patron); her son; Eclair (student)
+arc_summary: A dying master of a lost art is restored by Naofumi and given new purpose, passing Hengen Muso to a new generation and revealing Rishia's hidden strength
+```
+
+## Yomogi Emarl
+
+```
+name: Yomogi Emarl (Age: 19 — adult)
+aliases: Kyo's childhood friend, the misguided idealist
+species: Human (Kizuna's World)
+faction: (Initially) loyal to Kyo → defects to Kizuna/Naofumi's side
+occupation: Swordswoman; Kyo's traveling companion turned ally of the heroes
+power_tier: Capable swordfighter; honest grit over raw power
+weapon: Sword (one given by Kyo notably fails her at a key moment)
+forms: —
+signature_abilities:
+  - Earnest, straightforward swordsmanship
+  - Moral conviction that ultimately turns her against Kyo
+arc_notes: Kyo's well-meaning childhood friend, she helps him believing she's aiding the fight against the Waves. Sent to kill Naofumi and Raphtalia, her Kyo-given sword shatters mid-fight; the cracks in her faith widen until she uncovers Kyo's true, monstrous intentions when the Wave activates prematurely. After Kyo's death she works with Kizuna to fight the Waves honestly
+physical: An earnest adult woman with a forthright, slightly stubborn look and practical fighting gear
+style: Direct, honest, no-tricks swordfighting
+presence: Sincere, hot-blooded, principled
+core_motivation: Do the right thing and stop the Waves; loyalty to a friend she believes is good
+fear_or_conflict: The collapse of her faith in Kyo; complicity in his crimes; choosing truth over loyalty
+worldview: Sincere justice and loyalty — tested to the breaking point and reforged toward the truth
+self_image: A righteous friend trying to help — who must face that her friend is the villain
+tone: Earnest, forthright, a little naive
+humor: Guileless; comic in her stubborn sincerity
+reaction_cue: Charges in for what she believes is right; agonizes as doubts mount; commits fully once she sees the truth
+relationship_pattern: Fiercely loyal — first to Kyo, then to the heroes once she's disillusioned
+voice_quality: Strong, clear, earnest
+speech_pattern: Blunt, sincere, conviction-driven
+tells: Falters and frowns as her certainty about Kyo cracks
+signature_phrase: "I fought for what I thought was right — and I'll keep fighting once I know what that really is."
+story_role: The misguided friend whose defection helps undo Kyo
+key_relationship: Kyo (childhood friend she must turn against); Kizuna (new cause/ally)
+arc_summary: A sincere idealist used by her childhood friend discovers his true monstrosity, breaks from him, and joins the heroes to fight the Waves honestly
+```
+
+## R'yne
+
+```
+name: R'yne (Age: adult)
+aliases: S'yne's ancestor, the Sewing-Kit Hero of the ancient past
+species: Skywing
+faction: The previous era's heroes' circle (the distant past)
+occupation: Past Sewing-Kit Hero; teacher of the Skywing arts
+power_tier: A legendary-era Vassal Hero of her time
+weapon: The Vassal Sewing Kit (in the past)
+forms:
+  - Skywing flight and lost Skywing techniques
+signature_abilities:
+  - Sewing-Kit combat (the ancestral version of S'yne's style)
+  - Mastery of the Skywing race's now-lost flight and techniques
+arc_notes: An ancestor of S'yne and the Sewing-Kit Hero of the ancient past. Sister to L'yne/Filolia; after L'yne was summoned to the past's Shield-and-Bow world, R'yne followed and eventually found her, reluctantly allowing Mamorou and Holn's attempts to revive her. She recognizes S'yne as a fellow Skywing and descendant, and teaches her the race's lost techniques and lineage
+physical: An adult Skywing woman resembling an older S'yne, with intact (un-broken) speech and flight
+style: Composed ancestral master of the Sewing-Kit arts
+presence: Quietly authoritative, with a teacher's patience
+core_motivation: Preserve her sister's memory and pass Skywing knowledge to her descendant
+fear_or_conflict: Loss of her sister; the fading of Skywing arts; the ethics of the revival attempts
+worldview: Lineage and technique must be preserved and passed on
+self_image: A keeper of Skywing heritage and her family's legacy
+tone: Calm, instructive, warm beneath reserve
+humor: Subtle, dry
+reaction_cue: Teaches and tests; softens at recognizing kin in S'yne
+relationship_pattern: Protective ancestor/teacher; sisterly grief for L'yne
+voice_quality: Clear, measured (unlike S'yne's broken speech)
+speech_pattern: Articulate, instructive, lineage-minded
+tells: A teacher's steady patience; lingering sorrow over her sister
+signature_phrase: "You are Skywing, child — let me give you back what our blood forgot."
+story_role: The ancestral mentor who restores S'yne's heritage and ties the present to the past arcs
+key_relationship: S'yne (descendant/student); L'yne/Filolia (lost sister); Mamorou & Holn (past allies)
+arc_summary: An ancient Skywing hero, grieving her summoned sister, becomes the teacher who returns S'yne her people's lost techniques and history
+```
