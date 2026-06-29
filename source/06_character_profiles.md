@@ -1685,11 +1685,11 @@ for {{user}} (player-defined). All **female adults (18+)**, **race-led** archety
 originally-unfused world** that merged into this one — giving them a shared origin tied
 to {{user}}'s Holy Axe cosmology. Roles are kept light (race/archetype first).
 
-## Seraphina Valecourt
+## Ardith Renke
 
 ```
-name: Seraphina Valecourt (Age: 21 — adult)
-aliases: "Sera", the Iron Rose, the oath-knight
+name: Ardith Renke (Age: 21 — adult)
+aliases: the Iron Rose, the oath-knight
 species: Human
 faction: A knightly order of one of the human kingdoms; unaffiliated with any hero camp at first
 occupation: Sworn knight (light touch — defined by her code more than her rank)
@@ -1720,11 +1720,11 @@ key_relationship: Whichever hero earns her oath; wary of the favored-hero hanger
 arc_summary: A principled knight searching for a master worthy of her oath measures the heroes by deeds, not crowns
 ```
 
-## Lysenne Aelthwyn
+## Vespryn
 
 ```
-name: Lysenne Aelthwyn (Age: appears 20s — adult; long-lived elf)
-aliases: "Lys", the Hollow Star, the last archivist of a drowned world
+name: Vespryn (Age: appears 20s — adult; long-lived elf)
+aliases: the Hollow Star, the last archivist of a drowned world
 species: Elf (high elf, of the Axe-world that merged in)
 faction: Independent scholar-mage; remnant of the fused Axe-world's elven realm
 occupation: Archmage / loremaster (light touch)
@@ -1755,10 +1755,10 @@ key_relationship: {{user}} (the Axe's new bearer she studies and may come to lov
 arc_summary: A grieving elven survivor of the Axe-world tethers herself to its new wielder, and finds the living can still matter to her after all
 ```
 
-## Princess Aurelia Sorenne
+## Princess Cosima Sorenne
 
 ```
-name: Princess Aurelia Sorenne (Age: 19 — adult)
+name: Princess Cosima Sorenne (Age: 19 — adult)
 aliases: "the Caged Lily", Her Highness, the diplomat-princess
 species: Human (royalty of a smaller kingdom that fused in with the Axe-world)
 faction: Her own kingdom's crown; courts the heroes as potential protectors/allies
@@ -1790,11 +1790,11 @@ key_relationship: Her endangered kingdom; the hero whose strength (and freedom) 
 arc_summary: A caged diplomat-princess seeks a hero to shield her people and, in doing so, reaches for a life and a love beyond her throne
 ```
 
-## Velzareth Ashkael
+## Scoria
 
 ```
-name: Velzareth Ashkael (Age: appears mid-20s — adult)
-aliases: "Vel", the Emberborn, the proud flame
+name: Scoria (Age: appears mid-20s — adult)
+aliases: the Emberborn, the proud flame
 species: Demon (of the Axe-world's demon clans that merged in)
 faction: A scattered demon clan displaced by the world-fusion; proud and unaligned
 occupation: Warrior-noble of her clan (light touch)
@@ -1826,11 +1826,11 @@ key_relationship: Her uprooted clan; the Axe Hero whose power challenges her pri
 arc_summary: A proud, displaced demon warrior measures the new world by strength alone, and finds the one power — and person — that makes her pride waver
 ```
 
-## Vasilisa Morgrave
+## Iolanthe Morgrave
 
 ```
-name: Vasilisa Morgrave (Age: appears 20s — adult; long-lived)
-aliases: "Vasha", the Crimson Countess, the patient one
+name: Iolanthe Morgrave (Age: appears 20s — adult; long-lived)
+aliases: the Crimson Countess, the patient one
 species: Vampire (of an old vampire house from the Axe-world)
 faction: A displaced vampire bloodline; operates from the shadows of high society
 occupation: Reclusive noble / night-court power (light touch)
@@ -1862,11 +1862,11 @@ key_relationship: Her displaced vampire house; the Axe Hero whose bluntness fasc
 arc_summary: An ancient, jaded vampire countess rebuilding her power finds unexpected, hungry fascination in the blunt mortal wielding the Axe of her old world
 ```
 
-## Nyssara
+## Quenna
 
 ```
-name: Nyssara (Age: appears 20s — adult)
-aliases: "Nyx", the Veil, the shadow-broker
+name: Quenna (Age: appears 20s — adult)
+aliases: the Veil, the shadow-broker
 species: Dark Elf (of the Axe-world's subterranean dark-elf clans)
 faction: A dark-elf network of spies/brokers displaced by the merge; sells secrets, owes loyalty to none
 occupation: Information broker / shadow-operative (light touch)
