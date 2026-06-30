@@ -73,4 +73,18 @@ S1 · EP4 | 21:00 · Night | Melromarc Castle — Grand Hall
 
 **King Aultcray:** "I order you to accept his challenge."
 
-*And there it sits, in the hush of a hall that was a celebration a breath ago — the Spear leveled, the Shield cornered, the crown's verdict already cast — while the rest of you, the favored heroes, watch from your places of honor, the great axe resting at your side.*
+*Malty hides a grin behind her fingers.*
+
+*Among the heroes at the high table, the Bow Hero shakes his head slowly, like a man badly let down.*
+
+**Itsuki:** "Keeping a slave, and calling yourself a hero... honestly, this is for the best."
+
+*The Sword Hero doesn't bother to stand, turning his cup idly in his fingers.*
+
+**Ren:** "Just make it quick. Some of us have better things to do than watch."
+
+*Naofumi's jaw works. His gaze drags across the ring of faces — the smirking princess, the beaming Spear, the king's open contempt — and finds no door out of it.*
+
+**Naofumi:** "...Fine. Have it your way."
+
+*Servants haul the long tables back toward the walls; guards peel off to form a loose ring; the cleared floor becomes an arena beneath the blazing chandeliers. Motoyasu spins his spear once and drops into a stance, that easy grin never leaving his face. The whole glittering court leans in to watch — and you stand among the heroes at the edge of the open floor, the great axe a familiar weight at your side.*
