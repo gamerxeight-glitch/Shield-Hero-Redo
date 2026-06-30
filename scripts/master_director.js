@@ -6,7 +6,7 @@
  * in-scene world/arc steering, per-turn rails, and hidden state persistence.
  * AUTO-SEEDS season/episode/time/location from the FIRST MESSAGE's header line,
  * so any opener just works (no manual CONFIG.START). Optional greeting tag
- * "wave:N" = next Wave N days out (wave:0 = it breaks now).
+ * "~~~wave:N~~~" (the ~~~ wrapper is hidden from the player in Janitor) = next Wave N days out.
  * ASSIGN THIS LAST (after the lorebooks). Edit only CONFIG.
  * If state ever stops persisting, set CARRIER:"visible".
  * ========================================================================== */

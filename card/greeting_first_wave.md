@@ -1,19 +1,19 @@
 # Alternate Greeting — The Dragon Hourglass (Season 1, before the First Wave)
 
 > Paste into Janitor's **First Message** to START here instead of the summoning.
-> Post-betrayal, at the Church of the Four's Dragon Hourglass; the count is still
-> running, all five heroes gathered with their parties. Motoyasu confronts Naofumi
-> and flirts with Raphtalia; the scene ends as the sand finally empties — on
-> {{user}}'s turn.
+> Post-betrayal, at the Church of the Four's Dragon Hourglass; the first Wave is
+> still a day or two out, all five heroes gathered with their parties. Motoyasu
+> confronts Naofumi and flirts with Raphtalia; the scene ends on {{user}}'s turn as
+> Naofumi, leaving, runs into him.
 >
 > NOTE: the master engine auto-reads this header line on turn 1 (season, episode,
-> time, location) — no manual setup needed. The hidden `wave:0` tag tells it the
-> Wave breaks immediately; keep it for this opener.
+> time, location) — no manual setup. The `~~~wave:2~~~` tag at the very bottom
+> (anything wrapped in ~~~ is hidden from the player in Janitor) tells the engine
+> the next Wave is ~2 days out; keep it for this opener.
 
 ---
 
 S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
-<!--wave:0-->
 ---
 
 *Incense, cold stone, and the dry hiss of sand falling somewhere overhead.*
@@ -78,4 +78,4 @@ S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 
 **Naofumi:** "...Move."
 
-*Overhead, the sand has run thin — a last bright thread spilling toward the bottom. The red light is already climbing the pillars, the hum in the stone rising with it, reaching for every hero and party beneath the glass.*
+~~~wave:2~~~
