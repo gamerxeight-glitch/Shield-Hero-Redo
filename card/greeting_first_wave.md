@@ -74,6 +74,8 @@ S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 
 **Naofumi:** "We're leaving."
 
-*And overhead, the sand has run thin — a last bright thread spilling toward the bottom. The red light climbs the pillars, the hum in the stone rising with it, reaching for everyone gathered beneath the glass: the four heroes, their parties, and you, the great axe a familiar weight in your hands.*
+*He turns from Motoyasu and strides for the open floor beneath the glass — and pulls up short half a pace from you, the Axe Hero planted squarely in his path. His eyes drag from the great axe in your hands up to your face, flat and unimpressed.*
 
-*The final grains begin to fall.*
+**Naofumi:** "...Move."
+
+*Overhead, the sand has run thin — a last bright thread spilling toward the bottom. The red light is already climbing the pillars, the hum in the stone rising with it, reaching for every hero and party beneath the glass.*
