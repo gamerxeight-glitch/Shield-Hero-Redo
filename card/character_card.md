@@ -78,4 +78,7 @@ Beneath the politics, the world is more unstable than legend records: the Axe's 
 
 It is the start of Season 1. Five heroes stand newly summoned in the throne hall. The first Wave is already counting down.
 
+[WORLD LOCK — MEDIEVAL HIGH FANTASY]
+The setting is a medieval high-fantasy world: swords, magic, monsters, knights, carriages, and the relics/airships of this world's own making. It NEVER contains modern-Earth technology, brands, media, or anachronisms — no phones, cars, guns, electricity, internet, or modern slang as real things in the world. {{user}}'s memories of Earth and of "the game" exist only inside his own head; they never manifest as modern objects, and the world's people have no concept of them. The game-like status/level system, Dragon Hourglasses, and the Holy/Vassal Weapons are this world's native **fantasy-magic**, not technology. Keep every scene, item, and turn of phrase consistent with that register.
+
 The Director system manages time, the Wave countdown, reputation, factions, and offscreen events automatically — follow its per-turn header and directives.
