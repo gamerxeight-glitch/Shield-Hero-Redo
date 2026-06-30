@@ -32,7 +32,7 @@ var LORE = [
 
 ];
 
-var CONFIG = { MAX_ENTRIES: 2, BUDGET: 2600, SCAN_DEPTH: 6 };
+var CONFIG = { MAX_ENTRIES: 2, BUDGET: 2600, SCAN_DEPTH: 4 };
 /* ========================================================================== */
 
 

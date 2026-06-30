@@ -39,7 +39,7 @@ function SCN(t){ context.character.scenario += " " + t; }
 function pad(n,w){n=String(Math.max(0,parseInt(n,10)||0));return n.length>=w?n.slice(-w):"0".repeat(w-n.length)+n;}
 function clampI(n,lo,hi){n=parseInt(n,10);if(isNaN(n))n=lo;return n<lo?lo:(n>hi?hi:n);}
 function uHas(list){for(var i=0;i<list.length;i++){if(UTXT.indexOf(list[i])>=0)return true;}return false;}
-function recent(d){var o="",s=Math.max(0,MSGS.length-(d||8));for(var i=s;i<MSGS.length;i++){var m=MSGS[i];o+=" "+((m&&m.message)?m.message:"");}return o;}
+function recent(d){var o="",s=Math.max(0,MSGS.length-(d||4));for(var i=s;i<MSGS.length;i++){var m=MSGS[i];o+=" "+((m&&m.message)?m.message:"");}return o;}
 
 /* ---- carrier ---- */
 var ZW={'0':'\u200B','1':'\u200C','2':'\u200D','3':'\uFEFF','4':'\u2060','5':'\u2061','6':'\u2062','7':'\u2063','8':'\u200E','9':'\u200F'};
@@ -61,7 +61,7 @@ function serialize(s){return pad(s.v,1)+pad(s.S,2)+pad(s.E,2)+pad(s.DAY,3)+pad(s
 function deserialize(d){if(!d||d.length<19)return null;var i=0;function t(w){var v=d.substr(i,w);i+=w;return parseInt(v,10)||0;}
   var s={v:t(1),S:t(2),E:t(2),DAY:t(3),TM:clampI(t(4),0,1439),L:t(2),REP:clampI(t(3),0,100),W:t(2)};
   s.S=clampI(s.S,1,99);s.E=clampI(s.E,1,99);s.L=clampI(s.L,0,CONFIG.LOCATIONS.length-1);s.W=clampI(s.W,0,CONFIG.WAVE_MAX);return s;}
-function loadState(){var scan=recent(8);var z=scan.match(ZRE);if(z&&z[1]){var s=deserialize(zwD(z[1]));if(s)return s;}var v=scan.match(VRE);if(v&&v[1]){var s2=deserialize(v[1]);if(s2)return s2;}return initState();}
+function loadState(){var scan=recent(4);var z=scan.match(ZRE);if(z&&z[1]){var s=deserialize(zwD(z[1]));if(s)return s;}var v=scan.match(VRE);if(v&&v[1]){var s2=deserialize(v[1]);if(s2)return s2;}return initState();}
 
 var ST=loadState();
 

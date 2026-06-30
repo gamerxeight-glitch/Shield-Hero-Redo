@@ -128,7 +128,7 @@ var LORE = [
 
 ];
 
-var CONFIG = { MAX_ENTRIES: 5, BUDGET: 3200, SCAN_DEPTH: 6 };
+var CONFIG = { MAX_ENTRIES: 5, BUDGET: 3200, SCAN_DEPTH: 4 };
 /* ========================================================================== */
 
 
