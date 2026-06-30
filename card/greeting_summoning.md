@@ -1,36 +1,61 @@
 # Greeting — The Summoning (Season 1, Episode 1)
 
-> Paste into Janitor's **First Message**. Opens on the exact moment of the
-> five-hero summoning. {{user}} is the Axe Hero. State initializes to S1E1 (the
-> master engine takes over from turn one). Let the court, the king, and the
-> kingdom's reaction unfold across the following turns — don't rush ahead.
+> Paste into Janitor's **First Message**. Opens on the five-hero summoning and ends
+> on {{user}}'s turn to name himself. {{user}} is the Axe Hero — one of the four
+> celebrated heroes (equal to Sword/Spear/Bow); only the Shield is scorned. State
+> initializes to S1E1; the master engine takes over from turn one.
 
 ---
 
 S1 · EP1 | 10:00 · Morning | Throne Hall
 ---
 
-*Light, sound, and weight return all at once.*
+*The weight comes first.*
 
-*A vast stone hall opens up — vaulted ceilings lost in shadow, banners hung the length of soaring pillars, torchfire throwing gold across the walls, and over everything the cloying sweetness of incense and scorched magic. Five summoning circles are burned into the great dais, their sigils still blazing as the spell that tore five strangers across worlds finishes its work. You are standing in one of them.*
+*Before the light, before the noise — a long haft settles across your palms and a broad head of dark steel hangs from its end, heavier than steel has any right to be. A war-axe, sitting in your grip as though it has always belonged there.*
 
-*Four others share the dais — young men, blinking, just as newly arrived.*
+*Then everything else rushes in: cold flagstone underfoot, the sting of incense and scorched magic, and a glow guttering out of the ring of golden sigils scorched into the floor around your boots.*
 
-*Then the weapons come.*
+*You are not alone in it.*
 
-*A longsword flares to life in one hero's hand. A spear in the next. A bow, faintly humming, in the third. A round shield clamps itself over the forearm of a dark-haired youth at the end of the row. And settling into your own grip — heavy, certain, thrumming with a low and hungry weight — a great war-axe takes shape. The fifth Holy Weapon.*
+*Four other young men stand in four other circles, each looking as lost as the last, and each holding a weapon that wasn't there a breath ago — a longsword, a spear, a bow, and, clamped to the forearm of a dark-haired youth at the end of the row, a round shield. Five circles. Five strangers. Five Holy Weapons, exactly as the old tales swore.*
 
-*For one held breath, the hall is utterly silent.*
+*The chamber is cavernous and old — grey pillars vanishing into shadow, robed figures with hands clasped in something like prayer, court mages slumped and gasping from the spell they've just spent themselves to cast. One lifts his head and breathes it like a miracle: "...It worked. All five of them. They've come."*
 
-*Then it breaks open. Robed clergy rush to the foot of the dais with their hands flung high; nobles in jeweled finery rise from their benches; knights in polished plate strike fists to breastplates. The noise rolls up the pillars and rings off the vaults.*
+*The others find their tongues fast.*
 
-**Herald:** "It is done! The Sword, the Spear, the Bow, the Shield, and the Axe — the five Holy Heroes, summoned to Melromarc at last!"
+**Spear-wielder:** "Right — first things first. Where is this, and what's in it for us? Nobody hauls people across worlds for free."
 
-*The roar redoubles. At the head of the hall, on a throne flanked by armored guards and tall banners, a heavyset crowned man leans slowly forward, taking in the four armed newcomers — Sword, Spear, Bow, and Axe alike — with open approval. Only when his eyes pass over the round shield on the dark-haired youth's arm does the warmth briefly go out of them.*
+**Sword-wielder:** *(turning his blade over, unbothered)* "Reward first, explanations later. They called us. They can pay for the privilege."
 
-*Beside the throne, a red-haired young woman in fine silks watches the new arrivals with a small, practiced smile.*
+*Before the grumbling can build, armored boots ring on stone. Knights in polished plate fall into an aisle; a steward in heavy robes bows and sweeps a hand toward a great arched doorway spilling warm light.*
 
-*Five strangers, weapons still warm with the magic that forged them, stand in the heart of a kingdom that reached across worlds to pull them here. The hall waits. The king waits.*
+**Steward:** "Honored Heroes — His Majesty awaits. If you would follow me."
 
----
-*High above the city, in a quiet tower none of the cheering crowd spares a glance for, a great hourglass has just been turned — and the first red grain of the coming Wave begins, soundlessly, to fall.*
+*You are brought up a broad sweep of steps into a throne hall that swallows the chamber below: banners tall as houses, stained glass throwing scattered color across the floor, courtiers in jewels lining both sides, and clergy in the white-and-gold of the Church of the Five murmuring blessings as the five of you pass. Near the foot of the dais, a red-haired young woman in fine silks watches with a small, practiced smile.*
+
+*At the head of the hall, on a throne flanked by armored guards, a heavyset crowned man rises to his feet.*
+
+**King:** "I am Aultcray Melromarc the Thirty-Second, sovereign of this realm. You stand in the kingdom of Melromarc, called across worlds to be its bulwark against the Waves of Calamity." *His gaze travels slowly across the five of you.* "Heroes." *A beat.* "Name yourselves."
+
+*The sword-wielder answers first, flat and unhurried.*
+
+**Ren:** "Amaki Ren. Eighteen years old. First-year student."
+
+*The spear-wielder steps forward with an easy grin.*
+
+**Motoyasu:** "I'm Kitamura Motoyasu. Twenty-one, and a college student."
+
+*The bow-wielder lets out a small, theatrical breath.*
+
+**Itsuki:** "I suppose I'm next." *A beat.* "Kawasumi Itsuki. Nineteen years old. First-year student."
+
+*Then the dark-haired youth with the shield — plainer than the others, his voice even:*
+
+**Naofumi:** "Iwatani Naofumi. Twenty. University student."
+
+*Four names given. Four heroes accounted for.*
+
+*The hall's attention slides onward — courtiers, clergy, the king himself — and comes to rest on the fifth and last. On you, and the great axe still hanging from your hands.*
+
+**King Aultcray:** "...And you, Axe Hero?"
