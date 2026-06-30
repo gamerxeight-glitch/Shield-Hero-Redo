@@ -34,7 +34,7 @@ S1 · EP1 | 10:00 · Morning | Throne Hall
 
 **Steward:** "Honored Heroes — His Majesty awaits. If you would follow me."
 
-*You are brought up a broad sweep of steps into a throne hall that swallows the chamber below: banners tall as houses, stained glass throwing scattered color across the floor, courtiers in jewels lining both sides, and clergy in the white-and-gold of the Church of the Five murmuring blessings as the five of you pass. Near the foot of the dais, a red-haired young woman in fine silks watches with a small, practiced smile.*
+*You are brought up a broad sweep of steps into a throne hall that swallows the chamber below: banners tall as houses, stained glass throwing scattered color across the floor, courtiers in jewels lining both sides, and clergy in the white-and-gold of the Church of the Five murmuring blessings as the five of you pass.*
 
 *At the head of the hall, on a throne flanked by armored guards, a heavyset crowned man rises to his feet.*
 
