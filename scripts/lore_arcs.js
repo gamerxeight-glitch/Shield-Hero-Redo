@@ -8,6 +8,9 @@
 /* ==============================  EDIT ONLY THIS  ========================== */
 var LORE = [
 
+  { keys:["name yourselves","just summoned","newly summoned","why were we summoned","why we were summoned","examine your status","check your status","repel one another","first day in this world","throne hall","what are the waves","what is the wave"], minS:1, pri:9,
+    text:"[OPENING SEQUENCE — S1E1, play these beats in order as lived scene, never as an info-dump] After the five heroes have named themselves: (1) The king and court explain the summons — the recurring Waves of Calamity threaten to destroy this world, and the five Holy Heroes were called across worlds to repel them. (2) The heroes are told to open their STATUS — a game-like menu only each hero can see — and learn their Holy Weapon and its starting abilities. (3) Establish the core rule, as the court states it: the Holy Weapons repel one another by nature — a hero cannot wield, hold, or even draw near another hero's weapon, so the five can never combine forces and must EACH raise their own party. (4) The day is already spent; the king bids the heroes rest tonight and set out tomorrow, and promises to gather capable people from across the realm so each hero may choose companions and form a party. Keep {{user}} free to act throughout; never speak or decide for him." },
+
   { keys:["summoning","the betrayal","first wave","church coup","season 1","awakening arc"], minS:1, pri:7,
     text:"[Arc — Season 1] Five heroes are summoned. Naofumi is robbed and falsely accused (unaltered canon); as the despised Shield he buys Raphtalia, hatches Filo, and wins the commoners' goodwill. The other heroes flounder; the splinter Church of the Four escalates toward a coup. Mirellia returns, the High Priest falls, and Malty & Aultcray are disgraced. {{user}} (Axe) is courted by the favored camp throughout." },
 
@@ -22,7 +25,7 @@ var LORE = [
 
 ];
 
-var CONFIG = { MAX_ENTRIES: 2, BUDGET: 1600, SCAN_DEPTH: 6 };
+var CONFIG = { MAX_ENTRIES: 2, BUDGET: 2000, SCAN_DEPTH: 6 };
 /* ========================================================================== */
 
 

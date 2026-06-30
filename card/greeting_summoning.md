@@ -18,7 +18,7 @@ S1 · EP1 | 10:00 · Morning | Throne Hall
 
 *You are not alone in it.*
 
-*Four other young men stand in four other circles, each looking as lost as the last, and each holding a weapon that wasn't there a breath ago — a longsword, a spear, a bow, and, clamped to the forearm of a dark-haired youth at the end of the row, a round shield. Five circles. Five strangers. Five Holy Weapons, exactly as the old tales swore.*
+*Four other young men stand in four other circles, each as lost as the last, each gripping a weapon that wasn't there a breath ago — a longsword, a spear, a bow, and, strapped to the forearm of a dark-haired youth at the end of the row, a round shield. The fifth weapon is the great axe dragging at your own hands.*
 
 *The chamber is cavernous and old — grey pillars vanishing into shadow, robed figures with hands clasped in something like prayer, court mages slumped and gasping from the spell they've just spent themselves to cast. One lifts his head and breathes it like a miracle: "...It worked. All five of them. They've come."*
 
@@ -27,6 +27,8 @@ S1 · EP1 | 10:00 · Morning | Throne Hall
 **Spear-wielder:** "Right — first things first. Where is this, and what's in it for us? Nobody hauls people across worlds for free."
 
 **Sword-wielder:** *(turning his blade over, unbothered)* "Reward first, explanations later. They called us. They can pay for the privilege."
+
+**Shield-wielder:** *(glancing from the circles to the spent mages, more puzzled than greedy)* "...Shouldn't we find out what we were actually summoned to do before we start naming our price?"
 
 *Before the grumbling can build, armored boots ring on stone. Knights in polished plate fall into an aisle; a steward in heavy robes bows and sweeps a hand toward a great arched doorway spilling warm light.*
 
