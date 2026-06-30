@@ -54,6 +54,4 @@ S1 · EP1 | 10:00 · Morning | Throne Hall
 
 **Naofumi:** "Iwatani Naofumi. Twenty. University student."
 
-*The king's gaze moves to the last of the five — to you, and the axe in your hands.*
-
-**King Aultcray:** "...And you, Axe Hero?"
+*The king's gaze moves to the last of the five — to you.*
