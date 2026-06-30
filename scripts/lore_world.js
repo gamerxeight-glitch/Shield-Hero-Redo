@@ -45,17 +45,7 @@ var LORE = [
   { keys:["kizuna's world","glass's world","parallel world","other world"], minS:2, pri:5,
     text:"[Connected worlds] Beyond Raphtalia's world lies Kizuna's/Glass's parallel world, with its own Legendary & Vassal heroes — early antagonists (kill the rival world's heroes to spare their own) who become allies against the true enemy." },
   { keys:["medea","behind the waves","cause of the waves"], minS:4, pri:5,
-    text:"[Medea] The hidden deity engineering the Waves by merging the worlds — the final cause behind everything; uses the Vanguards as disposable tools. ENDGAME; do not surface early." },
-
-  /* ---------- Arc spine (season-gated) ---------- */
-  { keys:["summoning","the betrayal","first wave","church coup","season 1 arc"], minS:1, pri:6,
-    text:"[Arc — Season 1] Five heroes summoned; Naofumi robbed and falsely accused (unaltered); as the despised Shield he buys Raphtalia, hatches Filo, and earns the commoners' goodwill; the splinter Church escalates to a coup; Mirellia returns, the High Priest falls, and Malty & Aultcray are disgraced." },
-  { keys:["cal mira","spirit tortoise arc","season 2 arc"], minS:2, pri:6,
-    text:"[Arc — Season 2] Cal Mira training and the other-world heroes' first strikes; the Spirit Tortoise rampages under Kyo; Naofumi is cast into Kizuna's world, frees her, and kills Kyo as enemies become allies." },
-  { keys:["q'ten lo arc","phoenix arc","village arc","season 3 arc"], minS:3, pri:6,
-    text:"[Arc — Season 3] Rebuilding the village of freed demi-humans; the journey to Q'ten Lo and Raphtalia's heritage; the Phoenix battle and Atla's sacrifice; the gathering Vanguard threat toward Faubrey and Takt." },
-  { keys:["vanguard arc","faubrey war","final arc","the past arc"], minS:4, pri:5,
-    text:"[Arc — beyond] Takt's coup and war, deeper Vanguard conflict across worlds, the journey into the past (Mamorou and Siltvelt's origin), and the march toward Medea. Endgame guidelines." }
+    text:"[Medea] The hidden deity engineering the Waves by merging the worlds — the final cause behind everything; uses the Vanguards as disposable tools. ENDGAME; do not surface early." }
 
 ];
 

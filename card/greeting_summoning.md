@@ -1,37 +1,36 @@
 # Greeting — The Summoning (Season 1, Episode 1)
 
-> Paste into Janitor's **First Message**. Opens the canonical AU timeline: five
-> heroes summoned together; {{user}} is the revered Axe Hero, Naofumi the scorned
-> Shield. State initializes to S1E1 (the master engine takes over from turn one).
+> Paste into Janitor's **First Message**. Opens on the exact moment of the
+> five-hero summoning. {{user}} is the Axe Hero. State initializes to S1E1 (the
+> master engine takes over from turn one). Let the court, the king, and the
+> kingdom's reaction unfold across the following turns — don't rush ahead.
 
 ---
 
 S1 · EP1 | 10:00 · Morning | Throne Hall
 ---
 
-*Cold stone and the bite of old incense. Five scorched summoning circles smolder across the dais of Melromarc's throne hall, their light guttering out one by one as the figures standing in them harden into flesh.*
+*Light, sound, and weight return all at once.*
 
-*Five young men. Five weapons.*
+*A vast stone hall opens up — vaulted ceilings lost in shadow, banners hung the length of soaring pillars, torchfire throwing gold across the walls, and over everything the cloying sweetness of incense and scorched magic. Five summoning circles are burned into the great dais, their sigils still blazing as the spell that tore five strangers across worlds finishes its work. You are standing in one of them.*
 
-*To one side, a sword settles into a boy's hand and drinks the torchlight. Beside him, a long spear; then a bow that hums faintly as it finishes forming. At the far end, a round shield clamps over the forearm of a dark-haired youth who stares at it as though unsure it's real.*
+*Four others share the dais — young men, blinking, just as newly arrived.*
 
-*And in your own grip — heavy, certain, thrumming with a low and hungry weight — a great axe has taken shape. The fifth Holy Weapon.*
+*Then the weapons come.*
 
-*The hall erupts.*
+*A longsword flares to life in one hero's hand. A spear in the next. A bow, faintly humming, in the third. A round shield clamps itself over the forearm of a dark-haired youth at the end of the row. And settling into your own grip — heavy, certain, thrumming with a low and hungry weight — a great war-axe takes shape. The fifth Holy Weapon.*
 
-**Herald:** "They have come! Sword, Spear, Bow, and Axe — the Holy Heroes of legend, returned to Melromarc in her hour of need!"
+*For one held breath, the hall is utterly silent.*
 
-*Robed clergy of the Church of the Five surge forward with raised hands and shining eyes — and four of the five are bathed in that adoration. Nobles crane and murmur; a knot of priests is already drifting your way, reverent and eager to lay claim to the bearer of the most feared of the five.*
+*Then it breaks open. Robed clergy rush to the foot of the dais with their hands flung high; nobles in jeweled finery rise from their benches; knights in polished plate strike fists to breastplates. The noise rolls up the pillars and rings off the vaults.*
 
-*Only one hero stands outside the warmth. The dark-haired youth with the round shield earns no cheer — only narrowed eyes, a few words traded behind raised hands, a chill that spreads through the room wherever his gaze lands. A priest beside him takes a deliberate step back.*
+**Herald:** "It is done! The Sword, the Spear, the Bow, the Shield, and the Axe — the five Holy Heroes, summoned to Melromarc at last!"
 
-*At the head of the hall a heavyset king rises from the throne, flanked by armored knights and a red-haired young woman whose smile is sweet and well-rehearsed.*
+*The roar redoubles. At the head of the hall, on a throne flanked by armored guards and tall banners, a heavyset crowned man leans slowly forward — his gaze travelling from hero to hero, weighing each weapon in turn, and settling on the great axe in your hands a beat longer than the rest.*
 
-**King Aultcray:** "Heroes. Melromarc has called you across worlds for one purpose — the Waves of Calamity. The first already gathers. You will be given funds, companions, and the gratitude of this kingdom..." *His gaze slides to the Shield Hero, then away, as if from something spoiled.* "...most of you."
+*Beside the throne, a red-haired young woman in fine silks watches the new arrivals with a small, practiced smile.*
 
-*Beyond the high windows, in a tower at the city's heart, a great hourglass of red sand has begun — grain by grain — to fall.*
-
-*The four favored heroes are already caught in the court's current: the cheers, the offered hands, the red-haired woman gliding toward the gathered heroes with that practiced smile. The axe hangs heavy and waiting in your hands, and every eye in the hall keeps drifting back to it — and to you.*
+*Five strangers, weapons still warm with the magic that forged them, stand in the heart of a kingdom that reached across worlds to pull them here. The hall waits. The king waits.*
 
 ---
-*Beyond the throne hall, the splinter Church of the Four — the sect that names the Shield Hero a devil — is already plotting how four favored heroes might be turned against the one they loathe. And far past the castle walls, by a quiet riverbank, the red sand keeps falling: the first Wave is nearer than anyone in this gilded room cares to admit.*
+*High above the city, in a quiet tower none of the cheering crowd spares a glance for, a great hourglass has just been turned — and the first red grain of the coming Wave begins, soundlessly, to fall.*
