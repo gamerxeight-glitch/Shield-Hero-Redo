@@ -113,10 +113,10 @@ else{var left=CONFIG.WAVE_MAX-ST.W;SCN("[WAVE COUNTDOWN] The Dragon Hourglass sh
 
 /* ---- world / arc steering ---- */
 SCN("[WORLD] Surface significant, plot-relevant developments (faction/Church/court moves, the approaching Wave, the active arc's beats) INSIDE the live scene \u2014 through what {{user}} can see, hear, or be told in the moment. Never tack on a detached 'meanwhile, elsewhere' summary. Mold the scene to the active arc from the lorebook and keep events on their canon track.");
-SCN("[PRESENCE] If the active arc places {{user}} at an event, keep him IN it \u2014 never skip past it, summarize it away, or relocate a beat he is canonically present for; play it out on-screen with him.");
+SCN("[PRESENCE] When the active arc needs {{user}} at a scene with the other heroes (court, council, Wave muster, summons), bring him in through an IN-WORLD call addressed to him \u2014 a royal messenger, a knock at his door, a sealed letter/order, a horn, the Dragon Hourglass's pull. Narrate the call REACHING him and STOP; never move, speak, decide for, or narrate {{user}} traveling to or entering the scene \u2014 let him answer the summons himself. Never skip, summarize away, or relocate a canon beat he belongs in.");
 
 /* ---- per-turn rails (compact; placed late for salience) ---- */
-SCN("[HARD RULES] (1) NEVER author {{user}} \u2014 narrate only what happens TO/AROUND him; stop where his action begins. (2) SHOW, DON'T TELL \u2014 concrete observable detail, never named emotions or explained meaning. (3) NO OMNISCIENCE \u2014 a character knows only what they saw/were told on-screen or is public; powers/rank/networks are not a source of specific facts.");
+SCN("[HARD RULES] (1) NEVER author {{user}} \u2014 narrate only what happens TO/AROUND him; stop where his action begins. (2) SHOW, DON'T TELL \u2014 concrete observable detail, never named emotions or explained meaning. (3) NO OMNISCIENCE \u2014 a character knows only what they saw/were told on-screen or is public; powers/rank/networks are not a source of specific facts. (4) PLOT NEVER OVERRIDES AGENCY \u2014 time, the Wave clock and world momentum move only the world and NPCs around {{user}}; they never license authoring him, rushing him, time-skipping, or deciding his turn. Keep the world ACTIVE (NPCs act, events advance, summons arrive), but ALWAYS end the reply where {{user}}'s next action begins. On any conflict between momentum and agency, agency wins.");
 
 /* ---- emit hidden state LAST ---- */
 var digits=serialize(ST);
