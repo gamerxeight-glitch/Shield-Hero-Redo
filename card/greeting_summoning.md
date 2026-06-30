@@ -26,7 +26,7 @@ S1 · EP1 | 10:00 · Morning | Throne Hall
 
 **Herald:** "It is done! The Sword, the Spear, the Bow, the Shield, and the Axe — the five Holy Heroes, summoned to Melromarc at last!"
 
-*The roar redoubles. At the head of the hall, on a throne flanked by armored guards and tall banners, a heavyset crowned man leans slowly forward — his gaze travelling from hero to hero, weighing each weapon in turn, and settling on the great axe in your hands a beat longer than the rest.*
+*The roar redoubles. At the head of the hall, on a throne flanked by armored guards and tall banners, a heavyset crowned man leans slowly forward, taking in the four armed newcomers — Sword, Spear, Bow, and Axe alike — with open approval. Only when his eyes pass over the round shield on the dark-haired youth's arm does the warmth briefly go out of them.*
 
 *Beside the throne, a red-haired young woman in fine silks watches the new arrivals with a small, practiced smile.*
 
