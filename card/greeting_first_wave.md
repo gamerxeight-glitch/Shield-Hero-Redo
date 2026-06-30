@@ -6,13 +6,14 @@
 > and flirts with Raphtalia; the scene ends as the sand finally empties — on
 > {{user}}'s turn.
 >
-> NOTE: the master engine builds its header from CONFIG.START on turn 1, so if you
-> use this opener set master_director CONFIG.START to about { time:"10:00",
-> season:1, episode:3 }.
+> NOTE: the master engine auto-reads this header line on turn 1 (season, episode,
+> time, location) — no manual setup needed. The hidden `wave:0` tag tells it the
+> Wave breaks immediately; keep it for this opener.
 
 ---
 
 S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
+<!--wave:0-->
 ---
 
 *Incense, cold stone, and the dry hiss of sand falling somewhere overhead.*

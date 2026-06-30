@@ -5,13 +5,12 @@
 > challenges Naofumi to a duel over Raphtalia and the king orders him to accept.
 > Ends on {{user}}'s turn as the duel is set.
 >
-> NOTE: the master engine builds its header from CONFIG.START on turn 1; if you use
-> this opener set master_director CONFIG.START to about { time:"20:00", season:1,
-> episode:4 }.
+> NOTE: the master engine auto-reads this header line on turn 1 (season, episode,
+> time, location) — no manual setup needed.
 
 ---
 
-S1 · EP4 | 20:00 · Night | Melromarc Castle — Grand Hall
+S1 · EP4 | 21:00 · Night | Melromarc Castle — Grand Hall
 ---
 
 *Warmth, after so much cold.*
