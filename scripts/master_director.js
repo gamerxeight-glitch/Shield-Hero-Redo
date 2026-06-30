@@ -3,7 +3,7 @@
  * master_director.js — MASTER ENGINE (Five-Hero AU)
  * Header (S·EP | time | location) that the lore scripts read for season-gating,
  * realistic time, episode/season progression, the Wave doom-clock, {{user}}'s
- * reputation standing, offscreen world-movement, per-turn rails, and hidden
+ * reputation standing, in-scene world/arc steering, per-turn rails, and hidden
  * state persistence. ASSIGN THIS LAST (after the lorebooks). Edit only CONFIG.
  * If state ever stops persisting, set CARRIER:"visible".
  * ========================================================================== */
@@ -111,8 +111,9 @@ SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST
 if(WAVE_NOW){SCN("[WAVE] A Wave of Calamity breaks THIS episode: the sky cracks red, monsters pour from the rift, and the heroes are pulled to confront it. Make it the scene's gravity.");}
 else{var left=CONFIG.WAVE_MAX-ST.W;SCN("[WAVE COUNTDOWN] The Dragon Hourglass shows the next Wave roughly "+left+" episode"+(left===1?"":"s")+" away — let that pressure color faction moves and preparations.");}
 
-/* ---- offscreen ---- */
-SCN("[OFFSCREEN] End the reply with a line containing only '---', then 1\u20133 sentences of what's happening elsewhere (the other four heroes' parties, Melromarc's court and the Churches, scheming nobles, the next Wave drawing closer). Reveal faction/plot movement freely; never relocate or contradict anyone on-screen in the current scene.");
+/* ---- world / arc steering ---- */
+SCN("[WORLD] Surface significant, plot-relevant developments (faction/Church/court moves, the approaching Wave, the active arc's beats) INSIDE the live scene \u2014 through what {{user}} can see, hear, or be told in the moment. Never tack on a detached 'meanwhile, elsewhere' summary. Mold the scene to the active arc from the lorebook and keep events on their canon track.");
+SCN("[PRESENCE] If the active arc places {{user}} at an event, keep him IN it \u2014 never skip past it, summarize it away, or relocate a beat he is canonically present for; play it out on-screen with him.");
 
 /* ---- per-turn rails (compact; placed late for salience) ---- */
 SCN("[HARD RULES] (1) NEVER author {{user}} \u2014 narrate only what happens TO/AROUND him; stop where his action begins. (2) SHOW, DON'T TELL \u2014 concrete observable detail, never named emotions or explained meaning. (3) NO OMNISCIENCE \u2014 a character knows only what they saw/were told on-screen or is public; powers/rank/networks are not a source of specific facts.");
