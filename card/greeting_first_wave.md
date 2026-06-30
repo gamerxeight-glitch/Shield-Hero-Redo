@@ -1,75 +1,78 @@
 # Alternate Greeting — The Dragon Hourglass (Season 1, before the First Wave)
 
-> Paste into Janitor's **First Message** if you want to START here instead of the
-> summoning. Opens post-betrayal at the Church of the Four's Dragon Hourglass, the
-> count nearly run out, all five heroes gathered; Motoyasu confronts Naofumi and
-> flirts with Raphtalia. Ends on {{user}}'s turn as the last sand falls.
+> Paste into Janitor's **First Message** to START here instead of the summoning.
+> Post-betrayal, at the Church of the Four's Dragon Hourglass; the count is still
+> running, all five heroes gathered with their parties. Motoyasu confronts Naofumi
+> and flirts with Raphtalia; the scene ends as the sand finally empties — on
+> {{user}}'s turn.
 >
 > NOTE: the master engine builds its header from CONFIG.START on turn 1, so if you
-> use this opener, set master_director CONFIG.START to roughly { time:"10:00",
-> season:1, episode:3 } so the printed header matches the scene.
+> use this opener set master_director CONFIG.START to about { time:"10:00",
+> season:1, episode:3 }.
 
 ---
 
 S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 ---
 
-*The sand is almost gone.*
+*Incense, cold stone, and the dry hiss of sand falling somewhere overhead.*
 
-*High overhead, cradled in a frame of black iron and gold filigree, an hourglass the size of a watchtower lets the last of its glittering sand whisper down — grain by grain, slow as a held breath. Red light pools where the count runs thin, washing the stone in the color of a coming storm.*
+*The thing the priests brought you to see turns slowly above the altar: a dragon-boned hourglass tall as a watchtower, its upper chamber still heavy with glittering sand, the drift below it climbing grain by grain. A low red light breathes at its heart with every measure that drops — patient, not yet urgent.*
 
-*The hall is the Church of the Four's own: vaulted ceilings lost in incense-haze, four great reliefs set above the altar — axe, sword, spear, bow, each haloed in gold — and the blank, chiseled-out scar where a fifth was struck from the wall. Clergy in white-and-gold line the aisles. As you pass beneath the reliefs, heads bow toward the Axe Hero; the warmth in those faces curdles the moment their eyes drift past you.*
+*Four weapons are worked into the wall in beaten gold above it — axe, sword, spear, bow — and a fifth has been chiselled away to a pale scar. When you crossed beneath them the clergy bowed low to the Axe Hero; their warmth thinned the moment their eyes slid past you to the shield at the back of the hall.*
 
-*To one side, a dark-haired young man in plain travel-leathers stares up at the great glass, a round shield on his arm and a russet-haired girl at his shoulder — a tanuki-eared demi-human, young-faced but adult, one hand resting on a sword too big for her.*
+*The other heroes are already here, spread down the nave with their parties — Ren turning his sword over to catch the light, Itsuki half-listening to a hovering acolyte, Motoyasu lounging against a pillar with a red-haired woman in court silks at his arm.*
+
+*The tall doors open last for a dark-haired young man in plain leathers, a round shield on one arm and a russet-haired demi-human girl close at his side — tanuki-eared, grown but young in the face, a sword riding her hip. He stops beneath the great glass and tips his head back to take it in.*
 
 **Naofumi:** "...Is this the dragon hourglass the king was talking about?"
 
-**Raphtalia:** *(quiet, watching the sand)* "When the last grain falls, the heroes and their parties are sent to where the Wave begins. Or so I hear."
+**Raphtalia:** *(following the falling sand with her eyes)* "When the last grain drops, the heroes and their parties are sent to where the Wave begins. Or so I hear."
 
-*A bright voice cuts across the hall.*
+*Motoyasu's head comes up at the sound of them. A grin spreads, and he pushes off the pillar.*
 
 **Motoyasu:** "Hm? Is that Naofumi I see?"
 
-*The Spear Hero crosses the floor with an easy, sauntering grin, a red-haired woman in fine silks trailing a half-step behind him. His gaze drags over Naofumi's worn gear and he barks a laugh.*
+*He saunters over, gaze raking down Naofumi's secondhand gear, and clicks his tongue.*
 
 **Motoyasu:** "Dude, come on — you're still fighting with such flimsy equipment?"
 
-*Then he sees the girl. His whole face changes.*
+*Raphtalia edges half a step closer to Naofumi, eyeing the approaching heroes.*
 
-**Motoyasu:** "—So cute!"
+**Raphtalia:** *(low, to Naofumi)* "...Who are they, Naofumi-sama?"
 
-*He sweeps Raphtalia's free hand up into both of his before she can pull back.*
+*Before Naofumi can answer, Motoyasu's eyes drop to her — and light up. He closes the last of the distance and scoops her free hand into both of his.*
 
-**Motoyasu:** "Hello! I am Kitamura Motoyasu, the Spear Hero." *(beaming)* "A girl as adorable as you shouldn't be wielding a sword. I'll protect you."
+**Motoyasu:** "—So cute! Hello! I am Kitamura Motoyasu, the Spear Hero."
 
-*Raphtalia stiffens, eyes darting to the shield at Naofumi's arm.*
+**Raphtalia:** *(going stiff, hand caught)* "You're... a hero?"
 
-**Raphtalia:** "...Who are they, Naofumi-sama?" *(then, to Motoyasu, wary)* "You're... a hero?"
+**Motoyasu:** *(turning her hand over like something precious)* "A girl as adorable as you shouldn't be wielding a sword. I'll protect you."
 
-**Motoyasu:** "With Naofumi? You can't. Stay with him and you'll be in danger." *(lowering his voice, conspiratorial)* "Surely you've heard the rumours about him, too."
+*The red-haired woman is at his shoulder in a heartbeat, glaring at the hand Raphtalia hasn't yet wrenched back.*
 
-*She wrenches her hand free and steps back to Naofumi's side, chin set.*
+**Malty:** "Hey! Motoyasu-sama is talking to you!" *(her smile curdles)* "...Motoyasu-sama, why are you complimenting a demi-human?"
+
+*Raphtalia tears her hand free and plants herself against Naofumi's side.*
 
 **Raphtalia:** "I'm sorry. I have sworn to fight with Naofumi-sama!"
 
-*The red-haired woman bristles, stepping in close at Motoyasu's elbow.*
+*Motoyasu's grin only sharpens. He leans after her, dropping his voice into something that wants to sound gentle.*
 
-**Malty:** "Hey! Motoyasu-sama is talking to you!" *(her lip curls)* "...Motoyasu-sama, why are you complimenting a demi-human?"
+**Motoyasu:** "With Naofumi? You can't. Stay with him and you'll be in danger." *(a flick of his eyes toward the listening court)* "Surely you've heard the rumours about him, too."
 
-*Off near the altar, the Sword Hero hasn't bothered to look up from checking his blade.*
+*Down the nave, Ren still hasn't looked up from his blade.*
 
 **Ren:** "Don't hold us back."
 
-*The Bow Hero only offers a small, careless wave as he turns away.*
+*Itsuki is already drifting toward his place beneath the glass, one hand raised in a careless wave.*
 
 **Itsuki:** "See you at the Wave."
 
-*Naofumi's expression doesn't move. He sets a hand on Raphtalia's shoulder and turns for the open floor beneath the glass.*
+*Naofumi's expression hasn't shifted through any of it. He sets a hand on Raphtalia's shoulder and steers her away from Motoyasu, toward the open floor.*
 
 **Naofumi:** "We're leaving."
 
-*Above, the sand thins to a last bright thread. The red light climbs the walls, gathering, and a low hum rises through the flagstones — the count, almost spent, reaching for everyone standing beneath it.*
-
-*The great axe is a familiar weight in your hands. The clergy have drawn back. The other four are already in their places.*
+*And overhead, the sand has run thin — a last bright thread spilling toward the bottom. The red light climbs the pillars, the hum in the stone rising with it, reaching for everyone gathered beneath the glass: the four heroes, their parties, and you, the great axe a familiar weight in your hands.*
 
 *The final grains begin to fall.*
