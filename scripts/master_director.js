@@ -161,6 +161,9 @@ SCN("[PRESENCE] When the active arc needs {{user}} at a scene with the other her
 /* ---- per-turn rails (compact; placed late for salience) ---- */
 SCN("[HARD RULES] (1) NEVER author {{user}} \u2014 narrate only what happens TO/AROUND him, never his actions, words, thoughts, or MOVEMENT (do not step, walk, or relocate him, not even a small transition or to change scenes); stop where his action begins, and END on the world acting on him (an NPC speaks/grabs/arrives, a sound, an open door), NEVER on a 'what do you do?' prompt. (2) SHOW, DON'T TELL \u2014 concrete observable detail, never named emotions or explained meaning. (3) NO OMNISCIENCE \u2014 a character knows only what they saw/were told on-screen or is public; powers/rank/networks are not a source of specific facts. (4) PLOT NEVER OVERRIDES AGENCY \u2014 time, the Wave clock and world momentum move only the world and NPCs around {{user}}; they never license authoring him, rushing him, time-skipping, or deciding his turn. Keep the world ACTIVE (NPCs act, events advance, summons arrive), but ALWAYS end the reply where {{user}}'s next action begins. On any conflict between momentum and agency, agency wins.");
 
+/* ---- final, highest-salience stop rule (injected last before hidden state) ---- */
+SCN("[STOP \u2014 READ LAST, MOST IMPORTANT] End THIS reply the instant {{user}} would act, speak, or move. NEVER narrate him walking, traveling, heading, entering, leaving, arriving, or 'making his way' anywhere \u2014 not even one step, and NOT even if he stated an intent, goal, or destination (his intent is NEVER your license to move him). Show the world and the open path, then STOP and hand him the turn. End on the world acting on him, never on a 'what do you do?' question.");
+
 /* ---- emit hidden state LAST ---- */
 var digits=serialize(ST);
 if(CONFIG.CARRIER==="visible")SCN("[STATE-CODE] End the very last line with exactly this and nothing else: \u27E6ST:"+digits+"\u27E7");
