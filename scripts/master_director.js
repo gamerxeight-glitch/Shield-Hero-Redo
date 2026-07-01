@@ -70,10 +70,11 @@ function lastHeader(scan){
 }
 
 /* ---- state ---- */
-function initState(){return {v:1,S:CONFIG.START.season,E:CONFIG.START.episode,DAY:0,TM:toMin(CONFIG.START.time),REP:CONFIG.START.rep,W:0,WAVES:0};}
-function serialize(s){return pad(s.v,1)+pad(s.S,2)+pad(s.E,3)+pad(s.DAY,3)+pad(s.TM,4)+pad(s.REP,3)+pad(s.W,2)+pad(s.WAVES,2);}
+function initState(){return {v:1,S:CONFIG.START.season,E:CONFIG.START.episode,DAY:0,TM:toMin(CONFIG.START.time),REP:CONFIG.START.rep,W:0,WAVES:0,PSZ:0};}
+function serialize(s){return pad(s.v,1)+pad(s.S,2)+pad(s.E,3)+pad(s.DAY,3)+pad(s.TM,4)+pad(s.REP,3)+pad(s.W,2)+pad(s.WAVES,2)+pad(s.PSZ,1);}
 function deserialize(d){if(!d||d.length<20)return null;var i=0;function t(w){var v=d.substr(i,w);i+=w;return parseInt(v,10)||0;}
   var s={v:t(1),S:t(2),E:t(3),DAY:t(3),TM:clampI(t(4),0,1439),REP:clampI(t(3),0,100),W:t(2),WAVES:t(2)};
+  s.PSZ=(d.length>=21)?clampI(d.substr(20,1),0,9):0;
   s.S=clampI(s.S,1,99);s.E=clampI(s.E,1,999);s.W=clampI(s.W,0,CONFIG.DAYS_PER_WAVE);s.WAVES=clampI(s.WAVES,0,99);return s;}
 function loadState(){
   var scan=recent(4);
@@ -90,6 +91,7 @@ function loadState(){
 }
 
 var ST=loadState();
+if(!ST.PSZ){ST.PSZ=3+Math.floor(Math.random()*5);}   // one-time roll: {{user}}'s party size, 3..7
 
 /* ---- time advance (accelerated; charged scenes stay fine-grained) ---- */
 function advance(prev){var cur=clampI(prev,0,1439);
@@ -145,6 +147,7 @@ SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match lighting and who is
 
 /* ---- standing + wave directives ---- */
 SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST.REP+"/100). Have the world (Church of the Five, nobles, commoners) treat him accordingly; never print the number in-scene.");
+SCN("[PARTY] When {{user}} recruits during the party-forming arc, about "+ST.PSZ+" companions are available to join him \u2014 a varied mix of any race, gender and class (adventurers, soldiers, mercenaries, mages), never a fixed or single-gender lineup. Present candidates and let {{user}} choose who joins; never assign, force, or finalize his party for him.");
 if(WAVE_NOW){SCN("[WAVE] The Dragon Hourglass has run out \u2014 a Wave of Calamity breaks NOW. By the world's fixed GAME-MECHANICS, the instant the last grain falls every Hero and their whole party \u2014 {{user}} included \u2014 is automatically teleported to where the Wave erupts (a red-skied rift zone). This warp is an involuntary SYSTEM event, not anyone's choice, so it is the ONE sanctioned time the world moves {{user}}: narrate the pull seizing him and setting him down at the Wave front through his own senses, then STOP and let him act. Monsters are already pouring from the rift; this is the scene's gravity.");}
 else{var left=CONFIG.DAYS_PER_WAVE-ST.W;SCN("[WAVE COUNTDOWN] The Dragon Hourglass shows the next Wave about "+left+" day"+(left===1?"":"s")+" out \u2014 let that pressure color faction moves and preparations. When it empties, the Hourglass auto-warps every hero and party to the Wave (a game mechanic); only then does that warp apply.");}
 
