@@ -14,7 +14,7 @@
 /* ==============================  CONFIG  ================================== */
 var CONFIG = {
   CARRIER: "zw",
-  START: { time: "10:00", season: 1, episode: 1, rep: 82 },   // fallback only; greeting header overrides
+  START: { time: "18:00", season: 1, episode: 1, rep: 82 },   // fallback only; greeting header overrides
   DAYS_PER_WAVE: 7,          // RP pace: a Wave at most ~7 in-story days apart
   WAVES_PER_SEASON: 3,       // season advances every few Waves (keeps arc gating stable, not day-count)
   WAKE_MIN: 7*60,            // 07:00 — a rolled day starts here

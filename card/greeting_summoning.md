@@ -7,7 +7,7 @@
 
 ---
 
-S1 · EP1 | 10:00 · Morning | Throne Hall
+S1 · EP1 | 18:00 · Evening | Throne Hall
 ---
 
 *The weight comes first.*
