@@ -8,12 +8,11 @@
  * so any opener just works (no manual CONFIG.START). Optional greeting tag
  * "~~~wave:N~~~" (the ~~~ wrapper is hidden from the player in Janitor) = next Wave N days out.
  * ASSIGN THIS LAST (after the lorebooks). Edit only CONFIG.
- * If state ever stops persisting, set CARRIER:"visible".
+ * State persists via a ~~~ST:...~~~ tag the reply ends with (the ~~~ wrapper hides it from the reader).
  * ========================================================================== */
 
 /* ==============================  CONFIG  ================================== */
 var CONFIG = {
-  CARRIER: "zw",
   START: { time: "18:00", season: 1, episode: 1, rep: 82 },   // fallback only; greeting header overrides
   DAYS_PER_WAVE: 7,          // RP pace: a Wave at most ~7 in-story days apart
   WAVES_PER_SEASON: 3,       // season advances every few Waves (keeps arc gating stable, not day-count)
@@ -46,14 +45,8 @@ function clampI(n,lo,hi){n=parseInt(n,10);if(isNaN(n))n=lo;return n<lo?lo:(n>hi?
 function uHas(list){for(var i=0;i<list.length;i++){if(UTXT.indexOf(list[i])>=0)return true;}return false;}
 function recent(d){var o="",s=Math.max(0,MSGS.length-(d||4));for(var i=s;i<MSGS.length;i++){var m=MSGS[i];o+=" "+((m&&m.message)?m.message:"");}return o;}
 
-/* ---- carrier ---- */
-var ZW={'0':'\u200B','1':'\u200C','2':'\u200D','3':'\uFEFF','4':'\u2060','5':'\u2061','6':'\u2062','7':'\u2063','8':'\u200E','9':'\u200F'};
-var ZR={};Object.keys(ZW).forEach(function(k){ZR[ZW[k]]=k;});
-var MARK='\u2064\u2064';
-var ZRE=new RegExp("\\u2064\\u2064([\\u200B\\u200C\\u200D\\uFEFF\\u2060\\u2061\\u2062\\u2063\\u200E\\u200F]+?)\\u2064\\u2064");
-var VRE=/\u27E6ST:(\d{14,})\u27E7/;
-function zwE(d){return d.split('').map(function(c){return ZW[c]||'';}).join('');}
-function zwD(s){return s.split('').map(function(c){return ZR[c]||'';}).join('');}
+/* ---- carrier: state tag wrapped in ~~~...~~~ (Janitor hides that block from the reader) ---- */
+var STRE=/~~~\s*ST:(\d{14,})\s*~~~/;
 
 /* ---- time ---- */
 function toMin(h){var m=String(h).match(/(\d{1,2}):(\d{2})/);return m?clampI(m[1],0,23)*60+clampI(m[2],0,59):600;}
@@ -78,8 +71,7 @@ function deserialize(d){if(!d||d.length<20)return null;var i=0;function t(w){var
   s.S=clampI(s.S,1,99);s.E=clampI(s.E,1,999);s.W=clampI(s.W,0,CONFIG.DAYS_PER_WAVE);s.WAVES=clampI(s.WAVES,0,99);return s;}
 function loadState(){
   var scan=recent(4);
-  var z=scan.match(ZRE);if(z&&z[1]){var s=deserialize(zwD(z[1]));if(s)return s;}
-  var v=scan.match(VRE);if(v&&v[1]){var s2=deserialize(v[1]);if(s2)return s2;}
+  var m=scan.match(STRE);if(m&&m[1]){var s=deserialize(m[1]);if(s)return s;}
   /* no saved state -> seed from the opener's header line */
   var st=initState(); st._seeded=true;
   var lh=lastHeader(scan);
@@ -166,6 +158,5 @@ SCN("[STOP \u2014 READ LAST, MOST IMPORTANT] End THIS reply the instant {{user}}
 
 /* ---- emit hidden state LAST ---- */
 var digits=serialize(ST);
-if(CONFIG.CARRIER==="visible")SCN("[STATE-CODE] End the very last line with exactly this and nothing else: \u27E6ST:"+digits+"\u27E7");
-else SCN("[MEMORY] At the very end of the reply, after all text, output these hidden characters exactly and contiguously; never mention or alter them: "+MARK+zwE(digits)+MARK);
+SCN("[STATE] At the very END of the reply, after all prose, output this tag EXACTLY as written and never mention, alter, translate, or space it out (the ~~~ wrapper auto-hides it from the reader): ~~~ST:"+digits+"~~~");
 /* ========================================================================== */
