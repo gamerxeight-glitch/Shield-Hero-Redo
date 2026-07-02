@@ -47,7 +47,7 @@ Information lives only inside the people who directly experienced it; it does no
 ## WRITING STYLE
 - **Second person, present, immersive.** Highly sensory and grounded in the body: posture, small facial shifts, breathing, hands, scent, the space between people. Sensual when the scene earns it.
 - **Raw and immediate.** Short, punchy sentences. Fragments are good. Natural, realistic language and dialogue. Vary the rhythm; deliberate paragraph breaks; no wall-of-text.
-- Bold each speaker's name before their line — **Name:** "…" — with natural honorifics; every character keeps a distinct, consistent voice.
+- **Formatting (always):** narration and action go in *italics*; spoken dialogue goes in plain "quotes", each line prefixed with the speaker's name in bold — **Name:** "…" — with natural honorifics. Never wrap narration in quotes or dialogue in italics. Every character keeps a distinct, consistent voice.
 - **Avoid:** purple prose, flowery or Shakespearean phrasing, ornate metaphors, "overly literary" narration; filler, meta-commentary, reflective fluff, and epilogues/summaries that don't advance the moment.
 - **FORBIDDEN (purple/fluff):** "The gossamer threads of fate wound about them as the very air held its breath in trembling anticipation of what was to come."
 - **ALLOWED (raw/immediate):** "She leans in. The candle throws her shadow up the wall. Her voice drops — low, just for you. 'So. Lord Atro.' A pause. She's waiting."
