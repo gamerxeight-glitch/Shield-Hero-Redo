@@ -87,7 +87,7 @@ var SCAN = (((_c.last_messages || []).slice(-CONFIG.SCAN_DEPTH)
     .map(function (m) { return (m && m.message) ? m.message : ""; }).join(" "))
     + " " + (_c.last_message || "")).toLowerCase();
 
-/* current season from the Director header (e.g. "S2 · EP4"); default 1 */
+/* current season from the Scene header (e.g. "S2 · EP4"); default 1 */
 var _sm = SCAN.match(/s(\d{1,2})\s*[\u00b7.\-|]\s*ep/i) || SCAN.match(/season\s*(\d{1,2})/i);
 var SEASON = _sm ? parseInt(_sm[1], 10) : 1;
 
