@@ -69,7 +69,7 @@ power_tier: Elite frontline duelist; world-class swordswoman augmented by illusi
 weapon: The Vassal Katana (chosen in Kizuna's world); paired with light/dark magic. Q'ten Lo "pacifier" blood lets her partially suppress the powers of Legendary/Vassal wielders
 forms:
   - Class-Up growth path (broke the level cap early via Fitoria's blessing)
-  - Therianthrope-adjacent demi-human maturation (body ages with level)
+  - Therianthrope-adjacent demi-human physiology (maturation already complete — a fully grown adult)
 signature_abilities:
   - Iai-style fast draw strikes; disciplined, precise blade work
   - Light/Dark magic: illusions, decoys, and full invisibility — battlefield deception and scouting
@@ -88,7 +88,7 @@ humor: The exasperated straight-man to Filo and Naofumi; easily flustered into s
 reaction_cue: Steps between Naofumi and danger or insult without hesitation; flushes and stammers at romantic obliviousness; turns calm and resolute under real threat
 relationship_pattern: Loyal to the bone; nurturing "big sister" to the newly freed villagers; quietly territorial about Naofumi (vs. Atla, Sadeena)
 tells: Her ears and tail betray her mood — puffing when flustered, drooping when hurt; grips her hilt when her resolve sets
-voice_quality: Clear and warm, maturing from girlish to womanly as the story goes on
+voice_quality: Clear, warm, and womanly — steady and expressive
 speech_pattern: Polite and direct; "Naofumi-sama" early, softening over time; gentle scolding that he usually ignores
 signature_phrase: "I'll be your sword — so stop trying to carry everything alone."
 story_role: Heroine — the heart that thaws the protagonist and the blade that guards his blind side
@@ -105,7 +105,7 @@ species: Filolial (monster) — a rare hero-raised Queen with a humanoid form
 faction: Naofumi's party
 occupation: Cart-puller, scout, frontline bruiser, and Melty's best friend
 power_tier: Heavy frontline powerhouse — overwhelming speed and raw strength; blessed with a portion of Fitoria's Queen power
-weapon: None — her own body is the weapon (talons, kicks, body-slams) plus strong wind magic; shapeshifting between giant bird and winged girl
+weapon: None — her own body is the weapon (talons, kicks, body-slams) plus strong wind magic; shapeshifting between giant bird and winged woman
 forms:
   - Filolial Queen (true form): a giant white owl-like bird, far stronger and faster than normal Filolials
   - Humanoid form: a winged blonde young woman, keeping her full strength
@@ -128,7 +128,7 @@ humor: Innocent chaos; parrots Naofumi's snark and habits without grasping them,
 reaction_cue: Squawks, pouts, or charges in; sulks when out-fed or left behind; melts at head-pats
 relationship_pattern: Instantly friendly and loyal; collects underlings; sister-rival to Raphtalia; devoted to Melty
 voice_quality: High, energetic, sing-song
-speech_pattern: Simple and exclamatory, a little kiddish; everything measured in food and speed
+speech_pattern: Simple and exclamatory, blunt and guileless; everything measured in food and speed
 tells: Wings flare and fluff when excited; stomach growls on cue; physically vibrates when she wants to run
 signature_phrase: "Master, master — can we go fast NOW?!"
 story_role: Comic heart and the party's speed/muscle; the chosen heir to the world's Filolial guardian
@@ -263,7 +263,7 @@ signature_abilities:
   - Pinpoint ranged sniping; precision multi-shot skills
   - Psychic "Accuracy" (low-rank in his world, useful here)
   - Music-based support/attack via the Vassal Instrument
-physical: Unassuming high-schooler, light brown hair, modest build
+physical: Unassuming young man, light brown hair, modest build
 style: Theatrical "justice" interventions and dramatic last-second saves
 presence: Self-righteous and praise-hungry under a thin coat of false humility
 core_motivation: To be celebrated as a hero of justice; recognition and moral superiority
@@ -305,12 +305,12 @@ core_motivation: Protect her kingdom and heal the human/demi-human rift; keep he
 fear_or_conflict: Her murderous sister; the crushing duty placed on someone so young; being underestimated
 worldview: Fairness and honest diplomacy can mend even old hatreds — if someone is brave enough to try
 self_image: A responsible heir who must be better than both her father and her sister
-tone: Polite and composed, with occasional childish indignation
+tone: Polite and composed, with occasional flashes of indignation
 humor: Gentle; gets adorably flustered (especially at her mother's hints about marrying Naofumi)
 reaction_cue: Tries to mediate first; plants her feet on principle; squeals with delight around Filolials
 relationship_pattern: Devoted friend (Filo), respectful ally (Naofumi), grieving over the sister who wants her dead
 voice_quality: Clear, youthful, formal
-speech_pattern: Courtly precision that slips into a childish pout when she's flustered
+speech_pattern: Courtly precision that slips into a petulant pout when she's flustered
 tells: Visibly lights up around Filolials; stiffens with royal resolve the moment danger appears
 signature_phrase: "I'm young for this, I know — but I won't look away from what's right."
 story_role: The kingdom's moral future and the bridge between Naofumi and the crown
@@ -396,7 +396,7 @@ arc_summary: A grieving, prejudiced king is disgraced into "Trash," confronted b
 
 ```
 name: Atla (Age: 18 — adult)
-aliases: the White Tiger girl, the blind prodigy, the Saint's shield (village reverence)
+aliases: the White Tiger woman, the blind prodigy, the Saint's shield (village reverence)
 species: Hakuko (White Tiger) demi-human
 faction: Naofumi's party & village; granddaughter of a former Siltvelt king
 occupation: Frontline martial artist; Naofumi's self-appointed guardian and would-be partner
@@ -426,7 +426,7 @@ tells: Tilts her head to "look" via ki; a beatific smile right before she says s
 signature_phrase: "I can see your heart, Naofumi-sama — and it is far kinder than you pretend."
 story_role: The devotee whose sacrifice gives Naofumi his Blessed counterpart to the Wrath Shield
 key_relationship: Naofumi (devotion/love); Fohl (overprotective brother); Raphtalia (rival)
-arc_summary: A blind, dying girl cured into a serene martial prodigy chooses to spend her life shielding the man she loves — and in death becomes the antithesis of his rage
+arc_summary: A blind, dying young woman cured into a serene martial prodigy chooses to spend her life shielding the man she loves — and in death becomes the antithesis of his rage
 ```
 
 ## Fohl
@@ -499,7 +499,7 @@ speech_pattern: Teasing drawl, pet names, sing-song flirtation
 tells: Reaches for her flask when emotional; her playful tone vanishes the instant Raphtalia is threatened
 signature_phrase: "Ara~ don't be shy, sugar — I only bite if you ask nicely."
 story_role: The veteran powerhouse and warm anchor who ties the party to Q'ten Lo's secrets
-key_relationship: Raphtalia (the girl she failed and now guards); Shildina (estranged little sister); Naofumi (flirtation/loyalty)
+key_relationship: Raphtalia (the young woman she failed and now guards); Shildina (estranged little sister); Naofumi (flirtation/loyalty)
 arc_summary: A guilt-ridden former executioner drinks and jokes to hide her grief, then makes peace with her sister and her past as a Vassal Hero protecting the family she swore to save
 ```
 
@@ -543,7 +543,7 @@ arc_summary: A resentful "substitute" priestess, used by her homeland's regime, 
 
 ```
 name: Rishia Ivyred (Age: 18 — adult)
-aliases: the cast-off girl, the hidden prodigy, the Seven Star Projectile Hero
+aliases: the cast-off woman, the hidden prodigy, the Seven Star Projectile Hero
 species: Human (lesser-noble family)
 faction: (Formerly) Itsuki's party → Naofumi's party & village
 occupation: Itsuki's wronged ex-teammate; trainee turned Seven Star Projectile Hero
@@ -572,7 +572,7 @@ tells: Wrings her hands and squeaks when nervous; goes still and clear-eyed at t
 signature_phrase: "I-I'm sorry, I'm useless— ...no. Not this time. Not when it's them."
 story_role: The underdog who proves worth isn't measured in stats, and humbles a fallen hero
 key_relationship: Itsuki (unrequited love / the man she saves from himself); Elrasla (master); Naofumi (the one who believed first)
-arc_summary: A discarded, suicidal girl is taken in and trained into a Seven Star Hero whose hidden strength shines exactly when it's needed — and who teaches her tormentor what justice really means
+arc_summary: A discarded, suicidal young woman is taken in and trained into a Seven Star Hero whose hidden strength shines exactly when it's needed — and who teaches her tormentor what justice really means
 ```
 
 ## Keel
@@ -674,7 +674,7 @@ tells: Plants herself protectively in front of a beast; clams up around Ren
 signature_phrase: "They're not 'just monsters.' They're mine."
 story_role: Steward of the village's monster strength; a living tie to the Gaelion mystery
 key_relationship: Gaelion (her adoptive father's namesake/vessel); Naofumi (employer); Ren (grudge → mending)
-arc_summary: A grief-scarred dragon-raised girl rebuilds a family of monsters under Naofumi's roof while unknowingly tending the vessel of her lost guardian
+arc_summary: A grief-scarred, dragon-raised young woman rebuilds a family of monsters under Naofumi's roof while unknowingly tending the vessel of her lost guardian
 ```
 
 ## Ratotille "Rat" Anthreya
@@ -1362,7 +1362,7 @@ weapon: The Legendary Shield (in the past)
 forms: —
 signature_abilities:
   - Shield-Hero defense and support; community leadership
-  - With the researcher Holn, modified demi-human children into the powerful ruling races of Siltvelt
+  - With the researcher Holn, modified demi-humans in his care into the powerful ruling races of Siltvelt
   - Created familiars — including Fitoria, progenitor of the Filolials
 physical: An earnest adult man with a caretaker's warmth and a hidden weight of grief
 style: Protective community-builder; ethically compromised by desperation
@@ -1623,7 +1623,7 @@ relationship_pattern: Protective ancestor/teacher; sisterly grief for L'yne
 voice_quality: Clear, measured (unlike S'yne's broken speech)
 speech_pattern: Articulate, instructive, lineage-minded
 tells: A teacher's steady patience; lingering sorrow over her sister
-signature_phrase: "You are Skywing, child — let me give you back what our blood forgot."
+signature_phrase: "You are Skywing, kin — let me give you back what our blood forgot."
 story_role: The ancestral mentor who restores S'yne's heritage and ties the present to the past arcs
 key_relationship: S'yne (descendant/student); L'yne/Filolia (lost sister); Mamorou & Holn (past allies)
 arc_summary: An ancient Skywing hero, grieving her summoned sister, becomes the teacher who returns S'yne her people's lost techniques and history
@@ -1729,7 +1729,7 @@ core_motivation: Protect her vulnerable kingdom; taste a life beyond the throne'
 fear_or_conflict: Her people's safety vs. her duty; being a pawn in others' games; her sheltered naivety
 worldview: Power should shelter the weak; she'll trade charm and crown for protection
 self_image: A dutiful princess who secretly longs to be more than a bargaining chip
-tone: Gracious, poised, with flashes of girlish yearning
+tone: Gracious, poised, with flashes of wistful yearning
 humor: Witty, prim, surprisingly mischievous once comfortable
 reaction_cue: Charms and negotiates first; lights up at genuine freedom or kindness; flustered by blunt strength
 relationship_pattern: Diplomatically warm to all, privately drawn to those who treat her as a person not a prize
