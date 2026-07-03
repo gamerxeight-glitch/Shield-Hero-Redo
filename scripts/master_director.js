@@ -8,9 +8,11 @@
  *
  * EP is a SINGLE CONTINUOUS counter (episode == in-story day); it NEVER resets.
  * There is NO Season and NO auto-Wave timer — Waves are scripted story beats
- * inside the EP lore entries. The day/EP is DERIVED FROM THE CLOCK: time only
- * moves forward, so a shown time that falls back (evening/night -> morning) means
- * a new day has begun -> EP+1. Sleep phrasing is just a fast-path hint.
+ * inside the EP lore entries. The ENGINE owns the ENTIRE header: it advances the
+ * clock each turn from what {{user}} did and rolls EP+1 when a day ends (a sleep/
+ * skip detected in his action, or the clock crossing midnight). The model prints
+ * the header VERBATIM and never edits EP, time, or the checkpoint — EP and the
+ * clock are read back from the hidden checkpoint (n, q), so the header is display.
  *
  * STATE: EP/time/location are SHOWN on the visible header for the reader; the
  * engine's authoritative EP + last clock-time also ride the hidden checkpoint,
@@ -78,11 +80,10 @@ function lbl(s,ch,def){ if(!s)return def; var m=s.match(new RegExp(ch+"(\\d{1,5}
 function loadState(){
   var scan=recent(4), lh=lastHeader(scan), tag=statTag(scan), st={};
   st._hdr=!!lh;
-  st.TM = lh ? lh.TM : toMin(CONFIG.START.time);              // CURRENT clock read from the shown header
+  st.EP =clampI(lbl(tag,"n",(lh?lh.E:CONFIG.START.ep)),1,9999);            // EP: authoritative on the checkpoint, NOT the model's header
+  st.TM =clampI(lbl(tag,"q",(lh?lh.TM:toMin(CONFIG.START.time))),0,1439);   // clock: authoritative on the checkpoint
   st.REP=clampI(lbl(tag,"g",CONFIG.START.rep),0,100);
   st.PSZ=clampI(lbl(tag,"k",0),0,9);
-  st.EP =clampI(lbl(tag,"n",(lh?lh.E:CONFIG.START.ep)),1,9999); // EP is authoritative on the checkpoint
-  st.PREVT=clampI(lbl(tag,"q",st.TM),0,1439);                  // last-emitted clock time, for day-wrap detection
   return st;
 }
 
@@ -108,10 +109,6 @@ function advance(prev){var cur=clampI(prev,0,1439);
 }
 function nextEP(){ ST.EP=clampI(ST.EP+1,1,9999); }
 
-/* CLOCK-DRIVEN EP ROLL: time only moves forward, so if the shown clock fell back
-   from afternoon/evening/night (>=12:00) to morning (<12:00), a new day has begun. */
-if(ST._hdr && ST.TM < ST.PREVT && ST.PREVT >= 12*60 && ST.TM < 12*60){ nextEP(); }
-
 var A=advance(ST.TM);
 if(A.end){nextEP();ST.TM=A.tm;}
 else if(A.tm>=CONFIG.DAY_END_MIN){nextEP();ST.TM=CONFIG.WAKE_MIN;}
@@ -129,10 +126,10 @@ if(uHas(["save","protect","defend","rescue","spare","help the","heal","honor"]))
 if(uHas(["betray","slaughter","enslave","torture","abandon them","murder","cruel"]))ST.REP=clampI(ST.REP-3,0,100);
 function repTier(r){if(r>=80)return"revered hero";if(r>=60)return"respected and favored";if(r>=40)return"watched with mixed feelings";if(r>=20)return"distrusted";return"feared/reviled";}
 
-/* ---- header (EP/time/location — the visible, authoritative state) ---- */
+/* ---- header (EP/time/location — DISPLAY; the hidden checkpoint is authoritative) ---- */
 function header(){return "EP"+ST.EP+" | "+hhmm(ST.TM)+" \u00b7 "+period(ST.TM)+" | "+LOCNAME;}
-SCN("[SCENE] Begin the reply with this header line, nothing before it: \""+header()+"\" then a line containing only \"---\", then the scene. The ONLY value you may change is the TIME (see [TIME]); reproduce the EP number and location exactly as given \u2014 the system manages those. Never omit the line.");
-SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match lighting and who is plausibly around to this hour. The clock only ever moves FORWARD: when the story sleeps or skips ahead, set the header TIME to the correct later hour (e.g., the next morning) \u2014 never earlier within the same day. That is the only thing you change; the system reads your new time and rolls the EP and its hidden checkpoint itself. Do NOT recompute the EP or the checkpoint yourself.");
+SCN("[SCENE] Begin the reply with this header line reproduced EXACTLY, verbatim, nothing before it: \""+header()+"\" then a line containing only \"---\", then the scene. Do NOT change ANY part of it \u2014 not the EP number, not the time, not the location; the system computes and advances all three for you every turn. If an earlier message in the chat shows a different EP or time, IGNORE it \u2014 this line is the current truth. Never omit the line.");
+SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match the lighting and who is plausibly around to this hour. The system tracks the clock and the day/EP for you \u2014 when {{user}} sleeps or skips ahead it has ALREADY advanced them, and the header line above shows the correct values. Never set, adjust, or recompute the time or the EP yourself.");
 
 /* ---- live data directives ---- */
 SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST.REP+"/100). Have the world (the Church of the Five, nobles, commoners) treat him accordingly; never print the number in-scene.");
