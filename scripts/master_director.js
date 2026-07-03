@@ -151,8 +151,8 @@ function repTier(r){if(r>=80)return"revered hero";if(r>=60)return"respected and 
 
 /* ---- header (S/E/time/location — the visible, authoritative state) ---- */
 function header(){return "S"+ST.S+" \u00b7 EP"+ST.E+" | "+hhmm(ST.TM)+" \u00b7 "+period(ST.TM)+" | "+LOCNAME;}
-SCN("[SCENE] Begin the reply with this header line, nothing before it: \""+header()+"\" then a line containing only \"---\", then the scene. Keep the season, episode, and location exactly as written \u2014 the system manages those. Never omit the line.");
-SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match lighting and who is plausibly around to this hour. The clock only ever moves FORWARD: when the story sleeps or skips ahead, set the header time to the correct later hour (e.g., the next morning) \u2014 never earlier within the same day. The system rolls the day and episode from the clock, so you do not change the EP yourself.");
+SCN("[SCENE] Begin the reply with this header line, nothing before it: \""+header()+"\" then a line containing only \"---\", then the scene. The ONLY value you may change is the TIME (see [TIME]); reproduce the season, EP number, and location exactly as given \u2014 the system manages those. Never omit the line.");
+SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match lighting and who is plausibly around to this hour. The clock only ever moves FORWARD: when the story sleeps or skips ahead, set the header TIME to the correct later hour (e.g., the next morning) \u2014 never earlier within the same day. That is the only thing you change; the system reads your new time and updates the day, the EP, and its hidden checkpoint itself. Do NOT recompute the EP or the checkpoint yourself.");
 
 /* ---- live data directives ---- */
 SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST.REP+"/100). Have the world (Church of the Five, nobles, commoners) treat him accordingly; never print the number in-scene.");
@@ -165,5 +165,5 @@ SCN("[FRAME] You are the living world + improv scene partner. The world and its 
 
 /* ---- emit hidden stats LAST (labeled; ~~~ wrapper hides it) ---- */
 var TAG="~~~ST R"+ST.REP+" W"+ST.W+" V"+ST.WAVES+" P"+ST.PSZ+" D"+ST.DAY+" E"+ST.E+" T"+ST.TM+"~~~";
-SCN("[STATE] At the very END of the reply, after all prose, output this tag EXACTLY and never alter, translate, space out, or mention it (the ~~~ wrapper auto-hides it from the reader): "+TAG);
+SCN("[STATE] End the reply, after all prose, by reproducing this system checkpoint EXACTLY \u2014 character for character \u2014 and nothing else: "+TAG+" . It is an OPAQUE system token, NOT a scoreboard: do not read meaning into its letters, do not recompute, 'correct', translate, space out, add, or drop any value \u2014 not even after sleep, a time skip, or a new day. The system rewrites it for you each turn. Never mention it. (The ~~~ wrapper hides it from the reader.)");
 /* ========================================================================== */
