@@ -7,9 +7,12 @@
  * narrative rules live in the System Prompt (custom prompt) — this only carries
  * live data + a compact reminder. Assign this LAST (after the lorebooks).
  *
- * STATE: S/E/time/location ride the VISIBLE header (human-readable, robust).
- * Only the hidden stats ride a short labeled tag the reply ends with:
- *   ~~~ST R<rep> W<wave-countdown> V<waves-survived> P<party-size> D<day>~~~
+ * STATE: S/EP/time/location are SHOWN on the visible header for the reader, but the
+ * engine's authoritative copies of the episode + last clock-time also ride the hidden
+ * tag. The day/episode is DERIVED FROM THE CLOCK: time only moves forward, so if the
+ * shown time falls back (evening/night -> morning) a new day has begun and EP rolls —
+ * no trigger word required. Sleep phrasing is just a fast-path hint. Hidden tag:
+ *   ~~~ST R<rep> W<wave-countdown> V<waves-survived> P<party-size> D<day> E<episode> T<time-of-day-min>~~~
  * The ~~~ wrapper hides it from the reader; labels survive a miscopy (a dropped
  * field just falls back to default instead of corrupting everything).
  * Optional greeting tag "~~~wave:N~~~" = next Wave N days out (wave:0 = now).
@@ -71,13 +74,16 @@ function lbl(s,ch,def){ if(!s)return def; var m=s.match(new RegExp(ch+"(\\d{1,4}
 /* ---- load state: S/E/TM from the header, stats from the tag (defaults on turn 1) ---- */
 function loadState(){
   var scan=recent(4), lh=lastHeader(scan), tag=statTag(scan), st={};
-  if(lh){ st.S=lh.S; st.E=lh.E; st.TM=lh.TM; }
-  else { st.S=CONFIG.START.season; st.E=CONFIG.START.episode; st.TM=toMin(CONFIG.START.time); }
+  st._hdr=!!lh;
+  if(lh){ st.S=lh.S; st.TM=lh.TM; }                    // season + CURRENT clock read from the shown header
+  else { st.S=CONFIG.START.season; st.TM=toMin(CONFIG.START.time); }
   st.REP=clampI(lbl(tag,"R",CONFIG.START.rep),0,100);
   st.W  =clampI(lbl(tag,"W",0),0,CONFIG.DAYS_PER_WAVE);
   st.WAVES=clampI(lbl(tag,"V",0),0,99);
   st.PSZ=clampI(lbl(tag,"P",0),0,9);
   st.DAY=clampI(lbl(tag,"D",0),0,9999);
+  st.E  =clampI(lbl(tag,"E",(lh?lh.E:CONFIG.START.episode)),1,999);  // episode is authoritative on the hidden tag
+  st.PREVT=clampI(lbl(tag,"T",st.TM),0,1439);                        // last-emitted clock time, for day-wrap detection
   if(!tag){ /* first turn — seed from header + optional greeting wave tag */
     st.WAVES = lh ? clampI((lh.S-1)*CONFIG.WAVES_PER_SEASON,0,99) : 0;
     st.W = 0;
@@ -115,6 +121,11 @@ function maybeSeason(){var ns=1+Math.floor(ST.WAVES/CONFIG.WAVES_PER_SEASON);if(
 function rollDay(){ST.DAY=clampI(ST.DAY+1,0,9999);ST.E=clampI(ST.E+1,1,999);ST.W=clampI(ST.W+1,0,CONFIG.DAYS_PER_WAVE);
   if(ST.W>=CONFIG.DAYS_PER_WAVE){WAVE_NOW=true;ST.W=0;ST.WAVES=clampI(ST.WAVES+1,0,99);maybeSeason();}}
 
+/* CLOCK-DRIVEN DAY ROLL: time only moves forward, so if the shown clock fell back
+   from afternoon/evening/night (>=12:00) to morning (<12:00), a new day has begun —
+   derive the day/episode from the clock, keeping the model's shown morning time. */
+if(ST._hdr && ST.TM < ST.PREVT && ST.PREVT >= 12*60 && ST.TM < 12*60){ rollDay(); }
+
 var A=advance(ST.TM);
 if(A.end){rollDay();ST.TM=A.tm;}
 else if(A.tm>=CONFIG.DAY_END_MIN){rollDay();ST.TM=CONFIG.WAKE_MIN;}
@@ -140,8 +151,8 @@ function repTier(r){if(r>=80)return"revered hero";if(r>=60)return"respected and 
 
 /* ---- header (S/E/time/location — the visible, authoritative state) ---- */
 function header(){return "S"+ST.S+" \u00b7 EP"+ST.E+" | "+hhmm(ST.TM)+" \u00b7 "+period(ST.TM)+" | "+LOCNAME;}
-SCN("[SCENE] Begin the reply with exactly this line, nothing before it: \""+header()+"\" then a line containing only \"---\", then the scene. Never reword or omit it.");
-SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match lighting and who is plausibly around to this hour.");
+SCN("[SCENE] Begin the reply with this header line, nothing before it: \""+header()+"\" then a line containing only \"---\", then the scene. Keep the season, episode, and location exactly as written \u2014 the system manages those. Never omit the line.");
+SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match lighting and who is plausibly around to this hour. The clock only ever moves FORWARD: when the story sleeps or skips ahead, set the header time to the correct later hour (e.g., the next morning) \u2014 never earlier within the same day. The system rolls the day and episode from the clock, so you do not change the EP yourself.");
 
 /* ---- live data directives ---- */
 SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST.REP+"/100). Have the world (Church of the Five, nobles, commoners) treat him accordingly; never print the number in-scene.");
@@ -153,6 +164,6 @@ else{var left=CONFIG.DAYS_PER_WAVE-ST.W;SCN("[WAVE COUNTDOWN] The Dragon Hourgla
 SCN("[FRAME] You are the living world + improv scene partner. The world and its people act on their own around {{user}} in the PRESENT moment \u2014 but you NEVER write, move, speak, think, or decide for him (not even a step, not even on a stated intent), you NEVER cut/fade/skip/flash-forward, and you END on the world acting on him, never on a 'what do you do?'. When a scene needs him present, the world SUMMONS him in-world (messenger, knock, horn) and you stop for him to answer. Every character knows ONLY what they personally witnessed; {{user}}'s status screen, thoughts, and private acts are invisible to all. Full rules: the System Prompt.");
 
 /* ---- emit hidden stats LAST (labeled; ~~~ wrapper hides it) ---- */
-var TAG="~~~ST R"+ST.REP+" W"+ST.W+" V"+ST.WAVES+" P"+ST.PSZ+" D"+ST.DAY+"~~~";
+var TAG="~~~ST R"+ST.REP+" W"+ST.W+" V"+ST.WAVES+" P"+ST.PSZ+" D"+ST.DAY+" E"+ST.E+" T"+ST.TM+"~~~";
 SCN("[STATE] At the very END of the reply, after all prose, output this tag EXACTLY and never alter, translate, space out, or mention it (the ~~~ wrapper auto-hides it from the reader): "+TAG);
 /* ========================================================================== */
