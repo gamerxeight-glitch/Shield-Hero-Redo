@@ -11,9 +11,11 @@
  * engine's authoritative copies of the episode + last clock-time also ride the hidden
  * tag. The day/episode is DERIVED FROM THE CLOCK: time only moves forward, so if the
  * shown time falls back (evening/night -> morning) a new day has begun and EP rolls —
- * no trigger word required. Sleep phrasing is just a fast-path hint. Hidden tag:
- *   ~~~ST R<rep> W<wave-countdown> V<waves-survived> P<party-size> D<day> E<episode> T<time-of-day-min>~~~
- * The ~~~ wrapper hides it from the reader; labels survive a miscopy (a dropped
+ * no trigger word required. Sleep phrasing is just a fast-path hint. Hidden
+ * checkpoint uses OPAQUE, non-mnemonic keys so the model can't "interpret" or
+ * edit it (maintainer legend below), and it must be echoed byte-for-byte:
+ *   ~~~SV g<rep> h<wave-countdown> j<waves-survived> k<party-size> m<day> n<episode> q<time-of-day-min>~~~
+ * The ~~~ wrapper hides it from the reader; keys survive a miscopy (a dropped
  * field just falls back to default instead of corrupting everything).
  * Optional greeting tag "~~~wave:N~~~" = next Wave N days out (wave:0 = now).
  * Edit only CONFIG.
@@ -67,8 +69,10 @@ function lastHeader(scan){
            TM:clampI(last[3],0,23)*60+clampI(last[4],0,59), loc:String(last[5]).trim() };
 }
 
-/* ---- hidden stat tag: ~~~ST R.. W.. V.. P.. D..~~~ (labeled -> miscopy-tolerant) ---- */
-function statTag(scan){ var m=scan.match(/~~~\s*ST\b([^~]*)~~~/); return m?m[1]:null; }
+/* ---- hidden checkpoint: ~~~SV g.. h.. j.. k.. m.. n.. q..~~~  (opaque keys, miscopy-tolerant)
+   MAINTAINER LEGEND: g=reputation  h=wave-countdown  j=waves-survived  k=party-size
+                      m=day  n=episode  q=time-of-day-minutes  (the model never sees this) ---- */
+function statTag(scan){ var m=scan.match(/~~~\s*SV\b([^~]*)~~~/); return m?m[1]:null; }
 function lbl(s,ch,def){ if(!s)return def; var m=s.match(new RegExp(ch+"(\\d{1,4})")); return m?parseInt(m[1],10):def; }
 
 /* ---- load state: S/E/TM from the header, stats from the tag (defaults on turn 1) ---- */
@@ -77,13 +81,13 @@ function loadState(){
   st._hdr=!!lh;
   if(lh){ st.S=lh.S; st.TM=lh.TM; }                    // season + CURRENT clock read from the shown header
   else { st.S=CONFIG.START.season; st.TM=toMin(CONFIG.START.time); }
-  st.REP=clampI(lbl(tag,"R",CONFIG.START.rep),0,100);
-  st.W  =clampI(lbl(tag,"W",0),0,CONFIG.DAYS_PER_WAVE);
-  st.WAVES=clampI(lbl(tag,"V",0),0,99);
-  st.PSZ=clampI(lbl(tag,"P",0),0,9);
-  st.DAY=clampI(lbl(tag,"D",0),0,9999);
-  st.E  =clampI(lbl(tag,"E",(lh?lh.E:CONFIG.START.episode)),1,999);  // episode is authoritative on the hidden tag
-  st.PREVT=clampI(lbl(tag,"T",st.TM),0,1439);                        // last-emitted clock time, for day-wrap detection
+  st.REP=clampI(lbl(tag,"g",CONFIG.START.rep),0,100);
+  st.W  =clampI(lbl(tag,"h",0),0,CONFIG.DAYS_PER_WAVE);
+  st.WAVES=clampI(lbl(tag,"j",0),0,99);
+  st.PSZ=clampI(lbl(tag,"k",0),0,9);
+  st.DAY=clampI(lbl(tag,"m",0),0,9999);
+  st.E  =clampI(lbl(tag,"n",(lh?lh.E:CONFIG.START.episode)),1,999);  // episode is authoritative on the hidden checkpoint
+  st.PREVT=clampI(lbl(tag,"q",st.TM),0,1439);                        // last-emitted clock time, for day-wrap detection
   if(!tag){ /* first turn — seed from header + optional greeting wave tag */
     st.WAVES = lh ? clampI((lh.S-1)*CONFIG.WAVES_PER_SEASON,0,99) : 0;
     st.W = 0;
@@ -164,6 +168,6 @@ else{var left=CONFIG.DAYS_PER_WAVE-ST.W;SCN("[WAVE COUNTDOWN] The Dragon Hourgla
 SCN("[FRAME] You are the living world + improv scene partner. The world and its people act on their own around {{user}} in the PRESENT moment \u2014 but you NEVER write, move, speak, think, or decide for him (not even a step, not even on a stated intent), you NEVER cut/fade/skip/flash-forward, and you END on the world acting on him, never on a 'what do you do?'. When a scene needs him present, the world SUMMONS him in-world (messenger, knock, horn) and you stop for him to answer. Every character knows ONLY what they personally witnessed; {{user}}'s status screen, thoughts, and private acts are invisible to all. Full rules: the System Prompt.");
 
 /* ---- emit hidden stats LAST (labeled; ~~~ wrapper hides it) ---- */
-var TAG="~~~ST R"+ST.REP+" W"+ST.W+" V"+ST.WAVES+" P"+ST.PSZ+" D"+ST.DAY+" E"+ST.E+" T"+ST.TM+"~~~";
+var TAG="~~~SV g"+ST.REP+" h"+ST.W+" j"+ST.WAVES+" k"+ST.PSZ+" m"+ST.DAY+" n"+ST.E+" q"+ST.TM+"~~~";
 SCN("[STATE] End the reply, after all prose, by reproducing this system checkpoint EXACTLY \u2014 character for character \u2014 and nothing else: "+TAG+" . It is an OPAQUE system token, NOT a scoreboard: do not read meaning into its letters, do not recompute, 'correct', translate, space out, add, or drop any value \u2014 not even after sleep, a time skip, or a new day. The system rewrites it for you each turn. Never mention it. (The ~~~ wrapper hides it from the reader.)");
 /* ========================================================================== */
