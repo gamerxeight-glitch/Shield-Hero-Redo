@@ -1,13 +1,13 @@
-# Greeting — The Summoning (Season 1, Episode 1)
+# Greeting — The Summoning (Episode 1)
 
 > Paste into Janitor's **First Message**. Opens on the five-hero summoning and ends
 > on {{user}}'s turn to name himself. {{user}} is the Axe Hero — one of the four
 > celebrated heroes (equal to Sword/Spear/Bow); only the Shield is scorned. State
-> initializes to S1E1; the master engine takes over from turn one.
+> initializes to EP1; the master engine takes over from turn one.
 
 ---
 
-S1 · EP1 | 18:00 · Evening | Throne Hall
+EP1 | 18:00 · Evening | Throne Hall
 ---
 
 *The weight comes first.*

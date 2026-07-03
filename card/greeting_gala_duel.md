@@ -1,16 +1,16 @@
-# Alternate Greeting — The Victory Gala & The Duel Challenge (Season 1, after the First Wave)
+# Alternate Greeting — The Victory Gala & The Duel Challenge (EP9, after the Second Wave)
 
-> Paste into Janitor's **First Message** to START here. The night after the first
+> Paste into Janitor's **First Message** to START here. The night after the Second
 > Wave: a victory gala at the palace, all heroes and parties present. Motoyasu
 > challenges Naofumi to a duel over Raphtalia and the king orders him to accept.
 > Ends on {{user}}'s turn as the duel is set.
 >
-> NOTE: the master engine auto-reads this header line on turn 1 (season, episode,
-> time, location) — no manual setup needed.
+> NOTE: the master engine auto-reads this header line on turn 1 (episode, time,
+> location) — no manual setup needed.
 
 ---
 
-S1 · EP4 | 21:00 · Night | Melromarc Castle — Grand Hall
+EP9 | 21:00 · Night | Melromarc Castle — Grand Hall
 ---
 
 *Warmth, after so much cold.*
@@ -37,9 +37,9 @@ S1 · EP4 | 21:00 · Night | Melromarc Castle — Grand Hall
 
 **Malty:** "Motoyasu-sama is still tired from the battle."
 
-*But his eyes have already slipped past her, caught on a russet-haired girl threading hurriedly back through the crowd toward that lonely corner. He starts after her. Malty's hand closes on his arm; she leans up and breathes something against his ear — and whatever it is, it stops him where he stands.*
+*But his eyes have already slipped past her, caught on a russet-haired woman threading hurriedly back through the crowd toward that lonely corner. He starts after her. Malty's hand closes on his arm; she leans up and breathes something against his ear — and whatever it is, it stops him where he stands.*
 
-*In the corner, the demi-human girl reaches Naofumi's side, eyeing the laden tables with open longing.*
+*In the corner, the demi-human woman reaches Naofumi's side, eyeing the laden tables with open longing.*
 
 **Raphtalia:** "Naofumi-sama, aren't you hungry? The food here looks heavenly."
 

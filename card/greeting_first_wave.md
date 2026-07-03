@@ -1,19 +1,18 @@
-# Alternate Greeting — The Dragon Hourglass (Season 1, before the First Wave)
+# Alternate Greeting — The Dragon Hourglass (EP7, before the Second Wave)
 
 > Paste into Janitor's **First Message** to START here instead of the summoning.
-> Post-betrayal, at the Church of the Four's Dragon Hourglass; the first Wave is
-> still a day or two out, all five heroes gathered with their parties. Motoyasu
+> Post-betrayal, at the Church of the Four's Dragon Hourglass; the Second Wave is
+> close now (the true first Wave struck before the heroes were summoned — this is
+> the first they'll face), all five heroes gathered with their parties. Motoyasu
 > confronts Naofumi and flirts with Raphtalia; the scene ends on {{user}}'s turn as
 > Naofumi, leaving, runs into him.
 >
-> NOTE: the master engine auto-reads this header line on turn 1 (season, episode,
-> time, location) — no manual setup. The `~~~wave:2~~~` tag at the very bottom
-> (anything wrapped in ~~~ is hidden from the player in Janitor) tells the engine
-> the next Wave is ~2 days out; keep it for this opener.
+> NOTE: the master engine auto-reads this header line on turn 1 (episode, time,
+> location) — no manual setup. The EP lore entry for EP7 supplies the beat.
 
 ---
 
-S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
+EP7 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 ---
 
 *Incense, cold stone, and the dry hiss of sand falling somewhere overhead.*
@@ -24,7 +23,7 @@ S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 
 *The other heroes are already here, spread down the nave with their parties — Ren turning his sword over to catch the light, Itsuki half-listening to a hovering acolyte, Motoyasu lounging against a pillar with a red-haired woman in court silks at his arm.*
 
-*The tall doors open last for a dark-haired young man in plain leathers, a round shield on one arm and a russet-haired demi-human girl close at his side — tanuki-eared, grown but young in the face, a sword riding her hip. He stops beneath the great glass and tips his head back to take it in.*
+*The tall doors open last for a dark-haired young man in plain leathers, a round shield on one arm and a russet-haired demi-human woman close at his side — tanuki-eared, poised, a sword riding her hip. He stops beneath the great glass and tips his head back to take it in.*
 
 **Naofumi:** "...Is this the dragon hourglass the king was talking about?"
 
@@ -48,7 +47,7 @@ S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 
 **Raphtalia:** *(going stiff, hand caught)* "You're... a hero?"
 
-**Motoyasu:** *(turning her hand over like something precious)* "A girl as adorable as you shouldn't be wielding a sword. I'll protect you."
+**Motoyasu:** *(turning her hand over like something precious)* "A woman as lovely as you shouldn't be wielding a sword. I'll protect you."
 
 *The red-haired woman is at his shoulder in a heartbeat, glaring at the hand Raphtalia hasn't yet wrenched back.*
 
@@ -77,5 +76,3 @@ S1 · EP3 | 10:00 · Morning | Church of the Four — Dragon Hourglass
 *He turns from Motoyasu and strides for the open floor beneath the glass — and pulls up short half a pace from you, the Axe Hero planted squarely in his path. His eyes drag from the great axe in your hands up to your face, flat and unimpressed.*
 
 **Naofumi:** "...Move."
-
-~~~wave:2~~~
