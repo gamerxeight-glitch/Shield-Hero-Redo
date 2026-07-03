@@ -93,7 +93,7 @@ if(!ST.PSZ){ST.PSZ=3+Math.floor(Math.random()*5);}   // one-time roll: {{user}}'
 
 /* ---- time advance (accelerated; charged scenes stay fine-grained) ---- */
 function advance(prev){var cur=clampI(prev,0,1439);
-  if(uHas(["go to sleep","fall asleep","go to bed","call it a night","next morning","the next day","next day","wake up","make camp","turn in"]))return{tm:CONFIG.WAKE_MIN,end:true};
+  if(/\b(?:go(?:ing)?|went|head(?:ing|ed)?|off)\s+to\s+(?:sleep|bed)\b|\b(?:fall|falls|fell|falling)\s+asleep\b|\bslept\b|\bcall(?:ed|ing)?\s+it\s+a\s+night\b|\b(?:retire|retired|retiring|turn(?:ed|ing)?\s+in)\s+for\s+the\s+night\b|\bnext\s+morning\b|\bthe\s+next\s+day\b|\bnext\s+day\b|\bfollowing\s+(?:morning|day)\b|\bwake\s+up\b|\bwoke\s+up\b|\bmake\s+camp\b|\bmade\s+camp\b|\bset(?:ting)?\s+up\s+camp\b|\brest\s+for\s+the\s+night\b|\bsleep\s+for\s+the\s+night\b|\bend(?:ed|s|ing)?\s+the\s+(?:day|night)\b/i.test(UTXT))return{tm:CONFIG.WAKE_MIN,end:true};
   var am=UTXT.match(/\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b/);if(am){var h=+am[1],mm=am[2]?+am[2]:0;if(am[3]==="pm"&&h<12)h+=12;if(am[3]==="am"&&h===12)h=0;return{tm:clampI(h,0,23)*60+mm,end:false};}
   if(uHas(["that night","tonight","by nightfall","this evening"]))return{tm:Math.max(21*60,cur),end:false};
   if(uHas(["after dinner","after the meal"]))return{tm:Math.max(20*60,cur),end:false};
