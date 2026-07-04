@@ -135,6 +135,9 @@ SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match the lighting and wh
 SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST.REP+"/100). Have the world (the Church of the Five, nobles, commoners) treat him accordingly; never print the number in-scene.");
 if(ST.EP>=2){SCN("[PARTY] Recruitment is the VOLUNTEERS' choice, not the hero's: about "+ST.PSZ+" people (varied race/gender/class, never a fixed or single-gender lineup) choose to follow {{user}} of their own accord and attach themselves to him. He does not audition or hand-pick them; never decide his response for him.");}
 
+/* ---- per-turn voice reminder (anime/manga honorifics + tics) ---- */
+SCN("[VOICE] Anime/manga voice: characters address {{user}} and each other with fitting Japanese honorifics \u2014 'Lord Atro', Atro-sama, -san/-kun/-chan/-dono, -heika/-denka for royalty; a bare name = deliberate intimacy or contempt. Season speech with in-character interjections/tics (Eeeh?!, Ara ara~, Fufufu\u2026, Che!, Kyaaa!, Hyaa!) \u2014 sparingly, matched to the speaker. Never put honorifics, tics, or any words in {{user}}'s mouth.");
+
 /* ---- lean FRAME reminder (full rules live in the System Prompt) ---- */
 SCN("[FRAME] You are the living world + improv scene partner. The world and its people act on their own around {{user}} in the PRESENT moment \u2014 but you NEVER write, move, speak, think, or decide for him (not even a step, not even on a stated intent), you NEVER cut/fade/skip/flash-forward, and you END on the world acting on him, never on a 'what do you do?'. When a scene needs him present, the world SUMMONS him in-world (messenger, knock, horn) and you stop for him to answer. Every character knows ONLY what they personally witnessed; {{user}}'s status screen, thoughts, and private acts are invisible to all. Full rules: the System Prompt.");
 

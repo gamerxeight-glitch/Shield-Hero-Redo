@@ -61,10 +61,17 @@ context.character.scenario = context.character.scenario || "";
 var _c = context.chat || {};
 var SCAN = (((_c.last_messages || []).slice(-4).map(function (m) { return (m && m.message) ? m.message : ""; }).join(" "))
     + " " + (_c.last_message || "")).toLowerCase();
-/* current EP = the last "EP# | HH:MM" header in the recent scan */
-var EP = 0, _re = /ep\s*(\d{1,4})\s*\|\s*\d{1,2}:\d{2}/gi, _m;
-while ((_m = _re.exec(SCAN)) !== null) { EP = parseInt(_m[1], 10); }
-if (!EP) EP = 1;                                  // first turn / before any header
+/* current EP: read from the checkpoint 'n' (authoritative, same source as master_director),
+   fall back to the header, then default 1. */
+var EP = 0;
+var _tag = SCAN.match(/~~~\s*sv\b([^~]*)~~~/);
+if (_tag) { var _mn = _tag[1].match(/n(\d{1,4})/); if (_mn) EP = parseInt(_mn[1], 10); }
+if (!EP) { var _re = /ep\s*(\d{1,4})\s*\|\s*\d{1,2}:\d{2}/gi, _m; while ((_m = _re.exec(SCAN)) !== null) { EP = parseInt(_m[1], 10); } }
+if (!EP) EP = 1;
+/* LOCKSTEP with master_director: if THIS turn's action ends the day the engine rolls EP+1
+   this turn, so match it. Keep this sleep/day-end test IDENTICAL to master_director advance(). */
+var _U = (_c.last_message || "").toLowerCase();
+if (/\b(?:go(?:es|ing)?|went|head(?:s|ing|ed)?|off)\s+to\s+(?:sleep|bed)\b|\b(?:i|we|they|he|she)\s+sleeps?\b|\b(?:fall|falls|fell|falling)\s+asleep\b|\bslept\b|\bcall(?:ed|ing)?\s+it\s+a\s+night\b|\b(?:retire|retired|retiring|turn(?:ed|ing)?\s+in)\s+for\s+the\s+night\b|\bnext\s+morning\b|\bthe\s+next\s+day\b|\bnext\s+day\b|\bfollowing\s+(?:morning|day)\b|\bwake\s+up\b|\bwoke\s+up\b|\bmake\s+camp\b|\bmade\s+camp\b|\bset(?:ting)?\s+up\s+camp\b|\brest\s+for\s+the\s+night\b|\bsleep\s+for\s+the\s+night\b|\bend(?:ed|s|ing)?\s+the\s+(?:day|night)\b/i.test(_U)) EP += 1;
 for (var i = 0; i < LORE.length; i++) {
   if (LORE[i].ep === EP) { context.character.scenario += "\n\n" + LORE[i].full; break; }
 }
