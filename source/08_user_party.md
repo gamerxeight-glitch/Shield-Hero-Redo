@@ -33,7 +33,7 @@ blood draw **prejudice in human-supremacist Melromarc** (mapping her canonical
 
 ## 3. Sylfaria "Sylfa" Verdanmoor — runaway elf princess-summoner (SHERA archetype, renamed)
 A recreation of **Shera L. Greenwood** under a new name. A **cheerful, buxom,
-gloriously airheaded first princess** of the woodland Verdanmoor elves who **ran
+gloriously airheaded first princess** of the Verdanmoor high elves (NOT wood elves) who **ran
 away from an arranged marriage** and took up **summoning to gain "the strength to
 live free."** Faithful nuances: her **summons misfire** (useless↔catastrophic), but
 she is **secretly a deadly archer** — the "gap moe" between clumsy ditz and
