@@ -10,8 +10,9 @@
  *     summoner (a recreation of the Shera L. Greenwood archetype, renamed)
  *   - Zero Two — a wild, teasing horned demi-human who claims {{user}} as her
  *     "Darling" (Darling in the FranXX)
- * Same mechanism as lore_characters.js: keyword-gated, EP-gated (minEP:2),
- * priority + budget capped. Assign at Depth 1, alongside the other lorebooks.
+ * ALWAYS-ON once recruited: EP-gated (minEP:2) but NOT keyword-gated, so the
+ * standing party always loads from recruitment day on. Assign at Depth 1,
+ * alongside the other lorebooks.
  * EVERY character here is a fully grown adult (18+). Never voice/author {{user}}.
  * ========================================================================== */
 
@@ -40,9 +41,10 @@ var LORE = [
 var CONFIG = { CAP: 4, BUD: 16000, SCAN_DEPTH: 4 };  // only 4 core companions; budget sized so all four FULL profiles fit together
 
 /* ===========================  ENGINE — LEAVE ALONE  =======================
- * Identical mechanism to lore_characters.js: keyword-gated, EP-gated (reads the
- * current EP from the checkpoint 'n', falls back to the header, then 1),
- * priority-sorted, budget-capped; prefers the full profile, falls back to brief.
+ * ALWAYS-ON once recruited (NOT keyword-gated): the standing party loads in full
+ * whenever EP>=2 (reads the current EP from the checkpoint 'n', falls back to the
+ * header, then 1). Budget-capped and priority-sorted; keyword hits only bias the
+ * sort when the budget is tight. Prefers the full profile, falls back to brief.
  * ========================================================================== */
 context.character = context.character || {};
 context.character.scenario = context.character.scenario || "";
@@ -59,9 +61,11 @@ var hits = [];
 LORE.forEach(function (e) {
   if (!e || !e.full) return;
   if (e.minEP && EP < e.minEP) return;
+  // NOT keyword-gated: these four are {{user}}'s STANDING party, always present
+  // once recruited (EP>=2). Keyword hits only bias the sort so a member being
+  // actively addressed ranks first when the budget is tight.
   var keys = (e.keys || []).map(function (k) { return String(k).toLowerCase(); });
   var m = _men(keys);
-  if (m <= 0) return;
   hits.push({ e: e, m: m, pri: e.pri || 5 });
 });
 hits.sort(function (a, b) { return (b.pri - a.pri) || (b.m - a.m); });
