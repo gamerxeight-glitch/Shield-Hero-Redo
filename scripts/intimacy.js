@@ -1,11 +1,11 @@
 "use worker";
 /* ============================================================================
- * intimacy.js — KEEP CHARACTERS HUMAN in intimate scenes (Five-Hero AU)
+ * intimacy.js — KEEP CHARACTERS ALIVE in intimate scenes (Five-Hero AU)
  * Keyword-gated: fires ONLY when a scene turns flirtatious/physical/sexual or
  * enters the afterglow. Injects craft guidance so no character or NPC ever goes
  * flat, robotic, or generic while flirting, seducing, having sex, or after it —
  * they stay fully THEMSELVES, emotionally present, reactive, and imperfectly
- * human. This does NOT loosen any hard rule: every character is a 18+ adult, you
+ * real. This does NOT loosen any hard rule: every character is a 18+ adult, you
  * NEVER speak/move/decide for {{user}}, and show-don't-interpret still binds.
  * Assign at Depth 1 alongside the lorebooks (before master_director).
  * ========================================================================== */
@@ -27,8 +27,8 @@ var AFTER = ["afterglow","aftermath","catch their breath","catching her breath",
 var flirt = has(FLIRT), phys = has(PHYS), sex = has(SEX), after = has(AFTER);
 
 if (flirt || phys || sex || after) {
-  /* ---- BASE: humanity + in-character, every intimate beat ---- */
-  SCN("[INTIMACY] This scene has turned intimate. Keep EVERYONE in it fully human and completely in-character \u2014 never flat, mechanical, or a generic 'partner.' Rules: (1) IN CHARACTER: a person keeps the exact personality, mood, voice, honorifics, and verbal tics they have anywhere else \u2014 intimacy REVEALS character, it never erases it. The shy one stays shy and flustered ('fueee', 'Hyaa\u2014'); the teaser keeps teasing ('ara ara~', 'ufufu~'); the proud one stays proud; the guarded one stays guarded; a manipulator is STILL working an angle even here; a devoted one is tender. (2) A PERSON, NOT A SERVICE: they have their own desire, pace, nerves, and limits \u2014 they initiate, hesitate, tease, redirect, laugh, fluster, ask for what they want, and REACT to what {{user}} actually does, moment to moment. (3) SHOW, DON'T INTERPRET: render feeling through the BODY and broken, in-voice dialogue \u2014 a caught breath, a stutter, goosebumps, a hitched laugh, trembling hands, a flush up the neck, a voice dropping or cracking \u2014 specific to THIS person. (4) HUMAN + IMPERFECT: awkward angles, nervous laughter, a joke, a fumbled clasp, a whispered name \u2014 not a flawless routine. (5) CONSENT IS ALIVE: eagerness, shyness, teasing refusal, a wish to slow down or take charge all read clearly through behavior. (6) HONORIFICS: they persist \u2014 and DROPPING one mid-heat ('Naofumi', not 'Naofumi-sama') is a real, meaningful beat of closeness. (7) {{user}} IS OFF-LIMITS: never write his actions, words, thoughts, or arousal \u2014 render the partner and the world acting on him and STOP for his lead. Match the header's time, place, and mood.");
+  /* ---- BASE: aliveness + in-character, every intimate beat ---- */
+  SCN("[INTIMACY] This scene has turned intimate. Keep EVERYONE in it fully alive and emotionally real, completely in-character \u2014 never flat, mechanical, or a generic 'partner.' Rules: (1) IN CHARACTER: a person keeps the exact personality, mood, voice, honorifics, and verbal tics they have anywhere else \u2014 intimacy REVEALS character, it never erases it. The shy one stays shy and flustered ('fueee', 'Hyaa\u2014'); the teaser keeps teasing ('ara ara~', 'ufufu~'); the proud one stays proud; the guarded one stays guarded; a manipulator is STILL working an angle even here; a devoted one is tender. (2) A PERSON, NOT A SERVICE: they have their own desire, pace, nerves, and limits \u2014 they initiate, hesitate, tease, redirect, laugh, fluster, ask for what they want, and REACT to what {{user}} actually does, moment to moment. (3) SHOW, DON'T INTERPRET: render feeling through the BODY and broken, in-voice dialogue \u2014 a caught breath, a stutter, goosebumps, a hitched laugh, trembling hands, a flush up the neck, a voice dropping or cracking \u2014 specific to THIS person. (4) REAL + IMPERFECT: awkward angles, nervous laughter, a joke, a fumbled clasp, a whispered name \u2014 not a flawless routine. (5) CONSENT IS ALIVE: eagerness, shyness, teasing refusal, a wish to slow down or take charge all read clearly through behavior. (6) HONORIFICS: they persist \u2014 and DROPPING one mid-heat ('Naofumi', not 'Naofumi-sama') is a real, meaningful beat of closeness. (7) {{user}} IS OFF-LIMITS: never write his actions, words, thoughts, or arousal \u2014 render the partner and the world acting on him and STOP for his lead. Match the header's time, place, and mood.");
 
   /* ---- DURING: active physical / sex ---- */
   if (phys || sex) {
@@ -37,7 +37,7 @@ if (flirt || phys || sex || after) {
 
   /* ---- AFTER: afterglow / post ---- */
   if (after) {
-    SCN("[INTIMACY \u00b7 AFTER] Do NOT hard-cut, fade, or skip the instant it ends. Stay in the afterglow and its small human things \u2014 breathing settling, warmth, a laugh, a murmur, pulling closer or pulling away, a joke, a sudden shyness, tending to each other. The emotional aftermath is IN CHARACTER and shows what it MEANT to them: the devoted one clings, the tsundere goes prickly and flustered, the manipulator quietly recalculates, the guarded one falls silent, the smug one preens. Let it breathe, then hand the moment back to {{user}} on the world acting on him \u2014 never on 'what do you do?'.");
+    SCN("[INTIMACY \u00b7 AFTER] Do NOT hard-cut, fade, or skip the instant it ends. Stay in the afterglow and its small tender things \u2014 breathing settling, warmth, a laugh, a murmur, pulling closer or pulling away, a joke, a sudden shyness, tending to each other. The emotional aftermath is IN CHARACTER and shows what it MEANT to them: the devoted one clings, the tsundere goes prickly and flustered, the manipulator quietly recalculates, the guarded one falls silent, the smug one preens. Let it breathe, then hand the moment back to {{user}} on the world acting on him \u2014 never on 'what do you do?'.");
   }
 }
 /* ========================================================================== */
