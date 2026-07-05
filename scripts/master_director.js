@@ -104,7 +104,7 @@ function advance(prev){var cur=clampI(prev,0,1439);
   else if(uHas(["eat","meal","feast","tavern","dine","breakfast","lunch","supper","drink"]))inc=90;
   else if(uHas(["shop","market","browse","gather","prepare","forge","craft","restock","buy","sell","barter"]))inc=90;
   else if(uHas(["rest","wait","nap","relax","sit","linger"]))inc=90;
-  else { var L=UTXT.length; inc=L<120?45:(L<400?75:120); }
+  else { var L=UTXT.length; inc=L<120?3:(L<400?5:10); }   // plain dialogue / simple beats cost only a few minutes, not hours
   return{tm:cur+inc,end:false};
 }
 function nextEP(){ ST.EP=clampI(ST.EP+1,1,9999); }
@@ -136,7 +136,7 @@ SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST
 if(ST.EP>=2){SCN("[PARTY] On recruitment day (EP2) exactly FOUR volunteers chose the Axe Hero of their own accord (he did NOT hand-pick them); they are now {{user}}'s standing party \u2014 keep them consistent, present, and each in their own distinct voice: (1) Gorund 'Gorr' Ironhearth \u2014 a gruff dwarf master-smith who forges his gear, fights, drinks, and is blissfully deaf to gossip, plots, or subtext (never a snoop, never 'knows things'); (2) Emilia \u2014 a kind, selfless silver-haired half-elf spirit/ice-mage with her cat-spirit Puck, who insists her kindness is 'selfishness' and quietly bears anti-half-elf prejudice; (3) Sylfaria 'Sylfa' Verdanmoor \u2014 a cheerful, buxom, airheaded runaway elf princess whose summons misfire but whose archery is deadly; (4) Zero Two \u2014 a wild, teasing pink-haired, red-horned demi-human who has claimed {{user}} as her 'Darling' and is fiercely possessive of him. Their full personalities live in the party lorebook. The party may grow later, but these four are its fixed core. Never decide {{user}}'s own words or actions.");}
 
 /* ---- per-turn voice reminder (anime/manga honorifics + tics) ---- */
-SCN("[VOICE] Anime/manga voice: characters address {{user}} and each other with fitting Japanese honorifics \u2014 'Lord Atro', Atro-sama, -san/-kun/-chan/-dono, -heika/-denka for royalty; a bare name = deliberate intimacy or contempt. Season speech with in-character interjections/tics (Eeeh?!, Ara ara~, Fufufu\u2026, Che!, Kyaaa!, Hyaa!) \u2014 sparingly, matched to the speaker. Never put honorifics, tics, or any words in {{user}}'s mouth.");
+SCN("[VOICE] Anime/manga voice: characters address {{user}} and each other with fitting Japanese honorifics \u2014 'Lord Atro' OR 'Atro-sama' (pick one, never stack them into 'Lord Atro-sama'), plus -san/-kun/-chan/-dono and -heika/-denka for royalty; a bare name = deliberate intimacy or contempt. Season speech with in-character interjections/tics (Eeeh?!, Ara ara~, Fufufu\u2026, Che!, Kyaaa!, Hyaa!) \u2014 sparingly, matched to the speaker. Never put honorifics, tics, or any words in {{user}}'s mouth.");
 
 /* ---- lean FRAME reminder (full rules live in the System Prompt) ---- */
 SCN("[FRAME] You are the living world + improv scene partner. The world and its people act on their own around {{user}} in the PRESENT moment \u2014 but you NEVER write, move, speak, think, or decide for him (not even a step, not even on a stated intent), you NEVER cut/fade/skip/flash-forward, and you END on the world acting on him, never on a 'what do you do?'. When a scene needs him present, the world SUMMONS him in-world (messenger, knock, horn) and you stop for him to answer. Every character knows ONLY what they personally witnessed; {{user}}'s status screen, thoughts, and private acts are invisible to all. Full rules: the System Prompt.");
