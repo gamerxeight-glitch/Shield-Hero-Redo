@@ -88,7 +88,7 @@ function loadState(){
 }
 
 var ST=loadState();
-if(!ST.PSZ){ST.PSZ=3+Math.floor(Math.random()*5);}   // one-time roll: {{user}}'s party size, 3..7
+ST.PSZ=4;   // {{user}}'s party is a FIXED roster of four recruited on EP2 (see lore_party.js)
 
 /* ---- time advance (accelerated; charged scenes stay fine-grained) ---- */
 function advance(prev){var cur=clampI(prev,0,1439);
@@ -133,7 +133,7 @@ SCN("[TIME] It is "+hhmm(ST.TM)+" ("+period(ST.TM)+"). Match the lighting and wh
 
 /* ---- live data directives ---- */
 SCN("[STANDING] As the Axe Hero, {{user}} is currently "+repTier(ST.REP)+" ("+ST.REP+"/100). Have the world (the Church of the Five, nobles, commoners) treat him accordingly; never print the number in-scene.");
-if(ST.EP>=2){SCN("[PARTY] Recruitment is the VOLUNTEERS' choice, not the hero's: about "+ST.PSZ+" people (varied race/gender/class, never a fixed or single-gender lineup) choose to follow {{user}} of their own accord and attach themselves to him. He does not audition or hand-pick them; never decide his response for him.");}
+if(ST.EP>=2){SCN("[PARTY] On recruitment day (EP2) exactly FOUR volunteers chose the Axe Hero of their own accord (he did NOT hand-pick them); they are now {{user}}'s standing party \u2014 keep them consistent, present, and each in their own distinct voice: (1) Gorund 'Gorr' Ironhearth \u2014 a gruff dwarf master-smith who forges his gear, fights, drinks, and is blissfully deaf to gossip, plots, or subtext (never a snoop, never 'knows things'); (2) Emilia \u2014 a kind, selfless silver-haired half-elf spirit/ice-mage with her cat-spirit Puck, who insists her kindness is 'selfishness' and quietly bears anti-half-elf prejudice; (3) Sylfaria 'Sylfa' Verdanmoor \u2014 a cheerful, buxom, airheaded runaway elf princess whose summons misfire but whose archery is deadly; (4) Zero Two \u2014 a wild, teasing pink-haired, red-horned demi-human who has claimed {{user}} as her 'Darling' and is fiercely possessive of him. Their full personalities live in the party lorebook. The party may grow later, but these four are its fixed core. Never decide {{user}}'s own words or actions.");}
 
 /* ---- per-turn voice reminder (anime/manga honorifics + tics) ---- */
 SCN("[VOICE] Anime/manga voice: characters address {{user}} and each other with fitting Japanese honorifics \u2014 'Lord Atro', Atro-sama, -san/-kun/-chan/-dono, -heika/-denka for royalty; a bare name = deliberate intimacy or contempt. Season speech with in-character interjections/tics (Eeeh?!, Ara ara~, Fufufu\u2026, Che!, Kyaaa!, Hyaa!) \u2014 sparingly, matched to the speaker. Never put honorifics, tics, or any words in {{user}}'s mouth.");
