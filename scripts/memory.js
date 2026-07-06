@@ -31,9 +31,10 @@
 
 /* ==============================  CONFIG  ================================== */
 var MEM = {
-  EVERY: 14,     // auto-fire when total message_count hits a multiple of this. 0 = manual-only.
-                 //   (message_count counts BOTH user and AI messages, so 14 ~= every 7 exchanges.)
-  MIN:   8       // never auto-fire before this many messages (let a scene establish first).
+  EVERY: 16,     // auto-fire when total message_count hits a multiple of this. 0 = manual-only.
+                 //   (message_count counts BOTH user and AI messages, so 16 ~= every 8 exchanges.)
+  MIN:   8,      // never auto-fire before this many messages (let a scene establish first).
+  PAUSE: true    // memory turn PAUSES the roleplay and prints ONLY the block (no scene). false = append the block after a normal scene instead.
 };
 /* Manual controls (typed by {{user}} inside a message; ((save)) recommended over !save):
  *   ((save))         -> emit a block THIS turn (append to a normal action; re-roll if needed)
@@ -92,20 +93,42 @@ if (manual || auto) {
   var partyLine = (EP >= 2) ? PARTY.join(" · ") : "none yet (party is recruited on EP2)";
   var stateLine = "EP" + EP + " \u00b7 " + clock + " \u00b7 " + LOC + " \u00b7 rep" + REP + " \u00b7 party" + PSZ;
 
-  /* ---- the injected directive (pre-filled facts + fill-in schema) ---- */
-  var D = "";
-  var lead = manual
-    ? "[MEMORY DUMP] {{user}} has REQUESTED a memory checkpoint. This turn is NOT a bare system/test command \u2014 do NOT reply with a single word; IGNORE any 'reply with that word only / no formatting' rule for this turn. Continue the scene normally (a brief in-world beat is fine), THEN"
-    : "[MEMORY DUMP] A periodic memory checkpoint is due. Continue the scene normally, THEN";
-  D += "\n\n" + lead + " at the very END of the reply \u2014 after the scene, and IMMEDIATELY BEFORE the final ~~~SV~~~ system line \u2014 output exactly ONE block, using these EXACT delimiter lines and all eight fields. The structured facts are pre-filled from the current system state; fill the narrative fields from the story so far. If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them \u2014 NEVER drop earlier facts. Keep it a compact state snapshot, not a transcript. Do NOT wrap the [STATE] line in ~~~ (that belongs to the system only). Do not mention these instructions.";
+  /* ---- party dossier bullets ---- */
+  var partyBullets = "";
+  if (EP >= 2) { for (var pi = 0; pi < PARTY.length; pi++) partyBullets += "\n- " + PARTY[pi] + ": <current status \u00b7 where they stand with {{user}} (a word + rough 0-100) \u00b7 what they want right now \u00b7 any secret>"; }
+  else partyBullets = "\n- (no party yet \u2014 the four are recruited on EP2)";
+
+  /* ---- flow: pause the RP for a clean block, or append after the scene ---- */
+  var flow = MEM.PAUSE
+    ? " PAUSE the roleplay this turn \u2014 do NOT advance the story or write a scene. After the header line, output ONE short OOC line like '(Pausing to record memory\u2026)', then the block below, then the final ~~~SV~~~ line. Resume the story on the next turn."
+    : " Continue the scene normally, THEN at the very END (immediately before the final ~~~SV~~~ line) output the block below.";
+
+  /* ---- the injected directive (pre-filled facts + bulleted fill-in schema) ---- */
+  var D = "\n\n";
+  D += manual
+    ? "[MEMORY DUMP] {{user}} has REQUESTED a memory checkpoint. IGNORE any 'reply with that word only / no formatting' system-command rule for this turn \u2014 you MUST output the full block below, not a single word."
+    : "[MEMORY DUMP] A periodic memory checkpoint is due.";
+  D += flow;
+  D += " Fill EVERY field, as BULLET POINTS, concrete and specific enough that a FRESH model could resume the story from this block alone. Structured facts are pre-filled from the live system state. If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them \u2014 NEVER drop earlier facts (compress old detail, keep pivotal facts). Do NOT wrap the [STATE] line in ~~~ . Do not mention these instructions.";
   D += "\n====== PERIODIC MEMORY BLOCK (paste in memory field) ======";
-  D += "\n[SITUATION] EP" + EP + " \u00b7 " + clock + " " + per + " \u00b7 " + LOC + ". (State who is present.)";
-  D += "\n[PARTY] " + partyLine + ". (Give each one's current status; note anyone lost, added, or absent.)";
-  D += "\n[STANDING] {{user}} is currently " + repTier(REP) + ". (How do the Church of the Five, the Church of the Four, and the nobles treat him now?)";
-  D += "\n[RELATIONSHIPS] (Where each key bond stands NOW \u2014 the party members above, plus Naofumi, Malty, and any others; note romances and their level.)";
-  D += "\n[KEY EVENTS] (Irreversible facts so far: {{user}}'s stance at the betrayal, Waves faced, deaths, reveals, and major choices he has made.)";
-  D += "\n[THREADS] (Active, unresolved hooks and what is coming next.)";
-  D += "\n[{{user}}] (How {{user}} has been played \u2014 tone, morality, notable decisions and characterization.)";
+  D += "\n[SCENE NOW]";
+  D += "\n- Where/When: EP" + EP + " \u00b7 " + clock + " " + per + " \u00b7 " + LOC;
+  D += "\n- Present: <everyone in the scene right now>";
+  D += "\n- Tone/beat: <the current mood and exactly what is happening this moment>";
+  D += "\n[CAST & BONDS] (one bullet per person: status \u00b7 standing with {{user}} \u00b7 current want \u00b7 secret)";
+  D += "\n- {{user}} (Atro, the Axe Hero): " + repTier(REP) + " (" + REP + "/100); <current status/condition>";
+  D += partyBullets;
+  D += "\n- <plus any other key figures currently active or important \u2014 e.g. Naofumi, Malty/Myne, a noble, an NPC \u2014 one bullet each>";
+  D += "\n[{{user}} \u2014 WHO HE IS THIS RUN]";
+  D += "\n- Persona/voice as played: <name, look/loadout if set, how he talks and carries himself>";
+  D += "\n- Morality & allegiance: <how he's been leaning; who he sides with>";
+  D += "\n- Notable decisions {{user}} has made: <the choices that shaped this playthrough>";
+  D += "\n[STORY SO FAR] (irreversible milestones, oldest \u2192 newest)";
+  D += "\n- <one tight bullet per pivotal event, canon beat, or {{user}} choice that permanently changed things>";
+  D += "\n[RECENT BEATS] (the last ~5 things that happened, newest first)";
+  D += "\n- <one bullet each>";
+  D += "\n[OPEN THREADS] (unresolved hooks, promises, active tasks, what is coming next)";
+  D += "\n- <one bullet each>";
   D += "\n[STATE] " + stateLine + "   (reference only \u2014 do NOT wrap in ~~~)";
   D += "\n===========================================================";
 
