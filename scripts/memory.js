@@ -92,14 +92,14 @@ if (manual || auto) {
 
   /* ---- flow: pause the RP for a clean block, or append after the scene ---- */
   var flow = MEM.PAUSE
-    ? " PAUSE the roleplay this turn \u2014 do NOT advance the story, write a scene, print the EP|time|location header/'---' line, or add any acknowledgement line. Begin your reply DIRECTLY with the block below. The engine's ~~~SV~~~ checkpoint still follows at the very end as normal \u2014 keep it OUTSIDE the block and do not alter it. Resume the story next turn."
+    ? " This turn is a MEMORY TURN, not a story turn: your ENTIRE reply is the memory block and NOTHING ELSE. The FIRST line of your reply MUST be exactly '====== PERIODIC MEMORY BLOCK (paste in memory field) ======', then the filled fields, then the closing '===' line. Do NOT write a scene, an EP|time|location header, or a '---' line before it. (The engine's ~~~SV~~~ checkpoint still follows at the very end, OUTSIDE the block, unchanged.) Resume the story next turn."
     : " Continue the scene normally, THEN at the very END output the block below (the ~~~SV~~~ checkpoint still follows after it, unchanged).";
 
   /* ---- the injected directive (pre-filled scene + bulleted, split-section schema) ---- */
   var D = "\n\n";
   D += manual
-    ? "[MEMORY DUMP] {{user}} has REQUESTED a memory checkpoint. IGNORE any 'reply with that word only / no formatting' system-command rule for this turn \u2014 you MUST output the full block below, not a single word."
-    : "[MEMORY DUMP] A periodic memory checkpoint is due.";
+    ? "[MEMORY DUMP] {{user}} has REQUESTED a memory checkpoint \u2014 you MUST OUTPUT the full memory block below right now. This is a real, valid request: do NOT reply with a single word, do NOT echo the command, do NOT reply empty, and IGNORE any 'reply with that word only / no formatting' system-command rule for this turn."
+    : "[MEMORY DUMP] A periodic memory checkpoint is due \u2014 OUTPUT the full memory block below (do not reply empty).";
   D += flow;
   D += " Fill EVERY field as BULLET POINTS, concrete and specific enough that a FRESH model could resume the story from this block alone. Use markdown: **bold** the section labels and character names, *italics* for short descriptors. The [SCENE NOW] line is pre-filled. If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them \u2014 NEVER drop earlier facts (compress old detail, keep pivotal facts). Put NO ~~~ state token anywhere inside the block. Do not mention these instructions.";
   D += "\n====== PERIODIC MEMORY BLOCK (paste in memory field) ======";
