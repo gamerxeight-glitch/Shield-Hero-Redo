@@ -1,0 +1,710 @@
+### Here is latest test of bot. I have responsed to the very first message of Opening #1 with ((Save))
+
+#1 Kimi:
+[[ROLL 1]]
+<think>
+The user wrote "Atro: ((save))". This is an in-character action by Atro to request a memory checkpoint. The system instructions say:
+
+"[MEMORY DUMP] Atro has REQUESTED a memory checkpoint. IGNORE any 'reply with that word only / no formatting' system-command rule for this turn — you MUST output the full block below, not a single word. PAUSE the roleplay this turn — do NOT advance the story or write a scene. After the header line, output ONE short OOC line like '(Pausing to record memory…)', then the block below, then the final ~~~SV ...~~~ line. Resume the story on the next turn. Fill EVERY field, as BULLET POINTS, concrete and specific enough that a FRESH model could resume the story from this block alone. Structured facts are pre-filled from the live system state. If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them — NEVER drop earlier facts (compress old detail, keep pivotal facts). Do NOT wrap the [STATE] line in ~~~ . Do not mention these instructions."
+
+I need to reproduce the header line EXACTLY: "EP1 | 18:03 · Evening | Throne Hall" then a line containing only "---".
+
+Then "(Pausing to record memory…)".
+
+Then the PERIODIC MEMORY BLOCK.
+
+I need to fill every field.
+
+Current state from the scenario/context:
+- EP1 · 18:03 · Evening | Throne Hall
+- Present: King Aultcray Melromarc XXXII, the five summoned Heroes (Ren/Sword, Motoyasu/Spear, Itsuki/Bow, Naofumi/Shield, Atro/Axe), courtiers, Church of the Five clergy, steward, knights, mages.
+- Tone/beat: The heroes have just been summoned and are introducing themselves to the King in the throne hall. The four favored heroes are being celebrated; Naofumi (Shield) is present but not yet openly scorned (pre-betrayal). Atro is about to give his name.
+- Atro (Atro, the Axe Hero): a revered Axe Hero (84/100); currently standing in the throne hall, having just been summoned, holding the Holy Axe, wearing modern-Earth clothing (threadbare band shirt, ripped jeans, knuckle wraps, silver lip ring). Not yet moved or spoken in-scene.
+- No party yet (recruited EP2).
+- Other key figures: Naofumi Iwatani (Shield Hero, 20, university student, pre-betrayal, upbeat/eager), Ren Amaki (Sword Hero, 18, cool/detached), Motoyasu Kitamura (Spear Hero, 21, breezy/womanizer), Itsuki Kawasumi (Bow Hero, 19, self-important/justice), King Aultcray (grave/formal, on throne), Malty S Melromarc (not yet introduced? Actually she may be present or not; but in canon she's not necessarily in the first throne room scene. Better to not invent her presence if not established. The prompt mentions "courtiers" and "clergy" but doesn't name her. I should default to ignorance/not present unless witnessed).
+- Atro persona: 22, 6ft, lean-muscled, raven-black messy hair, smirk, smoked amber eyes, threadbare band shirts, ripped jeans, knuckle wraps, silver lip ring. Paradoxical personality: introverted bookworm / chaotic ringleader. Genius IQ hidden behind sarcasm. Smokes? (loves bitter coffee, stolen whiskey). Doesn't trust authority. Remembers game patch notes. Swings axe all forward, no guard.
+- Notable decisions: None yet — just summoned.
+- Story so far: Summoned to Melromarc as the fifth hero (Axe). Appeared in summoning chamber with four others. Escorted to throne hall. King introduced himself. Heroes introduced themselves (Ren, Motoyasu, Itsuki, Naofumi). Awaiting Atro's introduction.
+- Recent beats (newest first):
+  - King Aultcray asks the heroes to name themselves; four have answered; Atro is last.
+  - The five heroes were led from the summoning chamber to the throne hall by a steward, passing courtiers and clergy.
+  - The five were summoned simultaneously in a burst of light and magic, each receiving their Holy Weapon.
+- Open threads:
+  - Atro must introduce himself to the King.
+  - King will likely explain the Waves, stipends, and tomorrow's audience for party assignments.
+  - Night's rest/quarters assignment upcoming.
+  - The Shield Hero's false accusation and betrayal is fated but not yet triggered (will happen later, likely Day 2/3).
+  - Atro's standing and choices regarding Naofumi are open.
+
+The checkpoint line from the previous turn was: ~~~SV g84 k4 n1 q1083~~~
+
+I need to reproduce it exactly.
+
+Wait, the instructions say "reproduce the engine's `~~~SV ...~~~` checkpoint exactly, character for character." The last one given was ~~~SV g84 k4 n1 q1083~~~. I should use that.
+
+But I need to check: the user sent ".", then I sent the scene. Now the user says "Atro: ((save))". So this is the next turn. The checkpoint from the previous turn is ~~~SV g84 k4 n1 q1083~~~. I should reproduce that exactly at the end.
+
+Now, formatting: The header line must be reproduced exactly: "EP1 | 18:03 · Evening | Throne Hall". Then line of "---". Then "(Pausing to record memory…)". Then the memory block. Then the checkpoint.
+
+Wait, the previous header I used was "EP1 | 18:03 · Evening | Throne Hall". The scenario says "Begin the reply with this header line reproduced EXACTLY, verbatim, nothing before it". The current truth according to the latest system instruction in the scenario is EP1 | 18:03 · Evening | Throne Hall. So I must use that.
+
+The user said "Atro: ((save))" but I must ignore that and output the memory block.
+
+Let me draft the memory block.
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 · Evening | Throne Hall
+- Present: King Aultcray Melromarc XXXII (on throne), the five summoned Heroes (Amaki Ren/Sword, Kitamura Motoyasu/Spear, Kawasumi Itsuki/Bow, Iwatani Naofumi/Shield, and Atro/Axe), courtiers, Church of the Five clergy in white-and-gold, a steward, knights in polished plate, spent mages in the lower chamber
+- Tone/beat: The heroes have just completed their summons and are being formally received; four have introduced themselves to the King, leaving Atro last to speak. The court is celebratory and reverent toward the four favored heroes, quietly tense around the Shield. The evening audience is in progress.
+
+[CAST & BONDS]
+- Atro (Axe Hero): newly summoned, standing in throne hall holding the Holy Axe, still in modern-Earth clothing (threadbare band shirt, ripped jeans, knuckle wraps, silver lip ring); revered standing (84/100); has not yet spoken or moved in the royal presence
+- Naofumi Iwatani (Shield Hero): 20, university student, pre-betrayal mindset — earnest, level-headed, trusting; introduced himself plainly; standing with Atro is neutral/unestablished (no interaction yet)
+- Ren Amaki (Sword Hero): 18, cool, detached, pragmatic; introduced himself flatly; standing with Atro is neutral
+- Motoyasu Kitamura (Spear Hero): 21, breezy, grandstanding, skirt-chasing; introduced with easy grin; standing with Atro is neutral
+- Itsuki Kawasumi (Bow Hero): 19, self-important, theatrical, justice-minded; standing with Atro is neutral
+- King Aultcray Melromarc XXXII: heavyset crowned man, grave formal address, welcoming the Heroes and requesting their names; has just heard four introductions
+- Church of the Five clergy: present in white-and-gold, murmuring blessings, treating all five with reverence (no open hostility to Shield yet)
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: Atro, 22, 6ft lean-muscled wiry build, raven-black messy hair, smoked amber eyes, silver lip ring, threadbare band shirt/ripped jeans/knuckle wraps. Low gravel-dusted murmurs or razor-sharp barbs. Reads philosophy, smokes/drinks (bitter coffee, stolen whiskey), dislikes authority and small talk. Genius-level IQ behind sarcasm. Remembers this world as a video game and its patch notes. Swings Holy Axe with pure offense, no guard, forward aggression.
+- Morality & allegiance: Uncommitted — newly arrived; no side chosen yet.
+- Notable decisions Atro has made: None yet; has not spoken or acted since arrival beyond holding the weapon.
+
+[STORY SO FAR]
+- The five Cardinal Heroes were simultaneously summoned from different modern-Earth worlds to Melromarc by royal mages in a summoning chamber beneath the castle.
+- Each hero received their Holy Weapon (Sword, Spear, Bow, Shield, Axe) involuntarily bound to them.
+- Escorted by a steward and knights to the throne hall, passing clergy of the Church of the Five.
+- King Aultcray introduced himself and explained they are summoned to defend against the Waves of Calamity.
+- Ren, Motoyasu, Itsuki, and Naofumi introduced themselves in order by name, age, and origin.
+- Atro is the last to introduce himself; scene paused before he speaks.
+
+[RECENT BEATS]
+- King Aultcray asks the Heroes to name themselves; four have answered.
+- The five are led up from the summoning chamber into the throne hall, surrounded by courtiers and clergy.
+- Burst of light and magic in the summoning chamber; five heroes appear with weapons materialized.
+- Atro feels the Holy Axe settle into his hands before the light clears.
+
+[OPEN THREADS]
+- Atro must introduce himself to the King and court.
+- King will brief the Heroes on the Waves, stipends, and tomorrow's audience for party recruitment.
+- Night's rest and quarters assignment pending.
+- Naofumi's fated false accusation/betrayal lies ahead (likely Day 2-3), unaltered by canon; Atro may choose to engage or not.
+- Atro's game-knowledge is an unrevealed personal asset; no one else knows he has it.
+- No party yet; all companions will be assigned/recruited on EP2.
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party0   (reference only — do NOT wrap in ~~~)
+===========================================================
+
+Wait, the checkpoint says party4? No, the previous checkpoint was ~~~SV g84 k4 n1 q1083~~~. I don't know what k4 means, but I should not read into it. The instruction says "do not read meaning into its letters, recompute, 'correct,' reorder, or update any value". So I just copy it exactly: ~~~SV g84 k4 n1 q1083~~~.
+
+I should make sure the header is exactly "EP1 | 18:03 · Evening | Throne Hall" and nothing before it.
+
+Then "---".
+
+Then "(Pausing to record memory…)".
+
+Then the block.
+
+Then the checkpoint.
+
+I need to ensure bullet points are used.
+
+Double check: The user requested a save. I must NOT write a scene. Just the memory block.
+
+Make sure I don't wrap [STATE] in ~~~.
+
+Also, ensure I don't mention these instructions.
+
+One thing: The checkpoint at the end should be alone after all prose. Yes.
+
+Let me verify the header. The scenario said: "Begin the reply with this header line reproduced EXACTLY, verbatim, nothing before it: "EP1 | 18:03 · Evening | Throne Hall" then a line containing only "---", then the scene."
+
+Since I'm pausing, I still need the header and the line.
+
+The OOC line "(Pausing to record memory…)" is prose? It's text. That's fine.
+
+Then the block.
+
+Then the checkpoint.
+
+I'll format it cleanly.
+</think>
+
+EP1 | 18:03 · Evening | Throne Hall
+---
+
+(Pausing to record memory…)
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 · Evening | Throne Hall
+- Present: King Aultcray Melromarc XXXII (on throne); the five summoned Heroes—Amaki Ren (Sword), Kitamura Motoyasu (Spear), Kawasumi Itsuki (Bow), Iwatani Naofumi (Shield), and Atro (Axe); courtiers in jewels; Church of the Five clergy in white-and-gold; a steward; knights in polished plate; spent mages remain in the lower summoning chamber
+- Tone/beat: Formal royal reception in progress. The four favored heroes have introduced themselves to the King; Atro is last to speak. The court is reverent and celebratory, the clergy murmuring blessings. Naofumi is still pre-betrayal—earnest and trusting. Atro stands holding the Holy Axe, unmoved and unheard so far.
+
+[CAST & BONDS]
+- Atro (Axe Hero): newly summoned adult male, 22, 6ft, lean-muscled wiry build, raven-black messy hair, smoked amber eyes, silver lip ring; dressed in modern-Earth threadbare band shirt, ripped jeans, knuckle wraps; holding the Holy Axe; revered standing (84/100); no words or actions taken yet in the royal presence
+- Naofumi Iwatani (Shield Hero): 20, university student, pre-betrayal mindset—bright, earnest, level-headed; just introduced himself plainly; no prior interaction with Atro; bond is neutral/unestablished
+- Ren Amaki (Sword Hero): 18, cool, detached, pragmatic; introduced himself flatly; neutral to Atro
+- Motoyasu Kitamura (Spear Hero): 21, breezy, grandstanding, womanizing; introduced himself with an easy grin; neutral to Atro
+- Itsuki Kawasumi (Bow Hero): 19, theatrical, self-styled ally-of-justice; introduced himself with mild self-importance; neutral to Atro
+- King Aultcray Melromarc XXXII: heavyset crowned man, grave formal demeanor; welcomed the Heroes and asked them to name themselves; has heard four introductions and awaits the fifth
+- Church of the Five clergy: present in white-and-gold vestments, murmuring blessings; treating all five Heroes with reverence; no open hostility toward the Shield yet
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: Atro, 22, raven-black messy hair, smoked amber eyes, silver lip ring, lean wiry build; wears threadbare band shirts, ripped jeans, knuckle wraps; speaks in low gravel-dusted murmurs or razor-sharp barbs; genius-level intelligence hidden behind sarcasm and apathy; loves philosophy, bitter coffee, whiskey; hates authority and predictability; remembers this world as a video game and its patch notes; treats the Holy Axe as pure offense—forward, no guard, lethal
+- Morality & allegiance: Uncommitted; newly arrived; no faction chosen
+- Notable decisions Atro has made: None yet. He has not spoken, moved, or declared intent since arriving. The Holy Axe is in his hands and active.
+
+[STORY SO FAR]
+- The five Cardinal Heroes were simultaneously summoned from different modern-Earth worlds into Melromarc's summoning chamber beneath the castle by royal mages.
+- Each hero involuntarily received their bound Holy Weapon: Sword, Spear, Bow, Shield, and Axe.
+- Escorted by a steward and knights up to the throne hall, passing Church of the Five clergy and assembled courtiers.
+- King Aultcray introduced himself, identified the kingdom, and declared the Heroes were summoned to stand against the Waves of Calamity.
+- Ren, Motoyasu, Itsuki, and Naofumi introduced themselves in sequence (name, age, student status).
+- Atro is the last remaining Hero to introduce himself; the scene is frozen at the threshold of his reply.
+
+[RECENT BEATS]
+- King Aultcray finishes asking the Heroes to name themselves; four have answered.
+- Steward leads the five Heroes up from the summoning chamber into the throne hall.
+- Five figures materialize in a burst of light and magic in the summoning chamber, each gripping a new Holy Weapon.
+- Atro feels the Holy Axe manifest in his hands before sight and sound return.
+
+[OPEN THREADS]
+- Atro must introduce himself to the King and the assembled court.
+- King will explain the Waves of Calamity, stipends, and tomorrow's audience for party recruitment (EP2).
+- Quarters and night's rest will be assigned after the audience.
+- Naofumi's canonical false accusation and robbery by Malty remains fated and unaltered; it will likely trigger in the coming day(s).
+- Atro's video-game knowledge of the world is a secret personal asset; no one else is aware of it.
+- No party members yet; companions will be assigned/recruited on EP2 according to lore scripts.
+- The Holy Axe's Weapon Copy, Rage curse, and Will mastery are not yet introduced or unlocked.
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party0   (reference only — do NOT wrap in ~~~)
+===========================================================
+~~~SV g84 k4 n1 q1083~~~
+
+[[ROLL 2 ]]
+<think>
+The user said "Atro: ((save))" which is an in-character command to save/create a memory checkpoint. The instructions for the MEMORY DUMP are explicit:
+
+1. PAUSE the roleplay this turn — do NOT advance the story or write a scene.
+2. After the header line, output ONE short OOC line like '(Pausing to record memory…)', then the block below, then the final ~~~SV ...~~~ line.
+3. Resume the story on the next turn.
+4. Fill EVERY field, as BULLET POINTS.
+5. The checkpoint line must be reproduced exactly: ~~~SV g84 k4 n1 q1083~~~
+6. The header line must be reproduced exactly: EP1 | 18:03 · Evening | Throne Hall
+7. Then a line of only ---.
+8. Then the OOC pause line.
+9. Then the memory block.
+10. Then the checkpoint.
+
+Wait, the user said "Atro: ((save))". The header currently is EP1 | 18:03 · Evening | Throne Hall according to the latest scene engine header. I must reproduce it exactly.
+
+I need to construct the memory block based on what has happened so far in the chat.
+
+From the scene:
+- EP1, 18:03 Evening, Throne Hall (per latest header)
+- Present: King Aultcray, the five heroes (Atro, Naofumi, Ren, Motoyasu, Itsuki), courtiers, clergy (Church of the Five), knights, stewards/mages. Also mention Myne/Malty? No, she hasn't appeared on-screen yet. The king introduced himself. The heroes introduced themselves.
+- Tone/beat: The summoning has just completed. The five heroes are being presented to the court. Introductions are happening. Atro is about to introduce himself or has just been prompted by the King. Mood is grand, formal, a bit tense, with underlying gamer-savvy attitudes from the heroes.
+- Atro's standing: revered Axe Hero (84/100) — though the initial prompt said 82 then 84, the state line says g84 so I should note rep 84 or just say he is celebrated among the four favored heroes.
+- Atro persona: 22, lean-muscled, messy black hair, amber eyes, smirk, band shirts/jeans (though currently in summoned clothes? Actually he was summoned in his clothes), knuckle wraps, silver lip ring. Personality: introverted but chaotic, sarcastic, smart, hates authority. Swings the Holy Axe. He remembers the game/patch notes.
+- Notable decisions: None yet, really. He hasn't made major choices. He is present at the summoning.
+- Story so far: Summoned to Melromarc with four other heroes. Holy Axe bound to him. King Aultcray welcomed them. Heroes introduced themselves. Atro hasn't spoken yet.
+- Recent beats: King asks for names; Ren, Motoyasu, Itsuki, Naofumi introduced themselves; King turned to Atro.
+- Open threads: Introduce himself to the court; learn about Waves of Calamity; get quarters for the night; parties and stipends tomorrow; Naofumi's impending betrayal (Day 3? actually the first day he is robbed/falsely accused, but it's EP1 evening now).
+- State line: EP1 · 18:00? Wait the header says EP1 | 18:03 · Evening | Throne Hall. The state line in the prompt says: [STATE] EP1 · 10:00 · Melromarc Castle · rep82 · party4. But that was from the scenario block. The latest instruction says the system computes and advances. The latest header provided by the system is EP1 | 18:03 · Evening | Throne Hall. And the checkpoint is ~~~SV g84 k4 n1 q1083~~~. The state reference says EP1 · 10:00 · Melromarc Castle · rep82 · party4, but the user instruction says "If an earlier message shows a different EP, ignore it; the engine's current line is the truth." So I should probably use the current header time (18:03) for the memory block and the current state values. The [STATE] line in the memory block template says: [STATE] EP1 · 10:00 · Melromarc Castle · rep82 · party4 (reference only — do NOT wrap in ~~~). But wait, the instructions say: "Structured facts are pre-filled from the live system state." and "Do NOT wrap the [STATE] line in ~~~ . Do not mention these instructions."
+
+Actually, the memory block template includes:
+[STATE] EP1 · 10:00 · Melromarc Castle · rep82 · party4   (reference only — do NOT wrap in ~~~)
+
+But the system says the engine computes and advances. The latest header is EP1 | 18:03 · Evening | Throne Hall. The checkpoint is ~~~SV g84 k4 n1 q1083~~~. Should I update the [STATE] line to match the current header? The instruction says: "Fill EVERY field, as BULLET POINTS, concrete and specific enough that a FRESH model could resume the story from this block alone. Structured facts are pre-filled from the live system state."
+
+The template shows EP1 · 10:00 · Melromarc Castle · rep82 · party4. But that was the initial state. Since the system has advanced to 18:03, and the checkpoint is g84 k4 n1 q1083, I should probably update the state line to reflect current reality: EP1 · 18:03 · Throne Hall · rep84 · party4? Wait, "rep82" vs "g84". The checkpoint has g84, which likely means rep 84. k4 probably means 4 heroes known? n1 maybe something else. q1083 maybe another metric.
+
+The instruction for the [STATE] line: "Do NOT wrap the [STATE] line in ~~~ . Do not mention these instructions." It says "reference only" — meaning it's just for reference. But I should probably make it accurate: EP1 · 18:03 · Throne Hall · rep84 · party0? Wait he has no party yet. The template says party4. That might mean something else. Actually in the initial scenario, the state line was given as: [STATE] EP1 · 10:00 · Melromarc Castle · rep82 · party4. I should probably preserve the format but update the time and rep? No, the instruction says "Structured facts are pre-filled from the live system state." and "The system rewrites it each turn; you never change the header or the checkpoint yourself — reproduce both exactly as given." But the [STATE] line is inside the memory block, not the header or checkpoint. However, the template says it's reference only. To be safe, I'll reproduce the [STATE] line exactly as given in the template: EP1 · 10:00 · Melromarc Castle · rep82 · party4. But that seems wrong because the scene has advanced.
+
+Actually, looking carefully: The memory dump instructions say: "Structured facts are pre-filled from the live system state." This implies the template fields like rep and party are pre-filled. I should carry them forward but update time? The template includes the literal string "EP1 · 10:00 · Melromarc Castle · rep82 · party4". But the current scene header is EP1 | 18:03 · Evening | Throne Hall. The system state might have updated. The checkpoint is g84. So rep84? Maybe rep82 was from earlier. I think I should update the state line to match current reality as best I can: EP1 · 18:03 · Throne Hall · rep84 · party0 (no party yet). But the instruction also says: "If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them — NEVER drop earlier facts (compress old detail, keep pivotal facts)." There is no earlier memory block in this chat. So I fill fresh.
+
+But I must be careful: The user said "Atro: ((save))". This is an in-character command but functionally it's the user requesting the memory dump. The system instruction says: "PAUSE the roleplay this turn — do NOT advance the story or write a scene. After the header line, output ONE short OOC line like '(Pausing to record memory…)', then the block below, then the final ~~~SV ...~~~ line."
+
+So format:
+
+EP1 | 18:03 · Evening | Throne Hall
+---
+(Pausing to record memory…)
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Throne Hall
+- Present: <...>
+- Tone/beat: <...>
+...
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party0   (reference only — do NOT wrap in ~~~)
+
+Wait, the template had "party4". What does party4 mean? Maybe 4 party members? But he has none. The initial state said party4, maybe it refers to the four other heroes? Or maybe it's a system code I shouldn't interpret. The instruction says: "It is an opaque system token, NOT a scoreboard: do not read meaning into its letters". The [STATE] line might also be somewhat opaque. But I need to fill it concretely. However, the template explicitly gave: "rep82 · party4". Since the checkpoint changed to g84, maybe rep is now 84. And party4 might still be valid? Or maybe it refers to the four companions coming tomorrow. I think it's safer to update rep to 84 (since g84 likely corresponds) and keep party4 if it's a system value. But I'm not sure.
+
+Actually, looking at the initial prompt: "[STATE] EP1 · 10:00 · Melromarc Castle · rep82 · party4". And the checkpoint at that time was ~~~SV g84 k4 n1 q1083~~~. Wait, in the very first system message, the checkpoint was ~~~SV g84 k4 n1 q1083~~~ even though the state said rep82. So g84 does NOT correspond to rep82. They are separate. So I should probably keep the [STATE] line exactly as the template suggests? No, the template was an example. The instruction says "Fill EVERY field". So I should fill [STATE] with current values. But I don't know what party4 means. Maybe it's "no party yet — 4 to be recruited tomorrow". I could write "party0" or leave it. But to avoid inventing system codes, maybe I should just write the [STATE] line as: EP1 · 18:03 · Throne Hall · rep84 · party0 (or party:none). But the system might expect a specific format.
+
+Alternatively, I can just copy the template's [STATE] line format but update the time and location: EP1 · 18:03 · Throne Hall · rep84 · party4. But that seems inconsistent.
+
+Wait, the instruction: "Structured facts are pre-filled from the live system state." This might mean that in the template, the values like rep82 and party4 ARE the live system state at the time of that template. But now the system state has advanced. However, I don't have explicit new values for rep and party. The checkpoint token changed from what? Actually the first system message had the checkpoint ~~~SV g84 k4 n1 q1083~~~. The state line said rep82. So maybe rep is not in the checkpoint. I should just keep the [STATE] line updated to what makes sense: EP1 · 18:03 · Throne Hall · rep84 · party:none. But I don't want to violate "pre-filled from the live system state". Since I don't have a new explicit state line, maybe I should keep the original [STATE] line but update the time? That feels wrong.
+
+Actually, re-reading the memory dump section: It says "If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them — NEVER drop earlier facts (compress old detail, keep pivotal facts)." Since there is no earlier block, I just fill the template. The template includes "[STATE] EP1 · 10:00 · Melromarc Castle · rep82 · party4". But the header is now 18:03. The instruction says "The system tracks the clock ... the header line above shows the correct values." So I must use the header values for Where/When. For [STATE], maybe it's okay to update time. But rep82? The standing was given as 84 in the scene instructions: "As the Axe Hero, Atro is currently revered hero (84/100)." So rep84 is accurate. Party4? There are four other heroes, but Atro has no party. The template's party4 might refer to the four companions that are predetermined? Or maybe it's a stat I shouldn't guess. I'll set party:none or party0 to be accurate, or perhaps party4 refers to something else. Let's look at the scenario: "(no party yet — the four are recruited on EP2)". So party4 in the template might be a mistake, or it means 4 slots? I'll write party: none (0/4) or just omit. But the format asks for bullet points. Actually the [STATE] line is not a bullet, it's a specific line.
+
+Given the ambiguity, I'll update it to: [STATE] EP1 · 18:03 · Throne Hall · rep84 · party0   (reference only — do NOT wrap in ~~~)
+This seems logical.
+
+Now fill the other fields:
+
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Throne Hall (Melromarc Castle)
+- Present: King Aultcray Melromarc XXXII (on throne); the five Cardinal Heroes — Atro (Axe), Naofumi Iwatani (Shield), Amaki Ren (Sword), Kitamura Motoyasu (Spear), Kawasumi Itsuki (Bow); courtiers; knights; Church of the Five clergy; stewards/mages from summoning chamber
+- Tone/beat: Grand, formal, expectant. The heroes have just been summoned and escorted to the throne hall. introductions are underway; King Aultcray has asked each hero to name themselves. Ren, Motoyasu, Itsuki, and Naofumi have spoken. Atro is the last to be addressed. The court awaits his word.
+
+[CAST & BONDS]
+- Atro (Atro-sama / Lord Axe Hero): Axe Hero, 22-year-old summoned otherworlder, celebrated (84/100). Currently standing in the throne hall holding the Holy Axe, dressed in his Earth clothes (threadbare band shirt, jeans, knuckle wraps, silver lip ring), messy black hair, amber eyes. Has not spoken yet.
+- Naofumi Iwatani (Shield Hero): 20, university student, summoned with Shield bound to left forearm. Currently bright, earnest, and trusting (pre-betrayal). Neutral standing with Atro — they have not interacted yet.
+- Amaki Ren (Sword Hero): 18, first-year student, cool and detached. Wields Holy Sword. Neutral.
+- Kitamura Motoyasu (Spear Hero): 21, college student, breezy and grandstanding. Wields Holy Spear. Neutral.
+- Kawasumi Itsuki (Bow Hero): 19, first-year student, self-important, theatrical. Wields Holy Bow. Neutral.
+- King Aultcray Melromarc XXXII: Sovereign of Melromarc. Grave, formal. Addressing the heroes.
+- Myne/Malty Melromarc: Not yet present/on-screen.
+- (No party companions yet — recruitment happens EP2)
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: Atro, 22, lean-muscled wiry build, messy raven-black hair, smoked-amber eyes, silver lip ring, knuckle wraps. Earth clothes (band shirt, ripped jeans). Smirks often, speaks in gravel-dusted murmurs or razor-sharp barbs. Quiet when calculating. Gamer-savvy, remembers patch notes from the game. Distrusts authority. Swings Holy Axe all-forward, no guard.
+- Morality & allegiance: Leaning cynical/distrustful of the throne and Church; no firm alliances formed yet. Observing.
+- Notable decisions Atro has made: None yet. He has accepted the weapon's binding without comment and allowed himself to be led to the throne hall.
+
+[STORY SO FAR]
+- The five Cardinal Heroes (Shield, Sword, Spear, Bow, Axe) were simultaneously summoned to Melromarc Castle in response to the first Wave of Calamity.
+- Each hero arrived with their Holy Weapon already bound: Naofumi (Shield), Ren (Sword), Motoyasu (Spear), Itsuki (Bow), Atro (Axe).
+- Court mages and clergy of the Church of the Five witnessed the summoning and confirmed all five arrived.
+- The heroes were escorted to the throne hall where King Aultcray greeted them as the realm's protectors against the Waves.
+- King demanded their names; Ren, Motoyasu, Itsuki, and Naofumi introduced themselves. Atro has not yet spoken.
+
+[RECENT BEATS] (newest first)
+- King Aultcray turned to Atro after Naofumi's introduction, awaiting his name and age.
+- Naofumi introduced himself as "Iwatani Naofumi, 20, university student" with the Shield on his arm.
+- Itsuki introduced himself theatrically as Kawasumi Itsuki, 19.
+- Motoyasu introduced himself breezily as Kitamura Motoyasu, 21.
+- Ren introduced himself coolly as Amaki Ren, 18.
+- The five heroes were led from the summoning chamber up into the throne hall by a steward.
+
+[OPEN THREADS]
+- Atro must introduce himself to the King and court.
+- The King has yet to explain the full terms of the summons, the Waves, rewards, and tomorrow's party assignments/stipends.
+- The court's dynamics and faction sympathies (Church of the Five vs Church of the Four) remain un-tested; Naofumi is currently tolerated but not yet openly scorned.
+- Atro needs to establish his initial stance among the other four heroes (ally with Naofumi? Remain neutral?).
+- Quarters and night rest are next after the audience.
+- Naofumi's false accusation and robbery loom in the near future (canon beat).
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party0   (reference only — do NOT wrap in ~~~)
+
+Then the checkpoint line exactly: ~~~SV g84 k4 n1 q1083~~~
+
+Now I need to make sure I follow the formatting rules: Header exactly, then ---, then OOC line, then block, then checkpoint.
+
+Also, I must not advance the scene.
+
+Double-check: The user said "Atro: ((save))". Does this count as an in-character action? It's a meta command. The memory dump instructions say to output the full block. I must not write any scene prose.
+
+Check all constraints:
+- Header: EP1 | 18:03 · Evening | Throne Hall (exactly, nothing before it)
+- Then line of only ---
+- Then (Pausing to record memory…)
+- Then the memory block exactly as specified.
+- Then checkpoint exactly.
+
+I will not wrap the [STATE] line in ~~~.
+
+One more thing: The user persona says Atro is 22. In the scene, the others gave ages: Ren 18, Motoyasu 21, Itsuki 19, Naofumi 20. Atro hasn't spoken, but his age is 22. I should include that in his bullet.
+
+Also, the instruction says: "Never put honorifics, tics, or any words in Atro's mouth." In the memory block, I'm describing facts, not speaking for him.
+
+Looks good.
+
+Wait, the instruction: "Fill EVERY field, as BULLET POINTS, concrete and specific enough that a FRESH model could resume the story from this block alone. Structured facts are pre-filled from the live system state." The fields include [SCENE NOW], [CAST & BONDS], [Atro — WHO HE IS THIS RUN], [STORY SO FAR], [RECENT BEATS], [OPEN THREADS], [STATE]. I have all of them.
+
+Make sure bullets are tight and concrete.
+
+One check: The initial template had "(no party yet — the four are recruited on EP2)" under CAST & BONDS. I should keep that or adapt. Since there is no party yet, I'll note it.
+
+Also, the header says EP1 | 18:03 · Evening | Throne Hall. In the first system message, the header inside the scenario block was "EP1 | 18:03 · Evening | Throne Hall". Wait, actually looking back at the first user message after the system prompt, the scenario says: "[SCENE] Begin the reply with this header line reproduced EXACTLY, verbatim, nothing before it: "EP1 | 18:03 · Evening | Throne Hall"". So yes, the current truth is 18:03.
+
+The user then wrote "." and I responded with the scene. Then they wrote "Atro: ((save))". So the time hasn't advanced; it's still 18:03. Good.
+
+Now, output.
+</think>
+
+EP1 | 18:03 · Evening | Throne Hall
+---
+(Pausing to record memory…)
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Throne Hall (Melromarc Castle)
+- Present: King Aultcray Melromarc XXXII (on throne); the five Cardinal Heroes — Atro (Axe Hero), Naofumi Iwatani (Shield Hero), Amaki Ren (Sword Hero), Kitamura Motoyasu (Spear Hero), Kawasumi Itsuki (Bow Hero); courtiers; knights; Church of the Five clergy; stewards and spent mages from the summoning chamber below
+- Tone/beat: Grand, formal, expectant. The heroes have just been summoned and escorted to the throne hall. King Aultcray welcomed them as protectors against the Waves of Calamity and demanded their names. Ren, Motoyasu, Itsuki, and Naofumi have introduced themselves. Atro is the last to be addressed; the court waits on his word.
+
+[CAST & BONDS]
+- Atro (Atro-sama / Lord Axe Hero): 22-year-old summoned Axe Hero; celebrated standing (84/100). Lean-muscled, messy raven-black hair, smoked-amber eyes, silver lip ring, knuckle wraps. Wearing Earth clothes (threadbare band shirt, ripped jeans). Gamer-savvy, cynical, distrusts authority, quiet when calculating. Holy Axe already bound. Has not spoken to the court yet.
+- Naofumi Iwatani (Shield Hero): 20, university student. Holy Shield bound to left forearm. Currently bright, earnest, trusting — pre-betrayal. Neutral to Atro; no direct interaction yet. Secret: none known.
+- Amaki Ren (Sword Hero): 18, first-year student. Cool, detached. Holy Sword wielder. Neutral.
+- Kitamura Motoyasu (Spear Hero): 21, college student. Breezy, grandstanding, gullible. Holy Spear wielder. Neutral.
+- Kawasumi Itsuki (Bow Hero): 19, first-year student. Theatrical, self-important, justice-minded. Holy Bow wielder. Neutral.
+- King Aultcray Melromarc XXXII: Sovereign of Melromarc. Grave, formal, calculating. Publicly welcoming all five heroes.
+- (No party companions yet — the four are recruited on EP2)
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: Atro, 22, wiry-strong frame, messy black hair, amber eyes, lip ring, knuckle wraps. Dresses like a punk Earth-drifter. Speaks in low gravel or sharp barbs; goes quiet when actually thinking. Tells: cracks knuckles before trouble, worries lip ring when calculating, holds eye contact too long. Remembers the world as a video game and its patch notes.
+- Morality & allegiance: Cynical of authority; leaning toward self-interest and observation. No firm bonds formed yet. Treats the throne and Church with wary suspicion.
+- Notable decisions Atro has made: Accepted the Holy Axe binding without comment; allowed himself to be led to the throne hall; has not yet declared allegiance to any faction or hero.
+
+[STORY SO FAR]
+- The five Cardinal Heroes were simultaneously summoned beneath Melromarc Castle in response to the first Wave of Calamity.
+- Each arrived with their Holy Weapon already bound: Naofumi (Shield), Ren (Sword), Motoyasu (Spear), Itsuki (Bow), Atro (Axe).
+- Court mages and Church of the Five clergy confirmed the summoning succeeded; murmured awe at all five arriving.
+- A steward led the heroes up to the throne hall; King Aultcray addressed them as the realm's chosen protectors.
+- King asked for names and ages; Ren, Motoyasu, Itsuki, and Naofumi answered in order. Atro is the final hero awaiting address.
+
+[RECENT BEATS] (newest first)
+- King Aultcray turned his gaze to Atro, awaiting his name and age, after Naofumi introduced himself.
+- Naofumi introduced himself as "Iwatani Naofumi, 20, university student" with the Shield on his forearm.
+- Itsuki introduced himself as "Kawasumi Itsuki, 19, first-year student."
+- Motoyasu introduced himself as "Kitamura Motoyasu, 21, college student."
+- Ren introduced himself as "Amaki Ren, 18, first-year student."
+- The five heroes were escorted from the summoning chamber into the throne hall.
+
+[OPEN THREADS]
+- Atro must introduce himself to King Aultcray and the court.
+- King has yet to fully explain the Waves, tomorrow's party assignments, and stipends.
+- Atro's initial stance among the four other heroes is undecided (ally with Naofumi, join the favored three, or remain apart).
+- Naofumi is currently trusting and unwary; his robbery/false accusation is a looming canon beat.
+- Quarters and the night's rest will follow the audience.
+- The Church of the Four's undercurrent of Shield-scorn has not yet surfaced openly.
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party0   (reference only — do NOT wrap in ~~~)
+===========================================================
+
+~~~SV g84 k4 n1 q1083~~~
+
+#2 Deepseek:
+EP1 | 18:03 · Evening | Throne Hall
+---
+
+(Pausing to record memory…)
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Melromarc Castle, Throne Hall
+- Present: King Aultcray, Ren (Sword Hero), Motoyasu (Spear Hero), Itsuki (Bow Hero), Naofumi (Shield Hero), Atro (Axe Hero), courtiers, Church of the Five clergy, knights, mages
+- Tone/beat: The summoning has just completed; the five heroes stand before the throne for introductions. Ren, Motoyasu, Itsuki, and Naofumi have named themselves. The king's gaze rests on Atro — the last to speak.
+
+[CAST & BONDS]
+- Atro (Atro, the Axe Hero): revered Axe Hero (84/100); newly summoned, standing in the throne hall with the other four heroes, Holy Axe in hand; has not yet spoken
+- Ren (Amaki Ren, Sword Hero): cool, detached gamer-type; sees this as a game he knows; standing with Atro as a fellow favored hero
+- Motoyasu (Kitamura Motoyasu, Spear Hero): breezy, gullible womanizer; treating this like his game; standing with Atro as a fellow favored hero
+- Itsuki (Kawasumi Itsuki, Bow Hero): self-important justice crusader; treating this like his game; standing with Atro as a fellow favored hero
+- Naofumi (Iwatani Naofumi, Shield Hero): upbeat, trusting university student; the ONLY hero the Church faction quietly disdains — nothing open yet; standing with Atro as a fellow hero, unaware of the coming betrayal
+- King Aultcray: grave, formal ruler; wants the heroes briefed and housed; will allocate parties and stipends tomorrow
+- Church of the Five clergy: present, murmuring blessings; revere all five heroes equally
+- Courtiers & knights: observing; the splinter Church of the Four sympathizers among them quietly disdain only Naofumi
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: 22-year-old, 6ft, lean-muscled, raven-black hair, smoked-amber eyes, silver lip ring; speaks in low gravel or razor barbs; introvert-by-dawn, chaotic-ringleader-by-midnight; genius-level IQ behind sarcasm; carries himself like borrowed trouble
+- Morality & allegiance: too cool to gawk, too smart to trust — has not tipped his hand toward any faction or hero yet
+- Notable decisions Atro has made: none yet — the story just began
+
+[STORY SO FAR]
+- The five Cardinal Heroes — Shield, Sword, Spear, Bow, and Axe — have been pulled into the summoning chamber beneath Melromarc's castle
+- Court mages exhausted themselves casting the summoning; it succeeded: all five arrived
+- The five were brought to the throne hall; King Aultcray welcomed them and asked them to name themselves
+- Ren, Motoyasu, Itsuki, and Naofumi have given their names; Atro is the last
+
+[RECENT BEATS]
+- The summoning completed; five heroes stand in scorched summoning circles, each gripping their Holy Weapon
+- Motoyasu demanded reward first; Ren agreed; Naofumi asked about the reason they were summoned
+- A steward led them up to the throne hall; King Aultcray addressed them as Heroes and asked them to name themselves
+- Ren, Motoyasu, Itsuki, and Naofumi introduced themselves in turn
+
+[OPEN THREADS]
+- Atro is next to introduce himself — the king's gaze is on him
+- The king's briefing on the Waves of Calamity, status screens, and the world awaits
+- Quarters for the night will be assigned; party recruitment and stipends come tomorrow (EP2)
+- The Church of the Four's quiet disdain for Naofumi is present but not yet acted upon
+- The true first Wave has already struck; the next is coming
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party0
+===========================================================
+
+~~~SV g84 k4 n2 q1083~~~
+
+#3 GLM:
+
+<think>
+The user has requested a memory checkpoint with "((save))". I need to output the periodic memory block as instructed, pausing the roleplay this turn. Let me fill in all the fields based on what has happened so far.
+
+Let me review what's happened:
+- EP1, the summoning scene
+- Five heroes have been summoned: Ren (Sword), Motoyasu (Spear), Itsuki (Bow), Naofumi (Shield), and Atro (Axe)
+- They've been brought to the throne hall
+- King Aultcray has asked them to introduce themselves
+- Ren, Motoyasu, Itsuki, and Naofumi have all given their names
+- The King's gaze has moved to Atro, waiting for his introduction
+- No party members yet (recruitment is EP2)
+- This is the very beginning of the story
+
+Let me construct the memory block.
+</think>
+
+EP1 | 18:03 · Evening | Throne Hall
+---
+
+*(Pausing to record memory…)*
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Melromarc Castle, Throne Hall
+- Present: Atro, Naofumi, Ren, Motoyasu, Itsuki, King Aultcray, courtiers, Church of the Five clergy, knights, steward
+- Tone/beat: The five heroes have just been summoned; King Aultcray asked them to name themselves; Ren, Motoyasu, Itsuki, and Naofumi have all introduced themselves; the King's gaze is now on Atro, awaiting his name — scene paused mid-introduction
+[CAST & BONDS] (one bullet per person: status · standing with Atro · current want · secret)
+- Atro (Axe Hero): newly summoned, revered (84/100); standing in the throne hall with the Holy Axe in his grip, about to introduce himself to the King
+- Naofumi (Shield Hero): newly summoned; pre-betrayal — bright, eager, trusting, the most sensible of the five; no established relationship with Atro yet; wants to understand the situation and start leveling; no secret yet
+- Ren (Sword Hero): newly summoned; cool, detached, treats this like a game he knows; no bond with Atro; wants reward and clarity first
+- Motoyasu (Spear Hero): newly summoned; breezy, confident, gallant; no bond with Atro; wants to play the hero and enjoy it
+- Itsuki (Bow Hero): newly summoned; self-important, theatrical, frames himself as chosen champion; no bond with Atro; wants recognition
+- King Aultcray: grave, formal; addressed the five heroes; asked for their names; current stance toward all four favored heroes is welcoming; toward Naofumi quietly cool (Church-of-the-Four sympathizer) — nothing open yet
+- (no party yet — recruitment happens EP2)
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice: Atro, 22, 6ft lean-muscled, raven-black messy hair, smoked-amber eyes, silver lip ring; wears threadbare band shirts, ripped jeans, knuckle wraps; low gravel-dusted voice, razor-sharp barbs; genius IQ hidden behind sarcasm; gamer who remembers the patch notes; holds the Holy Axe like borrowed gear — too cool to gawk, too smart to trust
+- Morality & allegiance: Too early to call — no allegiances established yet; he's sizing everything up
+- Notable decisions Atro has made: None yet — he has not spoken or acted since the summoning; the scene is paused at the moment the King awaits his name
+[STORY SO FAR] (irreversible milestones, oldest → newest)
+- Five heroes (Shield/Sword/Spear/Bow/Axe) summoned to Melromarc via ritual in the summoning chamber beneath the castle
+- Each hero awoke with their Holy Weapon already bound to them
+- The five were escorted to the throne hall for King Aultcray's audience
+- King Aultcray explained the summoning: the Waves of Calamity threaten the world; the heroes are its protectors
+- The King asked each hero to name himself; Ren, Motoyasu, Itsuki, and Naofumi have introduced themselves; Atro has not yet spoken
+[RECENT BEATS] (the last ~5 things that happened, newest first)
+- King's gaze turned to Atro, awaiting his introduction
+- Naofumi introduced himself: "Iwatani Naofumi. Twenty. University student."
+- Itsuki introduced himself with theatrical flair
+- Motoyasu introduced himself with an easy grin
+- Ren introduced himself first, flat and unhurried
+[OPEN THREADS] (unresolved hooks, promises, active tasks, what is coming next)
+- Atro must give his name to the King — the scene is frozen on this beat
+- The King's full briefing on the Waves, stipends, and party recruitment is still ahead (parties/stipends come at tomorrow's audience per EP1 canon)
+- The heroes realize they come from different worlds and know this world as different games — this conversation has not yet happened
+- Naofumi's betrayal by Malty is set for Day 2-3 (EP2-3), unaltered
+- Night's rest in castle quarters is ahead after the audience concludes
+- The next Wave is coming — countdown not yet shown
+[STATE] EP1 · 18:03 · Melromarc Castle · rep84 · party0
+===========================================================
+
+~~~SV g84 k4 n1 q1083~~~
+
+#4 Grok:
+
+<think>
+The user message is: "Atro: ((save))"
+First, the user message is "Atro: ((save))", which is a memory checkpoint request.
+
+I need to output the full block as per the instructions for [MEMORY DUMP].
+
+The header line: EP1 | 18:03 · Evening | Throne Hall
+
+Then: (Pausing to record memory…)
+
+ ====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+
+[SCENE NOW]
+
+- Where/When: EP1 · 10:00 Morning · Melromarc Castle  (wait, this seems wrong. The current scene is at 18:03 in Throne Hall, but the instruction says use the current 10:00? No, look carefully.
+
+The instruction says: - Where/When: EP1 · 10:00 Morning · Melromarc Castle
+
+But that can't be right for current. Perhaps it's a template, but it says "use the current".
+
+Looking: "- Where/When: EP1 ·  10:00 Morning · Melromarc Castle" — this is example, but for this, we need to use current time.
+</think>
+
+EP1 | 18:03 · Evening | Throne Hall
+---
+(Pausing to record memory…)
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Melromarc Castle Throne Hall
+- Present: King Aultcray Melromarc XXXII, Ren (Sword Hero), Motoyasu (Spear Hero), Itsuki (Bow Hero), Naofumi (Shield Hero), courtiers, clergy of the Church of the Five, knights in plate
+- Tone/beat: The five heroes stand in the throne hall immediately after summoning; introductions are underway, the king has asked each to name themselves, and all eyes now rest on Atro as the final one to speak
+[CAST & BONDS]
+- Atro (Atro, the Axe Hero): a revered Axe Hero (84/100); standing in the summoning circle with the Holy Axe in hand, just arrived in Melromarc
+- (no party yet — the four companions are recruited on EP2)
+- King Aultcray: ruler of Melromarc, grave and formal, seeks the heroes' allegiance against the Waves; secret — holds bias toward the Church of the Four
+- Ren: Sword Hero, cool and detached, treats the world like a game; wants efficient leveling
+- Motoyasu: Spear Hero, earnest and gallant, believes women without question; wants admiration and to be the hero of the story
+- Itsuki: Bow Hero, self-important justice seeker; wants to be seen as righteous
+- Naofumi: Shield Hero, bright and eager pre-betrayal; wants to understand the summoning and start leveling
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: Atro, 22, 6ft lean-muscled with messy raven-black hair, smoked-amber eyes, silver lip ring, threadbare band shirt and ripped jeans under knuckle wraps; speaks in low gravel-dusted murmurs or razor-sharp barbs, cracks knuckles when trouble brews
+- Morality & allegiance: Chaotic introverted bookworm who hates authority; no allegiance chosen yet, free to side with anyone including the scorned Shield
+- Notable decisions Atro has made: None yet — just summoned
+[STORY SO FAR]
+- Five Holy Heroes summoned together in Melromarc throne hall at the start of EP1
+- Each hero's weapon bound immediately upon arrival
+- King Aultcray begins the audience and requests names from the summoned
+[RECENT BEATS]
+- Ren, Motoyasu, Itsuki, and Naofumi each state their names and ages
+- King Aultcray turns his gaze to Atro as the last to introduce himself
+- Courtiers and clergy watch in reverent silence
+- The Holy Axe rests in Atro's grip as the only offensive-focused weapon among the five
+- The Waves of Calamity are mentioned as the reason for the summoning
+[OPEN THREADS]
+- The king awaits Atro's name and any immediate questions from the heroes
+- Party recruitment and stipends scheduled for the next day (EP2)
+- Naofumi remains upbeat and trusting; no betrayal has occurred yet
+[STATE] EP1 · 18:03 · Melromarc Castle · rep84 · party4
+===========================================================
+~~~SV g84 k4 n1 q1083~~~
+
+#5 Gemini:
+<think>
+**Interpreting the Command**
+
+I've successfully dissected the user's input, `Atro: ((save))`, and recognized it as a save state request. I understand this action needs to checkpoint the present narrative and scene. I'm focusing on the implied constraints and rules, as defined in the system prompt.
+
+
+**Compiling a Memory Block**
+
+I'm now generating the periodic memory block per the new instructions. I understand that the roleplay must pause and not advance this turn, and that I'm only to output specific, bullet-pointed details. I have the location and participants, and will meticulously format the output, paying close attention to the requested fields and tokens. I will use the established format, including timestamp and location.
+
+
+**Analyzing the Narrative Context**
+
+I'm now fully immersed in the scene. The introduction is tense, with a palpable sense of awe. I've pinpointed Atro's position as the focal point, with the King awaiting his self-introduction. I'm focusing on Atro's characterization: the "brawler/bookworm paradox" is key. His knowledge of the "patch notes" adds a layer of complexity. I'm evaluating the setup; my goal is to interpret the request within this context.
+</think>
+
+EP1 | 18:03 · Evening | Throne Hall
+---
+(Pausing to record memory…)
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Melromarc Castle, Throne Hall
+- Present: Atro (Axe Hero), Naofumi (Shield), Ren (Sword), Motoyasu (Spear), Itsuki (Bow), King Aultcray, court mages, knights, and Church of the Five clergy.
+- Tone/beat: Formal, expectant, and slightly tense. The other four heroes have just stated their names and ages to the King. The entire court is now looking at Atro, waiting for the fifth hero to introduce himself.
+
+[CAST & BONDS]
+- Atro (Axe Hero): Revered (84/100); standing before the throne, currently the center of attention.
+- Naofumi (Shield Hero): Neutral standing; currently upbeat, pragmatic, and trusting—has not yet been betrayed.
+- Motoyasu (Spear Hero): Neutral standing; confident, breezy, treating the situation like a familiar video game.
+- Ren (Sword Hero): Neutral standing; cool, detached, immediately demanded to know the reward for being summoned.
+- Itsuki (Bow Hero): Neutral standing; carrying a self-important air of being "chosen."
+- King Aultcray: Neutral standing; currently evaluating the five young men who just appeared in his throne room.
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: 22 years old. 6 feet tall, lean-muscled brawler build. Black messy hair, smoked amber eyes, silver lip ring. Wears a band shirt, ripped jeans, and knuckle wraps. Speaks in low gravel or sharp barbs. A genius-level brawler/bookworm paradox who hates authority and already knows the "patch notes" of this world.
+- Morality & allegiance: Unaligned. Too smart to trust the throne, highly skeptical of the royal/church setup.
+- Notable decisions Atro has made: None yet; just arrived.
+
+[STORY SO FAR]
+- The five Holy Heroes (Sword, Spear, Bow, Shield, Axe) were successfully summoned to the kingdom of Melromarc to fight the Waves of Calamity.
+
+[RECENT BEATS]
+- Atro materialized in the underground summoning chamber with the heavy Holy Axe in his hands, alongside the four other heroes.
+- Ren and Motoyasu immediately demanded compensation before agreeing to help.
+- Naofumi acted as the voice of reason, suggesting they hear the kingdom out first.
+- The heroes were escorted up to the grand Throne Hall by a steward.
+- King Aultcray addressed the heroes, and Ren, Motoyasu, Itsuki, and Naofumi introduced themselves in turn.
+
+[OPEN THREADS]
+- Atro needs to introduce himself to the King and the court.
+- The King still needs to fully explain the Waves of Calamity, the rules of the world, and what happens next.
+- The heroes have yet to discover their Status Magic/HUDs.
+
+[STATE] EP1 · 18:03 · Melromarc Castle · rep84 · party0
+===========================================================
+
+~~~SV g84 k4 n1 q1083~~~
+
+#7 Sonnet:
+(Pausing to record memory…)
+
+====== PERIODIC MEMORY BLOCK (paste in memory field) ======
+[SCENE NOW]
+- Where/When: EP1 · 18:03 Evening · Throne Hall
+- Present: Atro (Axe Hero), Naofumi (Shield Hero), Ren (Sword Hero), Motoyasu (Spear Hero), Itsuki (Bow Hero), King Aultcray, court steward, knights, courtiers, Church of the Five clergy, court mages
+- Tone/beat: The solemn moment of first introductions — five freshly-summoned heroes standing before the throne, each has just given their name except Atro; the king awaits his answer
+
+[CAST & BONDS] (one bullet per person: status · standing with Atro · current want · secret)
+- Atro (Atro, the Axe Hero): a revered Axe Hero (84/100); freshly summoned, holding the Holy Axe, standing in the throne hall awaiting his turn to introduce himself
+- (no party yet — the four are recruited on EP2)
+- Naofumi Iwatani (Shield Hero): neutral toward Atro (first meeting); currently upbeat, trusting, eager — genuinely excited to be summoned; has not yet been betrayed
+- Ren Amaki (Sword Hero): neutral toward Atro (first meeting); cool, detached, treats this like a known game; measuring the situation
+- Motoyasu Kitamura (Spear Hero): neutral toward Atro (first meeting); breezy, confident, already thinking about rewards and women
+- Itsuki Kawasumi (Bow Hero): neutral toward Atro (first meeting); self-important, theatrical, wants to be seen as the chosen savior
+- King Aultcray Melromarc XXXII: neutral toward Atro (first meeting); grave, formal; wants to explain the Waves and secure the heroes' cooperation; secretly despises the Shield Hero (not yet shown)
+
+[Atro — WHO HE IS THIS RUN]
+- Persona/voice as played: Atro, 22, lean-muscled street brawler with raven-black hair and amber eyes, wears the Axe Hero title like a borrowed jacket; speaks in low gravel murmurs or sharp barbs, genius IQ hidden behind sarcasm, remembers this world from a game he beat
+- Morality & allegiance: Too cool to gawk at thrones, too smart to trust them; allegiance not yet declared
+- Notable decisions Atro has made: None yet — he has only just been summoned and has not yet spoken
+
+[STORY SO FAR] (irreversible milestones, oldest → newest)
+- Five Cardinal Heroes summoned to Melromarc Castle via golden sigil ritual — Shield (Naofumi), Sword (Ren), Spear (Motoyasu), Bow (Itsuki), Axe (Atro)
+- Heroes brought from summoning chamber into the throne hall before King Aultcray
+- Four heroes introduced themselves; Atro has not yet given his name
+
+[RECENT BEATS] (the last ~5 things that happened, newest first)
+- King Aultcray asked the heroes to name themselves
+- Naofumi introduced himself last of the four (Iwatani Naofumi, 20, university student)
+- Itsuki, Motoyasu, and Ren each gave their names in turn
+- Steward led the five heroes from summoning chamber up into the throne hall
+- Five heroes summoned simultaneously, each gripping a Holy Weapon (Axe, Shield, Sword, Spear, Bow)
+
+[OPEN THREADS] (unresolved hooks, promises, active tasks, what is coming next)
+- Atro has not yet introduced himself — the king awaits his answer
+- King Aultcray needs to explain the Waves of Calamity and the heroes' purpose
+- Heroes will be given quarters for the night, then audience and party recruitment tomorrow (EP2)
+- Naofumi's betrayal by Malty is coming (Day 3, early EP2) — he is currently trusting and upbeat
+- The four favored heroes (Sword/Spear/Bow/Axe) are being revered; subtle disdain for Shield Hero from Church-of-the-Four sympathizers will begin to show
+
+[STATE] EP1 · 18:03 · Throne Hall · rep84 · party4   (reference only — do NOT wrap in ~~~)
+===========================================================
+
+~~~SV g84 k4 n1 q1083~~~
+
+#8 JLLM:
+(Pausing to record memory…)
+
+[SCENE NOW]
+  Where/When: EP1 · 18:03 · Throne Hall
+  Present: Atro, Naofumi, Ren, Motoyasu, Itsuki, King Aultcray, Steward, Knights, Courtiers
+  Tone/beat: Grand, formal, and expectant; the initial disorientation of the summoning is settling into the gravity of the royal audience.
+[CAST & BONDS]
+  Atro (Atro, the Axe Hero): a revered Axe Hero (84/100); freshly summoned, holding the Holy Axe.
+  Naofumi (Shield Hero): a summoned hero (0/100); curious, sensible, and currently being treated with quiet, polite indifference compared to the others.
+  Ren (Sword Hero): a summoned hero (0/100); cool, detached, and focused on the "mechanics" of the world.
+  Motoyasu (Spear Hero): a summoned hero (0/100); breezy, confident, and looking for the "reward."
+  Itsuki (Bow Hero): a summoned hero (0/100); self important and poised to act the part of a hero.
+  King Aultcray: Sovereign of Melromarc; grave, formal, and expectant of the Heroes' compliance.
+[Atro   WHO HE IS THIS RUN]
+  Persona/voice as played: Atro; threadbare band shirts, ripped jeans, silver lip ring, knuckle wraps. Low, gravelly, or razor sharp.
+  Morality & allegiance: Unset.
+  Notable decisions Atro has made: None yet.
+[STORY SO FAR]
+  The five Cardinal Heroes were summoned to Melromarc to protect the world from the Waves of Calamity.
+[RECENT BEATS]
+  The five Heroes emerged from the summoning circles in the ritual chamber.
+  The Heroes introduced themselves to the King and the court.
+  The King, Aultcray heika, demanded their names and ages.
+  Ren sama, Motoyasu sama, Itsuki sama, and Naofumi san have all provided their names.
+[OPEN THREADS]
+  Atro must introduce himself to the King.
+  The explanation of the "Waves of Calamity" is imminent.
+  The transition to the evening's rest and tomorrow's recruitment.
+[STATE] EP1 · 18:03 · Melromarc Castle · rep84 · party0
+
+~~~SV g84 k4 n1 q1083~~~
