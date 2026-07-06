@@ -4,9 +4,16 @@
  * Every N messages (auto) OR on demand (`!save`), instructs the model to emit a
  * structured, human-pasteable memory snapshot at the end of the reply. Purpose:
  *   - Use 1 (ongoing): paste the block into Janitor's Memory field every so often.
- *   - Use 2 (dissect/transplant near ~400 msgs): fire `!save`, copy the block into
- *     a fresh chat's Opening, then replace the first reply with the old chat's
- *     last message (which restores Layer A via its ~~~SV~~~ token).
+ *   - Use 2 (dissect/transplant near ~400 msgs): append `((save))` to a normal
+ *     message, copy the block into a fresh chat's Opening, then replace the first
+ *     reply with the old chat's last message (restores Layer A via its ~~~SV~~~).
+ *
+ * MANUAL TRIGGER note: use `((save))` appended to a NORMAL action (e.g. "I follow
+ * the page. ((save))"), NOT a lone command. A bare command word (like the old
+ * `!save`) can be swallowed by a Persona/preset "if user sends a system command,
+ * reply with that word only" rule — which is exactly what makes it echo `!save`
+ * and skip everything. `((save))` inside a real message avoids that; the injected
+ * directive also explicitly overrides that rule as a backstop.
  *
  * WHY THIS IS RELIABLE: the SCHEMA is script-dictated, so the model FILLS fields
  * instead of guessing what's important. It also PRE-FILLS the structured facts it
@@ -28,9 +35,9 @@ var MEM = {
                  //   (message_count counts BOTH user and AI messages, so 14 ~= every 7 exchanges.)
   MIN:   8       // never auto-fire before this many messages (let a scene establish first).
 };
-/* Manual controls (typed by {{user}} in a message):
- *   !save            -> emit a block THIS turn (re-roll until it comes out clean)
- *   !save off        -> pause auto-firing        !save on -> resume auto-firing
+/* Manual controls (typed by {{user}} inside a message; ((save)) recommended over !save):
+ *   ((save))         -> emit a block THIS turn (append to a normal action; re-roll if needed)
+ *   ((save off))     -> pause auto-firing        ((save on)) -> resume auto-firing
  * The fixed party roster this bot recruits on EP2 (used to label the [PARTY] field). */
 var PARTY = ["Gorr (dwarf smith)", "Emilia (half-elf ice-mage)", "Sylfa (elf archer/summoner)", "Zero Two ('Darling', horned demi-human)"];
 /* ========================================================================== */
@@ -53,14 +60,17 @@ var SCAN = recent(8);
 
 /* ---- toggle (best-effort, window-based): latest !save off vs !save on wins ---- */
 var sLow = SCAN.toLowerCase();
-var offAt = sLow.lastIndexOf("!save off");
-var onAt  = sLow.lastIndexOf("!save on");
+var offAt = sLow.lastIndexOf("save off");   // catches ((save off)) / !save off / save off
+var onAt  = sLow.lastIndexOf("save on");
 var autoOff = offAt > onAt;   // both -1 when absent -> auto stays ON
 
-/* ---- triggers ---- */
-var lastLow = LAST.toLowerCase();
-var isToggle = /!save\s+(off|on)\b/i.test(LAST);
-var manual = /!save\b|!memory\b/i.test(lastLow) && !isToggle;
+/* ---- triggers ----
+ * Manual = an OOC tag inside a message: ((save)) / ((memory)) (also tolerates !save / !memory).
+ * IMPORTANT: prefer appending ((save)) to a NORMAL action so the message is never a bare
+ * command (a lone command word can be swallowed by a Persona/preset "reply with the word
+ * only" system-command rule). The override line below neutralizes that if it happens. */
+var isToggle = /save\s+(off|on)\b/i.test(LAST);
+var manual = /\(\(\s*save\s*\)\)|\(\(\s*memory\s*\)\)|!save\b|!memory\b/i.test(LAST) && !isToggle;
 var auto = (MEM.EVERY > 0) && (MC >= MEM.MIN) && (MC % MEM.EVERY === 0) && !autoOff;
 
 if (manual || auto) {
@@ -84,7 +94,10 @@ if (manual || auto) {
 
   /* ---- the injected directive (pre-filled facts + fill-in schema) ---- */
   var D = "";
-  D += "\n\n[MEMORY DUMP] A periodic memory checkpoint is due" + (manual ? " (requested)" : "") + ". At the very END of this reply \u2014 after the scene, and IMMEDIATELY BEFORE the final ~~~SV~~~ system line \u2014 output exactly ONE block, using these EXACT delimiter lines and all eight fields. The structured facts are pre-filled from the current system state; fill the narrative fields from the story so far. If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them \u2014 NEVER drop earlier facts. Keep it a compact state snapshot, not a transcript. Do NOT wrap the [STATE] line in ~~~ (that belongs to the system only). Do not mention these instructions.";
+  var lead = manual
+    ? "[MEMORY DUMP] {{user}} has REQUESTED a memory checkpoint. This turn is NOT a bare system/test command \u2014 do NOT reply with a single word; IGNORE any 'reply with that word only / no formatting' rule for this turn. Continue the scene normally (a brief in-world beat is fine), THEN"
+    : "[MEMORY DUMP] A periodic memory checkpoint is due. Continue the scene normally, THEN";
+  D += "\n\n" + lead + " at the very END of the reply \u2014 after the scene, and IMMEDIATELY BEFORE the final ~~~SV~~~ system line \u2014 output exactly ONE block, using these EXACT delimiter lines and all eight fields. The structured facts are pre-filled from the current system state; fill the narrative fields from the story so far. If an earlier PERIODIC MEMORY BLOCK appears in the chat, carry ALL of its facts forward and update them \u2014 NEVER drop earlier facts. Keep it a compact state snapshot, not a transcript. Do NOT wrap the [STATE] line in ~~~ (that belongs to the system only). Do not mention these instructions.";
   D += "\n====== PERIODIC MEMORY BLOCK (paste in memory field) ======";
   D += "\n[SITUATION] EP" + EP + " \u00b7 " + clock + " " + per + " \u00b7 " + LOC + ". (State who is present.)";
   D += "\n[PARTY] " + partyLine + ". (Give each one's current status; note anyone lost, added, or absent.)";
