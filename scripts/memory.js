@@ -92,7 +92,7 @@ if (manual || auto) {
 
   /* ---- flow: pause the RP for a clean block, or append after the scene ---- */
   var flow = MEM.PAUSE
-    ? " This turn is a MEMORY TURN, not a story turn: your ENTIRE reply is the memory block and NOTHING ELSE. The FIRST line of your reply MUST be exactly '====== PERIODIC MEMORY BLOCK (paste in memory field) ======', then the filled fields, then the closing '===' line. Do NOT write a scene, an EP|time|location header, or a '---' line before it. (The engine's ~~~SV~~~ checkpoint still follows at the very end, OUTSIDE the block, unchanged.) Resume the story next turn."
+    ? " This turn is a MEMORY TURN, not a story turn. FIRST, write this exact cue line to pause the roleplay \u2014 the ~~~ wrapper keeps it INVISIBLE to the reader, exactly like the checkpoint, so it is a hidden cue only: ~~~ pausing roleplay to record memory ~~~ \u2014 THEN, on the next line, output the block starting with '====== PERIODIC MEMORY BLOCK (paste in memory field) ======', the filled fields, then the closing '===' line. Do NOT write a scene, an EP|time|location header, or a '---' line. (The engine's ~~~SV~~~ checkpoint still follows at the very end, unchanged.) Resume the story next turn."
     : " Continue the scene normally, THEN at the very END output the block below (the ~~~SV~~~ checkpoint still follows after it, unchanged).";
 
   /* ---- the injected directive (pre-filled scene + bulleted, split-section schema) ---- */
