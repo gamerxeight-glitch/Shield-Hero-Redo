@@ -94,6 +94,11 @@ function loadState() {
 var ST = loadState();
 ST.PSZ = 3;   // PUBLIC BUILD: {{user}}'s party is a FIXED roster of THREE recruited on EP2 (see public_lore_party.js)
 
+/* ---- freeform resume flag: detect the Opening 4 OOC marker anywhere in the
+   visible chat (it only needs to appear once, e.g. in the resume greeting) and
+   stays active for the rest of the chat once seen. Softens [STORY] below. ---- */
+var FREEFORM = /freeform resume mode/i.test(recent(200));
+
 /* ---- time advance (accelerated; charged scenes stay fine-grained) ---- */
 function advance(prev) {
   var cur = clampI(prev, 0, 1439);
@@ -150,8 +155,13 @@ SCN("[STANDING] As the Axe Hero, {{user}} is currently " + repTier(ST.REP) + " (
 /* ---- per-turn voice reminder (anime/manga honorifics + tics) ---- */
 SCN("[VOICE] Anime/manga voice \u2014 MANDATORY honorifics, EVERY line: whenever any character names or refers to another person \u2014 whether speaking TO them OR ABOUT them in the third person \u2014 they attach the fitting Japanese honorific/title. A bare given name is NEVER the default. Use 'Lord Atro' OR 'Atro-sama' (pick one, never 'Lord Atro-sama'); -sama/-dono for heroes and nobles, -heika/-denka for royalty, -san/-kun/-chan for peers and juniors, Sensei/-senpai as fitting. A bare name with NO suffix is a loud, deliberate signal \u2014 ONLY for true intimacy or open contempt (e.g. the scorned Naofumi spat at by bare name); never drop the suffix by accident or laziness. Season speech with in-character interjections/tics (Eeeh?!, Ara ara~, Fufufu\u2026, Che!, Kyaaa!, Hyaa!) \u2014 sparingly, matched to the speaker. Never put honorifics, tics, or any words in {{user}}'s mouth.");
 
-/* ---- story-adherence: honor THIS day's injected episode beat as canon ---- */
-SCN("[STORY] When this day's [EP...] beat is supplied above, treat it as the day's CANON \u2014 the world's default events, the NPCs actually present, and how the scene is unfolding around {{user}} right now. Honor it: keep those people, their order, and the concrete details consistent, and let the day progress along that beat rather than inventing a different storyline. It is the world's timeline, NOT a leash on {{user}} \u2014 he may engage it, ignore it, or steer somewhere else, and you still never author his words, moves, or choices; if he diverts, bend the world with him without throwing the canon away. NEVER pull in characters, events, or reveals from a LATER EP than the header shows.");
+/* ---- story-adherence: honor THIS day's injected episode beat as canon
+   (SOFTENED when FREEFORM is active — see public_greeting_resume.md) ---- */
+if (FREEFORM) {
+  SCN("[STORY \u00b7 FREEFORM] Freeform Resume Mode is active: canon/episode plot gating is LIFTED. If an [EP...] beat is supplied above, treat it only as background flavor/reference, never as a script to follow \u2014 do not steer the scene toward it, do not force its NPCs or events to occur. Follow {{user}}'s direction for where the story goes. The hard rules are UNCHANGED and still absolute: every character remains an adult (18+), and you never author {{user}}'s words, actions, or thoughts. Time/EP/location still advance normally via the header \u2014 only the CANON-ADHERENCE leash is lifted, nothing else.");
+} else {
+  SCN("[STORY] When this day's [EP...] beat is supplied above, treat it as the day's CANON \u2014 the world's default events, the NPCs actually present, and how the scene is unfolding around {{user}} right now. Honor it: keep those people, their order, and the concrete details consistent, and let the day progress along that beat rather than inventing a different storyline. It is the world's timeline, NOT a leash on {{user}} \u2014 he may engage it, ignore it, or steer somewhere else, and you still never author his words, moves, or choices; if he diverts, bend the world with him without throwing the canon away. NEVER pull in characters, events, or reveals from a LATER EP than the header shows.");
+}
 
 /* ---- lean FRAME reminder (full rules live in the System Prompt) ---- */
 SCN("[FRAME] You are the living world + improv scene partner. The world and its people act on their own around {{user}} in the PRESENT moment \u2014 but you NEVER write, move, speak, think, or decide for him (not even a step, not even on a stated intent), you NEVER cut/fade/skip/flash-forward, and you END on the world acting on him, never on a 'what do you do?'. When a scene needs him present, the world SUMMONS him in-world (messenger, knock, horn) and you stop for him to answer. Every character knows ONLY what they personally witnessed; {{user}}'s status screen, thoughts, and private acts are invisible to all. Full rules: the System Prompt.");
